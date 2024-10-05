@@ -1,4 +1,4 @@
-import { Facebook, WhatsApp } from "@mui/icons-material";
+import { Facebook, LocationCity, WhatsApp } from "@mui/icons-material";
 import { FacebookIcon } from "lucide-react";
 import Image from "next/image";
 
@@ -16,6 +16,11 @@ const Footer = () => (
       </div>
 
       <h3>Church of Christ, Anua Obio</h3>
+      <p>
+        {" "}
+        <LocationCity />
+        No. 18 Thomas Udoekong, Anua Obio, Uyo, Akwa Ibom State
+      </p>
 
       <em>...all the Churches of Christ salute you (Romans 16:16)</em>
     </div>

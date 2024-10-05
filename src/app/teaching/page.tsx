@@ -336,6 +336,24 @@ function MajorTeachings() {
       image: "/images/marriageImg.jpg",
       linkedTo: "/teaching/marriage",
     },
+
+    {
+      id: "3",
+      title: "Spiritual Heritage",
+      description: "Remember your Spiritual Heritage",
+      text: "Act 9:15",
+      image: "/images/teaching1.png",
+      linkedTo: "/teaching/spiritual-heritage",
+    },
+    {
+      id: "4",
+      title: "God’s grace is sufficient for our needs",
+      description: "Remember your Spiritual Heritage",
+      text: "2 Cor. 12:7-10; 1 Cor. 15:10",
+
+      image: "/images/grace.jpeg",
+      linkedTo: "/teaching/grace",
+    },
   ];
 
   return (

@@ -2,12 +2,12 @@ import React from "react";
 
 type Props = {};
 
-function Sermon({}: Props) {
+function sermon({}: Props) {
   return (
-    <div className="flex flex-col bg-gray-300 gap-y-4 px-12 pt-12 pb-12">
-      <p>Sermon</p>
+    <div>
+      <p className="text-center text-24 font-bold py-10  ">Coming Soon</p>
     </div>
   );
 }
 
-export default Sermon;
+export default sermon;
