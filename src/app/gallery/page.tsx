@@ -29,7 +29,7 @@ function Gallery({}: Props) {
             const { img } = props;
             return (
               <div key={index} className="overflow-hidden">
-                <div className="relative h-64 m-4">
+                <div className="relative h-64 m-2">
                   <Image
                     src={img}
                     alt="Gallery Image"
