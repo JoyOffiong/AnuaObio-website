@@ -16,6 +16,12 @@ const config: Config = {
       },
     },
     extend: {
+      boxShadow: {
+        'custom-xl': '0px 4px 15px rgba(0, 0, 0, 0.2)', 
+      },
+      fontFamily: {
+        inter: ['Inter', 'sans-serif'], // Add Inter as a custom font
+      },
       backgroundImage: {
         "gradient-radial": "radial-gradient(var(--tw-gradient-stops))",
         "gradient-conic":
@@ -35,6 +41,7 @@ const config: Config = {
         tertiary50: "#A8ACAB",
         tertiary60: "#8D9290",
         tertiary70: "#5B5F5E",
+        lightText:"#666666",
         tertiary80: "#2E3130",
         tertiary90: "#1A1C1B",
         tertiary100: "#f5f6fa",

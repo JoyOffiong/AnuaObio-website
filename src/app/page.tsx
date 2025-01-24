@@ -1,23 +1,28 @@
 import Image from "next/image";
-import HeroSection from "./components/heroSection";
-import AboutTheChurch from "./components/aboutTheChurch";
-import Worshipservices from "./components/Worshipservices";
-import JoinUsToday from "./components/JoinUsToday";
+import HeroSection from "./homePageComponents/heroSection";
+import AboutTheChurch from "./homePageComponents/aboutTheChurch";
+import Worshipservices from "./homePageComponents/Worshipservices";
+import JoinUsToday from "./homePageComponents/JoinUsToday";
+import ReachOut from "./homePageComponents/reachUs";
 
 export default function Home() {
   return (
-    <div>
-      <div className="font-sans z-4 h-full">
+    <div className="font-inter ">
+      <div className="font-inter z-4 h-full">
         <HeroSection />
       </div>
 
-      <div className="font-sans">
+      <div>
+      <ReachOut/>
+      </div>
+
+      <div>
         <AboutTheChurch />
       </div>
-      <div className="font-sans">
+      <div>
         <JoinUsToday />
       </div>
-      <div className="font-sans ">
+      <div>
         <Worshipservices />
       </div>
     </div>

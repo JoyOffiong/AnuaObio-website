@@ -22,21 +22,23 @@ export default function RootLayout({
     <html lang="en">
       <body className={inter.className}>
         <div
-          className="pb-4 bg-white z-[400px]"
+          className="bg-white z-[400px]"
           style={{
             boxShadow:
               "0 4px 6px -1px rgba(251, 191, 36, 0.1), 0 2px 4px -1px rgba(251, 191, 36, 0.06)",
           }}
         >
-          <div className="justify-center flex ">
+          
+          <div className=" justify-between mx-8 flex  font-bold text-[#174124] flex-row   items-center">
+          <div className=" ">
             <Image
               src="/images/coclogo2.png"
               alt="churchLogo"
-              width={120}
-              height={120}
+              width={80}
+              height={80}
             />
           </div>
-          <div className=" justify-center flex  font-bold text-[#174124] flex-row gap-x-24  items-center">
+            
             <Link
               href="/"
               className="relative inline-block pb-1 transition-all duration-200 
