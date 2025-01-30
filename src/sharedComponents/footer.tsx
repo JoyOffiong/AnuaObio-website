@@ -5,13 +5,13 @@ import Image from "next/image";
 const Footer = () => (
   <div className=" p-8 mt-20 flex flex-col justify-center items-center text-white bg-black">
     <div className="pt-12  flex flex-col justify-center items-center  space-y-6">
-      <div className="rounded-full items-center">
+      <div className="items-center">
         <Image
-          src="/images/coclogo2.png"
+          src="/images/coc.png"
           alt="logo"
           width={100}
           height={100}
-          className=" h-[100px] w-[100px] rounded-full"
+       
         />
       </div>
 

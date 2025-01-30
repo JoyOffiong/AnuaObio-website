@@ -8,8 +8,8 @@ function ReachOut() {
         {medium:"Follow us", contactInfo:"@cocanuaobio"}
     ]
   return (
-    <div className='mx-12 my-14'>
-     <div className=' grid grid-cols-1 gap-x-10 md:grid-cols-3'>
+    <div className='mx-12 my-20'>
+     <div className=' grid grid-cols-1 gap-y-10 md:gap-x-10  md:grid-cols-3'>
         {
             mediums.map((med, index)=>{
                 const {medium, contactInfo}= med

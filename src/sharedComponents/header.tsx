@@ -4,63 +4,59 @@ import { useState } from "react";
 import { AppBar, Toolbar, Typography, Button } from "@mui/material";
 import Link from "next/link";
 import Image from "next/image";
-import { MenuIcon } from "lucide-react";
+import { Menu as MenuIcon, X } from "lucide-react";
 
 const Navbar = () => {
-  const [isMobileMenuVisible, setMobileMenuVisible] = useState(false);
+  const [mobileMenuVisible, setMobileMenuVisible] = useState(false);
 
   const toggleMobileMenu = () => {
-    setMobileMenuVisible(!isMobileMenuVisible);
+    setMobileMenuVisible((prev) => !prev);
   };
 
   return (
-    <div className="bg-white sticky  w-full justify-center space-y-12 gap-10  font-sans">
-      {/* <div className="h-16 w-16 rounded-full justify-center text-center my-12 flex item-center">
-        <Image
-          src="/images/coclogo.jpg"
-          alt="coclogo"
-          width={40}
-          height={40}
-          className="w-full h-full rounded-full text-center object-contain"
-        />
-      </div> */}
+    <>
+      {/* Navbar */}
+      <div className="fixed p-4 top-0 left-0 w-full z-50 bg-white shadow-md">
+        <div className="bg-red-950 px-4 py-3 flex justify-between items-center">
+          {/* Logo */}
+          <div>
+            <Image src="/images/coc.png" alt="churchLogo" width={80} height={80} />
+          </div>
 
-      <div className=" justify-center flex text-[#174124] flex-row gap-x-24  items-center">
-        <Link href="/">Home</Link>
-        <Link href="/sermon">Sermon</Link>
-        <Link href="/teaching">Teachings</Link>
-        <Link href="/gallery">Gallery</Link>
+          {/* Desktop Links (Hidden on Small Screens) */}
+          <div className="block">
+          <div className=" flex flex-row  gap-8 font-bold text-black">
+            <Link href="/" className="hover:text-gray-300 transition">Home</Link>
+            <Link href="/lessons" className="hover:text-gray-300 transition">Sermon</Link>
+            <Link href="/teaching" className="hover:text-gray-300 transition">Teachings</Link>
+            <Link href="/gallery" className="hover:text-gray-300 transition">Gallery</Link>
+          </div>
+          </div>
+          
+
+          {/* Mobile Menu Toggle */}
+          <button
+            className="md:hidden text-white focus:outline-none"
+            onClick={toggleMobileMenu}
+          >
+            {mobileMenuVisible ? <X size={28} /> : <MenuIcon size={28} />}
+          </button>
+        </div>
+
+        {/* Mobile Links */}
+        {mobileMenuVisible && (
+          <div className="md:hidden flex flex-col space-y-4 p-4 bg-white shadow-lg absolute w-full">
+            <Link href="/" className="text-black hover:text-gray-600 transition">Home</Link>
+            <Link href="/lessons" className="text-black hover:text-gray-600 transition">Sermon</Link>
+            <Link href="/teaching" className="text-black hover:text-gray-600 transition">Teachings</Link>
+            <Link href="/gallery" className="text-black hover:text-gray-600 transition">Gallery</Link>
+          </div>
+        )}
       </div>
 
-      {/* hamburger menu */}
-      {/* <button
-          type="button"
-          onClick={toggleMobileMenu}
-          className=" cursor-pointer focus:outline-none md:hidden"
-        >
-          <MenuIcon />
-        </button> */}
-      {/* Navigation Links (Mobile) */}
-      {/* <div
-          className={`md:hidden absolute flex px-4 flex-col text-black gap-y-6 top-full right-0 bg-[#fbf7ee] w-[30%] ${
-            isMobileMenuVisible ? "" : "hidden"
-          }`}
-        >
-          <Link href="/">Home</Link>
-          <Link href="/sermon">Sermon</Link>
-          <Link href="/teaching">Teachings</Link>
-          <Link href="/gallery">Gallery</Link>
-        </div> */}
-
-      {/* Navigation Links (Desktop) */}
-
-      {/* <div className="hidden md:flex flex-row gap-x-24  items-center">
-        <Link href="/">Home</Link>
-        <Link href="/sermon">Sermon</Link>
-        <Link href="/teaching">Teachings</Link>
-        <Link href="/gallery">Gallery</Link>
-      </div> */}
-    </div>
+      {/* Push content down so it's not hidden behind navbar */}
+      {/* <div className="pt-20"></div> */}
+    </>
   );
 };
 
