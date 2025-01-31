@@ -97,9 +97,9 @@ More  </button>
           <div className="sm:block md:hidden">
           <button
             className="md:hidden block text-black focus:outline-none"
-            onClick={toggleMobileMenu}
+          
           >
-            {mobileMenuVisible ? <X size={28}/> : <AlignRightIcon size={28} />}
+            {mobileMenuVisible ? <X size={28} onClick={()=>setMobileMenuVisible(false)}/> : <AlignRightIcon size={28}   onClick={toggleMobileMenu} />}
           </button>
           </div>
          
