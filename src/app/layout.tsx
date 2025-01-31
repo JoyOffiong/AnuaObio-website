@@ -27,7 +27,7 @@ export default function RootLayout({
 
 
   const toggleMobileMenu = () => {
-    setMobileMenuVisible(false);
+    setMobileMenuVisible(true);
   };
   const toggleAboutDropdown = () => {
     setAboutDropdownVisible(!aboutDropdownVisible);
@@ -74,7 +74,7 @@ export default function RootLayout({
             <div 
   className="relative"
 >
-  {/* More Button */}
+  {/* M Button */}
   <button        onMouseEnter={()=>setMoreDropdownVisible(true)}
  className="flex items-center gap-1 hover:text-green-950 transition">
 More  </button>
@@ -109,7 +109,8 @@ More  </button>
 <hr />
         </div>
 
-        {/* Mobile Links */}
+
+        {/* MOBILE LINKSSS */}
         {mobileMenuVisible && (
   <div className="md:hidden absolute top-0 left-0 w-full">
     <div className="w-full flex flex-col space-y-4 p-4 bg-white shadow-xl 
@@ -118,24 +119,38 @@ More  </button>
          style={{ transform: mobileMenuVisible ? "translateY(0)" : "translateY(-100%)", opacity: mobileMenuVisible ? 1 : 0 }}>
       
       <Link href="/" className="hover:text-gray-950 transition hover:bg-gray-100">Home</Link>
-            <Link href="../app/pages/sermon" className="hover:text-green-950 transition hover:bg-gray-100">Sermon</Link>
-            <Link href="../pages/lessons" className="hover:text-gray-950 transition hover:bg-gray-100">Teachings</Link>
-            <Link href="../app/pages/gallery" className="hover:text-gray-950 transition hover:bg-gray-100">Gallery</Link>
-             {/* More Button */}
-  <button        onMouseEnter={()=>setMoreDropdownVisible(true)}
+
+  {/* About Us Button */}
+  <button        onMouseEnter={toggleAboutDropdown}
+ className="flex items-center gap-1 hover:text-green-950 transition">
+    About Us
+  </button>
+
+  {/* Dropdown Menu */}
+  {aboutDropdownVisible && (
+    <div onMouseLeave={()=>toggleMobileMenu()} className="absolute left-0 top-20  w-40 bg-white shadow-custom-xl rounded-lg py-2"   
+>
+      <Link href="./pages/aboutUs/theChurch" className="block px-4 py-2 hover:bg-gray-100">The Church</Link>
+      <Link href="./pages/aboutUs/ourBeliefs" className="block px-4 py-2 hover:bg-gray-100">Our Belief</Link>
+      <Link href="./pages/aboutUs/ourWorship" className="block px-4 py-2 hover:bg-gray-100">Our Worship</Link>
+      <Link href="./pages/aboutUs/theMinister" className="block px-4 py-2 hover:bg-gray-100">The Minister</Link>
+    </div>
+  )}            <Link href="../pages/lessons" className="hover:text-gray-950 transition hover:bg-gray-100">Teachings</Link>
+            <Link href="../app/pages/contactUs" className="hover:text-gray-950 transition hover:bg-gray-100">Get in Touch</Link>
+{/* M Button */}
+<button        onMouseEnter={()=>setMoreDropdownVisible(true)}
  className="flex items-center gap-1 hover:text-green-950 transition">
 More  </button>
 
   {/* Dropdown Menu */}
   {moreDropdownVisible && (
-    <div onMouseLeave={()=>setMoreDropdownVisible(false)} className="absolute -left-12 top-full mt-2 w-40 bg-white shadow-lg rounded-lg py-2"   
+    <div onMouseLeave={()=>setMoreDropdownVisible(false)} className="absolute left-0 top-48 mt-2 w-40 bg-white shadow-custom-xl rounded-lg py-2"   
 >
       <Link href="./pages/more/gallery" className="block px-4 py-2 hover:bg-gray-100">Gallery</Link>
       <Link href="./pages/more/TheMinistry"className="block px-4 py-2 hover:bg-gray-100">The Ministry</Link>
       <Link href="./pages/more/TheMinister" className="block px-4 py-2 hover:bg-gray-100">Support Us</Link>
     </div>
-  )}
-    </div>
+  )}    </div>
   </div>
 )}
 
