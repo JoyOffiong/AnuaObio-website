@@ -136,7 +136,7 @@ More  </button>
       <Link href="/pages/aboutUs/theMinister" className="block px-4 py-2 hover:bg-gray-100">The Minister</Link>
     </div>
   )}            <Link href="/pages/lessons" className="hover:text-gray-950 transition hover:bg-gray-100">Teachings</Link>
-            <Link href="/app/pages/contactUs" className="hover:text-gray-950 transition hover:bg-gray-100">Get in Touch</Link>
+            <Link href="/pages/contactUs" className="hover:text-gray-950 transition hover:bg-gray-100">Get in Touch</Link>
 {/* M Button */}
 <button        onMouseEnter={()=>setMoreDropdownVisible(true)}
  className="flex items-center gap-1 hover:text-green-950 transition">
