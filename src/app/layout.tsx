@@ -83,8 +83,8 @@ More  </button>
   {moreDropdownVisible && (
     <div onMouseLeave={()=>setMoreDropdownVisible(false)} className="absolute -left-12 top-full mt-2 w-40 bg-white shadow-lg rounded-lg py-2"   
 >
-      <Link href="./pages/more/gallery" className="block px-4 py-2 hover:bg-gray-100">Gallery</Link>
-      <Link href="./pages/more/TheMinistry"className="block px-4 py-2 hover:bg-gray-100">The Ministry</Link>
+      <Link href="./pages/more/gallery1" className="block px-4 py-2 hover:bg-gray-100">Gallery</Link>
+      <Link href="./pages/more/theMinistry"className="block px-4 py-2 hover:bg-gray-100">The Ministry</Link>
       <Link href="./pages/more/TheMinister" className="block px-4 py-2 hover:bg-gray-100">Support Us</Link>
     </div>
   )}
@@ -146,8 +146,8 @@ More  </button>
   {moreDropdownVisible && (
     <div onMouseLeave={()=>setMoreDropdownVisible(false)} className="absolute left-0 top-48 mt-2 w-40 bg-white shadow-custom-xl rounded-lg py-2"   
 >
-      <Link href="./pages/more/gallery" className="block px-4 py-2 hover:bg-gray-100">Gallery</Link>
-      <Link href="./pages/more/TheMinistry"className="block px-4 py-2 hover:bg-gray-100">The Ministry</Link>
+      <Link href="./pages/more/gallery1" className="block px-4 py-2 hover:bg-gray-100">Gallery</Link>
+      <Link href="./pages/more/theMinistry"className="block px-4 py-2 hover:bg-gray-100">The Ministry</Link>
       <Link href="./pages/more/TheMinister" className="block px-4 py-2 hover:bg-gray-100">Support Us</Link>
     </div>
   )}    </div>
