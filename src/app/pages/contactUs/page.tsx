@@ -58,7 +58,7 @@ be happy to help in any way we can!</p>
       </div>
       </form>
      
-     <div className='grid grid-cols-1 md:grid-cols-2 mt-36 gap-4'>
+     <div className='grid grid-cols-1 md:grid-cols-2 m-18 md:mt-36 gap-4'>
       <div className='space-y-6 mt-16 md:pl-14 px-8 md:px-0 '>
         <p className='font-semibold text-3xl md:text-5xl'>Come visit us at:</p>
         <p className='font-medium text-xl md:text-2xl'>No. 18 Thomas Udoekong street, Anua Obio, Uyo Akwa Ibom State.</p>
