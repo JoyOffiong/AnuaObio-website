@@ -42,7 +42,7 @@ function Lessons() {
       }`}
     >
       <div className="text-center">
-        <p className="font-bold md:text-5xl text-3xl mb-10">Today's Lessons</p>
+        <p className="font-bold md:text-5xl text-3xl mb-10">Today&apos;s Lessons</p>
       </div>
       <div className="bg-[#f7f7f7] px-12 py-14">
         <div>

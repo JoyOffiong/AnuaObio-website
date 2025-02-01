@@ -4,7 +4,7 @@ import AboutTheChurch from "./homePageComponents/aboutTheChurch";
 import Worshipservices from "./homePageComponents/Worshipservices";
 import JoinUsToday from "./homePageComponents/JoinUsToday";
 import ReachOut from "./homePageComponents/reachUs";
-import Lessons from "./homePageComponents/Today'sLessons"
+import Lessons from "./homePageComponents/TodaysLessons"
 import Verse from "./homePageComponents/VerseOfDay";
 import FAQ from "./homePageComponents/FAQ";
 

@@ -31,12 +31,12 @@ function OurMinstry() {
 
             <p className="text-[#666666] font-medium">
               We are all about reaching out to people in different places,
-              whether it's hospitals, prisons, or even overseas, to spread a
+              whether it&apos;s hospitals, prisons, or even overseas, to spread a
               message of hope and love. We make it a point to connect with
               everyone who visits or contacts us, making sure they feel at home
               and supported on their salvation journey. To help new believers
               grow, we usually have a Bible study program that helps them dive
-              deeper into what Scripture has to say. On top of that, we’ve
+              deeper into what Scripture has to say. On top of that, we&apos;ve
               created an exciting outreach program designed to engage with our
               community and welcome those who are searching for answers. Our
               goal is to share the good news and help everyone grow in their
@@ -56,7 +56,7 @@ function OurMinstry() {
             <p className="text-[#333333] text-xl md:text-2xl font-bold text-center">Benevolence</p>
 
             <p className="text-[#666666] font-medium">
-            The Church of Christ Abua Obio really focuses on helping those in need, both within our church and in the wider community. We always seek to help those in need through various means, doing what we can to support people facing tough times. We also make an effort to visit and encourage those who might be feeling down or struggling physically. It’s all about coming together to lift each other up and share hope and faith with everyone who could use a little extra help.
+            The Church of Christ Abua Obio really focuses on helping those in need, both within our church and in the wider community. We always seek to help those in need through various means, doing what we can to support people facing tough times. We also make an effort to visit and encourage those who might be feeling down or struggling physically. It&apos;s all about coming together to lift each other up and share hope and faith with everyone who could use a little extra help.
             </p>
           </div>
 
@@ -65,7 +65,7 @@ function OurMinstry() {
             </p>
 
             <p className="text-[#666666] text-xl font-medium text-center ">
-            We've left this here because we will always seek to share goodness with you, so
+            We&apos;ve left this here because we will always seek to share goodness with you, so
             </p>
 
             <div>
