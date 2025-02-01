@@ -1,6 +1,6 @@
 "use client"
 
-import MapReport from '@/sharedComponents/googleMap'
+import GoogleMap from '@/sharedComponents/googleMap'
 import InputBoxComp from '@/sharedComponents/inputField'
 import React from 'react'
 import { useForm } from 'react-hook-form'
@@ -66,7 +66,7 @@ be happy to help in any way we can!</p>
         Join us today</p>
       </div>
       <div className='z-2'>
-        <MapReport />
+        <GoogleMap />
       </div>
      </div>
 
