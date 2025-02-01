@@ -61,16 +61,16 @@ export default function RootLayout({
   {aboutDropdownVisible && (
     <div onMouseLeave={()=>toggleMobileMenu()} className="absolute -left-12 top-full mt-2 w-40 bg-white shadow-lg rounded-lg py-2"   
 >
-      <Link href="./pages/aboutUs/theChurch" className="block px-4 py-2 hover:bg-gray-100">The Church</Link>
-      <Link href="./pages/aboutUs/ourBeliefs" className="block px-4 py-2 hover:bg-gray-100">Our Belief</Link>
-      <Link href="./pages/aboutUs/ourWorship" className="block px-4 py-2 hover:bg-gray-100">Our Worship</Link>
-      <Link href="./pages/aboutUs/theMinister" className="block px-4 py-2 hover:bg-gray-100">The Minister</Link>
+      <Link href="/pages/aboutUs/theChurch" className="block px-4 py-2 hover:bg-gray-100">The Church</Link>
+      <Link href="/pages/aboutUs/ourBeliefs" className="block px-4 py-2 hover:bg-gray-100">Our Belief</Link>
+      <Link href="/pages/aboutUs/ourWorship" className="block px-4 py-2 hover:bg-gray-100">Our Worship</Link>
+      <Link href="/pages/aboutUs/theMinister" className="block px-4 py-2 hover:bg-gray-100">The Minister</Link>
     </div>
   )}
 </div>
 
-            <Link href="./pages/lessons" className="hover:text-gray-950 transition">Teachings</Link>
-            <Link href="./pages/contactUs" className="hover:text-gray-950 transition">Get in Touch</Link>
+            <Link href="/pages/lessons" className="hover:text-gray-950 transition">Teachings</Link>
+            <Link href="/pages/contactUs" className="hover:text-gray-950 transition">Get in Touch</Link>
             <div 
   className="relative"
 >

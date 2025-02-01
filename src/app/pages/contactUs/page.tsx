@@ -58,14 +58,14 @@ be happy to help in any way we can!</p>
       </div>
       </form>
      
-     <div className='grid grid-cols-1 md:grid-cols-2 pl-14 mt-36 gap-4'>
-      <div className='space-y-6 mt-16'>
+     <div className='grid grid-cols-1 md:grid-cols-2 mt-36 gap-4'>
+      <div className='space-y-6 mt-16 md:pl-14 px-8 md:px-0 '>
         <p className='font-semibold text-3xl md:text-5xl'>Come visit us at:</p>
         <p className='font-medium text-xl md:text-2xl'>No. 18 Thomas Udoekong street, Anua Obio, Uyo Akwa Ibom State.</p>
         <p className='text-[#888888] text-lg md:text-'>We are a group of everyday people we seek to pattern selves after the example of the early church as it is revealed in the New Testament. 
         Join us today</p>
       </div>
-      <div className='z-2'>
+      <div className='z-2 md:-mb-0 -mb-20'>
         <GoogleMap />
       </div>
      </div>
