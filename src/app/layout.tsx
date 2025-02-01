@@ -52,14 +52,14 @@ export default function RootLayout({
   className="relative"
 >
   {/* About Us Button */}
-  <button        onMouseEnter={toggleAboutDropdown}
+  <button        onMouseEnter={()=>setAboutDropdownVisible(true)}
  className="flex items-center gap-1 hover:text-green-950 transition">
     About Us
   </button>
 
   {/* Dropdown Menu */}
   {aboutDropdownVisible && (
-    <div onMouseLeave={()=>toggleMobileMenu()} className="absolute -left-12 top-full mt-2 w-40 bg-white shadow-lg rounded-lg py-2"   
+    <div onMouseLeave={()=>setAboutDropdownVisible(false)} className="absolute -left-12 top-full mt-2 w-40 bg-white shadow-lg rounded-lg py-2"   
 >
       <Link href="/pages/aboutUs/theChurch" className="block px-4 py-2 hover:bg-gray-100">The Church</Link>
       <Link href="/pages/aboutUs/ourBeliefs" className="block px-4 py-2 hover:bg-gray-100">Our Belief</Link>
@@ -83,9 +83,9 @@ More  </button>
   {moreDropdownVisible && (
     <div onMouseLeave={()=>setMoreDropdownVisible(false)} className="absolute -left-12 top-full mt-2 w-40 bg-white shadow-lg rounded-lg py-2"   
 >
-      <Link href="./pages/more/gallery1" className="block px-4 py-2 hover:bg-gray-100">Gallery</Link>
-      <Link href="./pages/more/theMinistry"className="block px-4 py-2 hover:bg-gray-100">The Ministry</Link>
-      <Link href="./pages/more/TheMinister" className="block px-4 py-2 hover:bg-gray-100">Support Us</Link>
+      <Link href="/pages/more/gallery1" className="block px-4 py-2 hover:bg-gray-100">Gallery</Link>
+      <Link href="/pages/more/theMinistry"className="block px-4 py-2 hover:bg-gray-100">The Ministry</Link>
+      <Link href="/pages/more/TheMinister" className="block px-4 py-2 hover:bg-gray-100">Support Us</Link>
     </div>
   )}
 </div>            
@@ -121,22 +121,22 @@ More  </button>
       <Link href="/" className="hover:text-gray-950 transition hover:bg-gray-100">Home</Link>
 
   {/* About Us Button */}
-  <button        onMouseEnter={toggleAboutDropdown}
+  <button        onMouseEnter={()=>setAboutDropdownVisible(true)}
  className="flex items-center gap-1 hover:text-green-950 transition">
     About Us
   </button>
 
   {/* Dropdown Menu */}
   {aboutDropdownVisible && (
-    <div onMouseLeave={()=>toggleMobileMenu()} className="absolute left-0 top-20  w-40 bg-white shadow-custom-xl rounded-lg py-2"   
+    <div onMouseLeave={()=>setAboutDropdownVisible(false)} className="absolute left-0 top-20  w-40 bg-white shadow-custom-xl rounded-lg py-2"   
 >
-      <Link href="./pages/aboutUs/theChurch" className="block px-4 py-2 hover:bg-gray-100">The Church</Link>
-      <Link href="./pages/aboutUs/ourBeliefs" className="block px-4 py-2 hover:bg-gray-100">Our Belief</Link>
-      <Link href="./pages/aboutUs/ourWorship" className="block px-4 py-2 hover:bg-gray-100">Our Worship</Link>
-      <Link href="./pages/aboutUs/theMinister" className="block px-4 py-2 hover:bg-gray-100">The Minister</Link>
+      <Link href="/pages/aboutUs/theChurch" className="block px-4 py-2 hover:bg-gray-100">The Church</Link>
+      <Link href="/pages/aboutUs/ourBeliefs" className="block px-4 py-2 hover:bg-gray-100">Our Belief</Link>
+      <Link href="/pages/aboutUs/ourWorship" className="block px-4 py-2 hover:bg-gray-100">Our Worship</Link>
+      <Link href="/pages/aboutUs/theMinister" className="block px-4 py-2 hover:bg-gray-100">The Minister</Link>
     </div>
-  )}            <Link href="../pages/lessons" className="hover:text-gray-950 transition hover:bg-gray-100">Teachings</Link>
-            <Link href="../app/pages/contactUs" className="hover:text-gray-950 transition hover:bg-gray-100">Get in Touch</Link>
+  )}            <Link href="/pages/lessons" className="hover:text-gray-950 transition hover:bg-gray-100">Teachings</Link>
+            <Link href="/app/pages/contactUs" className="hover:text-gray-950 transition hover:bg-gray-100">Get in Touch</Link>
 {/* M Button */}
 <button        onMouseEnter={()=>setMoreDropdownVisible(true)}
  className="flex items-center gap-1 hover:text-green-950 transition">
@@ -146,9 +146,9 @@ More  </button>
   {moreDropdownVisible && (
     <div onMouseLeave={()=>setMoreDropdownVisible(false)} className="absolute left-0 top-48 mt-2 w-40 bg-white shadow-custom-xl rounded-lg py-2"   
 >
-      <Link href="./pages/more/gallery1" className="block px-4 py-2 hover:bg-gray-100">Gallery</Link>
-      <Link href="./pages/more/theMinistry"className="block px-4 py-2 hover:bg-gray-100">The Ministry</Link>
-      <Link href="./pages/more/TheMinister" className="block px-4 py-2 hover:bg-gray-100">Support Us</Link>
+      <Link href="/pages/more/gallery1" className="block px-4 py-2 hover:bg-gray-100">Gallery</Link>
+      <Link href="/pages/more/theMinistry"className="block px-4 py-2 hover:bg-gray-100">The Ministry</Link>
+      <Link href="/pages/more/TheMinister" className="block px-4 py-2 hover:bg-gray-100">Support Us</Link>
     </div>
   )}    </div>
   </div>
