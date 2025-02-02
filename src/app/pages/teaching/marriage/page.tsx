@@ -1,28 +1,43 @@
 import React from "react";
+import Img from "../../../../../public/images/marriage.jpg"
+import Image from "next/image";
+import { FaArrowLeft } from "react-icons/fa";
+import { Button } from "@mui/material";
+import BackButton from "@/sharedComponents/backButton";
+
 
 type Props = {};
 
 function Marriage({}: Props) {
   return (
-    <div className="font-sans ">
-      <div
-        className="bg-cover bg-center relative z-10 font-sans"
-        style={{
-          backgroundImage: "url('/images/marriage8.jpg')",
-          height: "400px",
-        }}
-      >
-        <div className="absolute inset-0  opacity-30"></div>
-        <div className="flex justify-center items-center h-full">
-          <div className="text-white text-center z-20">
-            <p className="font-semibold text-3xl md:text-5xl">
-              MALACHI’S TEACHING ON MARRIAGE AND DIVORCE
-            </p>
-          </div>
+    <div className="font-inter my-24 space-y-6 md:my-32 mx-6 md:mx-32 ">
+   
+<BackButton/>
+     <div className="flex flex-col gap-y-6 justify-center items-center h-full">
+        <div className="text-b text-center md:w-2/3 z-20 w-full">
+          <p className="font-bold uppercase text-xl md:text-5xl">
+          Malachi's Teaching on Marriage and Divorce          </p>
+        </div>
+        <div className="space-y-4 text-[#888888]">
+          <p>Jan. 10, 2025</p>
+          <p>By Bro. Offiong</p>
+        </div>
+        <div className="">
+          <Image
+            alt="Marriage"
+            src={Img}
+            height={300}
+            width={100}
+            className="h-[200px] w-screen max-w-full rounded-3xl object-cover"
+          />{" "}
+        </div>
+        <div className="font-semibold">
+          <em>Malachi 2:14-16.</em>
         </div>
       </div>
 
-      <div className="text-[#174124] space-y-4 p-12">
+
+      <div className="text-[#000000] space-y-4">
         <div className="space-y-2 ">
           <p className="font-bold text-lg">A. Introduction</p>
           <p>
