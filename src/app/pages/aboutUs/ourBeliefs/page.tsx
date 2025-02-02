@@ -16,7 +16,7 @@ const TheGodHead = [
 
   return (
     <div className=' my-24'>
-      <div className=' space-y-6 px-4 py-8 md:p-8'>
+      <div className=' space-y-6 px-4 py-8 md:px-32'>
       {
         TheGodHead.map((GH)=>{
           const {entity, texts, details} = GH
@@ -25,12 +25,12 @@ const TheGodHead = [
           <>
           <div className='flex flex-col mx-auto w-10/12 md:flex-row  items-center md:gap-24 gap-2'>
           <div className='w-full md:w-1/3'>
-          <p className='text-xl md:text-3xl font-bold'>{entity}</p>
+          <p className='text-3xl md:text-5xl font-bold text-[#333333]'>{entity}</p>
 
           </div>
-            <div className='leading-8 font-semibold space-y-4 w-full md:w-2/3'>
-                <p className='text-[#666666]'>{details}</p>
-                <em className='text-black'>{texts}</em>
+            <div className='leading-8 font-medium  w-full md:w-2/3'>
+                <p className='text-[#666666] text-xl pb-6 md:text-2xl leading-normal'>{details}</p>
+                <em className='text-black text-xl md:text-2xl '>{texts}</em>
             </div>
       </div>
       <div>
@@ -48,3 +48,4 @@ const TheGodHead = [
 }
 
 export default OurBeliefs
+

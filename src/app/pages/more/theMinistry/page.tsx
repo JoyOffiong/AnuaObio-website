@@ -30,7 +30,7 @@ function OurMinstry() {
 
   return (
     <div className="font-inter mt-16">
-      <div className="px-4 md:px-16 py-16">
+      <div className="px-8 md:px-32 py-16">
 
         <div className={`font-inter text-center transform transition-all duration-700 ${
         isVisible ? "opacity-100 translate-y-0" : "opacity-0 translate-y-10"
@@ -41,14 +41,12 @@ function OurMinstry() {
         </div>  
 
         <div className="md:space-y-24 space-y-12">
-          <div className={`font-inter transform transition-all duration-700 flex flex-row items-center space-y-4 w-full md:w-1/2  mx-auto ${
-        isVisible ? "opacity-100 translate-y-0" : "opacity-0 translate-y-10 flex flex-row items-center space-y-4 w-full md:w-1/2  mx-auto"
+          <div className={`font-inter transform transition-all duration-700 flex md:flex-row flex-col items-center space-y-4 w-full md:w-1/2  mx-auto ${
+        isVisible ? "opacity-100 translate-y-0" : "opacity-0 translate-y-10 flex md:flex-row flex-col items-center space-y-4 w-full md:w-1/2  mx-auto"
       }`}      ref={sectionRef}
           >
-              <div className={`font-inter transform transition-all duration-700 ${
-        isVisible ? "opacity-100 translate-y-0" : "opacity-0 translate-y-10"
-      }`}>
-                <div className="md:w-10/12 w-full text-right">
+              <div >
+                <div className="md:w-10/12 w-full text-center md:text-right">
                 <em className="text-[#333333]  font-semibold  text-xl md:text-2xl">
               Our Ministries are structured based on the work of church which
               includes:
@@ -57,17 +55,17 @@ function OurMinstry() {
          
               </div>
             
-            <div className="text-[#757575] flex md:w-1/2 justify-center md:justify-end w-full flex-col gap-y-2 font-medium text-base md:text-xl">
+            <div className="text-[#757575] flex md:w-1/2 justify-center text-center md:text-left w-full flex-col gap-y-2 font-medium text-base md:text-xl">
               <p>Evangelism</p>
               <p>Edification</p>
               <p>Benevolence</p>
             </div>
           </div>
 
-<div className={`font-inter transform transition-all duration-700 ${
+<div className={` font-inter transform transition-all space-y-8 duration-700 ${
         isVisible ? "opacity-100 translate-y-0" : "opacity-0 translate-y-10"
       }`}>
-<div className="space-y-4 w-10/12 mx-auto md:w-2/3">
+<div className="space-y-4 ">
             <p className="text-[#333333] text-xl md:text-2xl font-bold text-center">Evangelism</p>
 
             <p className="text-[#666666] text-base font-medium">
@@ -85,7 +83,7 @@ function OurMinstry() {
             </p>
           </div>
           
-          <div className="space-y-4 w-10/12 mx-auto md:w-2/3">
+          <div className="space-y-4">
             <p className="text-[#333333] text-xl md:text-2xl font-bold text-center">Edification</p>
 
             <p className="text-[#666666] text-base font-medium">
@@ -93,7 +91,7 @@ function OurMinstry() {
             </p>
           </div>
 
-          <div className="space-y-4 w-10/12 mx-auto md:w-2/3">
+          <div className="space-y-4">
             <p className="text-[#333333] text-xl md:text-2xl font-bold text-center">Benevolence</p>
 
             <p className="text-[#666666] text-base font-medium">
@@ -101,7 +99,7 @@ function OurMinstry() {
             </p>
           </div>
 
-          <div className=" w-10/12 mx-auto space-y-10 justify-center md:w-2/3">
+          <div className=" space-y-10 justify-center">
             <p className="text-[#333333] text-xl md:text-2xl font-bold  text-center">The Plan of salvation
             </p>
 

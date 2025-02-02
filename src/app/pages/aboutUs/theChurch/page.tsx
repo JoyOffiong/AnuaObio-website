@@ -3,8 +3,8 @@ import React from 'react'
 
 function TheChurch() {
   return (
-    <div className='m-12 my-24'>
-      <div className='mx-auto w-10/12 space-y-6 shadow-lg p-8'>
+    <div className='px-4 md:px-32 my-24'>
+      <div className=' space-y-6 shadow-lg p-4 md:p-8'>
             <div>
             <p className="font-bold text-3xl md:text-5xl mb-14 text-center">Our History</p>
             </div>

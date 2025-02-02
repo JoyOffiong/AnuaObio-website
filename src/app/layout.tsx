@@ -69,7 +69,7 @@ export default function RootLayout({
   )}
 </div>
 
-            <Link href="/pages/lessons" className="hover:text-gray-950 transition">Teachings</Link>
+            <Link href="/pages/lessons" className="hover:text-gray-950 transition ">Lessons</Link>
             <Link href="/pages/contactUs" className="hover:text-gray-950 transition">Get in Touch</Link>
             <div 
   className="relative"
@@ -112,13 +112,17 @@ More  </button>
 
         {/* MOBILE LINKSSS */}
         {mobileMenuVisible && (
-  <div className="md:hidden absolute top-0 left-0 w-full text-4xl">
+  <div className="md:hidden absolute top-0 left-0 w-full font-semibold text-2xl">
     <div className="w-full flex flex-col space-y-4 p-4 bg-white shadow-xl 
                     absolute top-16 left-0 transition-all duration-300 ease-in-out 
                     translate-y-[-100%] opacity-0"
          style={{ transform: mobileMenuVisible ? "translateY(0)" : "translateY(-100%)", opacity: mobileMenuVisible ? 1 : 0 }}>
       
-      <Link href="/" className="hover:text-gray-950 transition hover:bg-gray-100">Home</Link>
+      <Link href="/" className="hover:text-gray-950 transition hover:bg-gray-100">
+      <div onClick={()=>setMobileMenuVisible(false)} >
+        Home
+      </div>
+      </Link>
 
   {/* About Us Button */}
   <button        onMouseEnter={()=>setAboutDropdownVisible(true)}
@@ -130,12 +134,15 @@ More  </button>
   {aboutDropdownVisible && (
     <div onMouseLeave={()=>setAboutDropdownVisible(false)} className="absolute left-0 top-20  w-40 bg-white shadow-custom-xl rounded-lg py-2"   
 >
-      <Link href="/pages/aboutUs/theChurch" className="block px-4 py-2 hover:bg-gray-100">The Church</Link>
-      <Link href="/pages/aboutUs/ourBeliefs" className="block px-4 py-2 hover:bg-gray-100">Our Belief</Link>
+      <Link href="/pages/aboutUs/theChurch" className="block px-4 py-2 hover:bg-gray-100"> <div onClick={()=>{setMobileMenuVisible(false); setAboutDropdownVisible(false)}} >
+        The Church
+      </div></Link>
+      <Link href="/pages/aboutUs/ourBeliefs" className="block px-4 py-2 hover:bg-gray-100"><div  onClick={()=>{setMobileMenuVisible(false); setAboutDropdownVisible(false)}}  >
+Our Belief      </div></Link>
       {/* <Link href="/pages/aboutUs/ourWorship" className="block px-4 py-2 hover:bg-gray-100">Our Worship</Link> */}
       {/* <Link href="/pages/aboutUs/theMinister" className="block px-4 py-2 hover:bg-gray-100">The Minister</Link> */}
     </div>
-  )}            <Link href="/pages/lessons" className="hover:text-gray-950 transition hover:bg-gray-100">Teachings</Link>
+  )}            <Link href="/pages/lessons" className="hover:text-gray-950 transition hover:bg-gray-100">Lessons</Link>
             <Link href="/pages/contactUs" className="hover:text-gray-950 transition hover:bg-gray-100">Get in Touch</Link>
 {/* M Button */}
 <button        onMouseEnter={()=>setMoreDropdownVisible(true)}
@@ -146,9 +153,14 @@ More  </button>
   {moreDropdownVisible && (
     <div onMouseLeave={()=>setMoreDropdownVisible(false)} className="absolute left-0 top-48 mt-2 w-40 bg-white shadow-custom-xl rounded-lg py-2"   
 >
-      <Link href="/pages/more/gallery1" className="block px-4 py-2 hover:bg-gray-100">Gallery</Link>
-      <Link href="/pages/more/theMinistry"className="block px-4 py-2 hover:bg-gray-100">The Ministry</Link>
-      <Link href="/pages/more/support" className="block px-4 py-2 hover:bg-gray-100">Support Us</Link>
+      <Link href="/pages/more/gallery1" className="block px-4 py-2 hover:bg-gray-100"><div onClick={()=>{setMobileMenuVisible(false); setAboutDropdownVisible(false)}}  >
+        Gallery
+      </div></Link>
+      <Link href="/pages/more/theMinistry"className="block px-4 py-2 hover:bg-gray-100"><div  onClick={()=>{setMobileMenuVisible(false); setAboutDropdownVisible(false)}}  >
+        The Ministry
+      </div></Link>
+      <Link href="/pages/more/support" className="block px-4 py-2 hover:bg-gray-100"><div  onClick={()=>{setMobileMenuVisible(false); setAboutDropdownVisible(false)}}  >
+Support Us      </div></Link>
     </div>
   )}    </div>
   </div>
