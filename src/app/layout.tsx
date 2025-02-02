@@ -63,8 +63,8 @@ export default function RootLayout({
 >
       <Link href="/pages/aboutUs/theChurch" className="block px-4 py-2 hover:bg-gray-100">The Church</Link>
       <Link href="/pages/aboutUs/ourBeliefs" className="block px-4 py-2 hover:bg-gray-100">Our Belief</Link>
-      <Link href="/pages/aboutUs/ourWorship" className="block px-4 py-2 hover:bg-gray-100">Our Worship</Link>
-      <Link href="/pages/aboutUs/theMinister" className="block px-4 py-2 hover:bg-gray-100">The Minister</Link>
+      {/* <Link href="/pages/aboutUs/ourWorship" className="block px-4 py-2 hover:bg-gray-100">Our Worship</Link> */}
+      {/* <Link href="/pages/aboutUs/theMinister" className="block px-4 py-2 hover:bg-gray-100">The Minister</Link> */}
     </div>
   )}
 </div>
@@ -85,7 +85,7 @@ More  </button>
 >
       <Link href="/pages/more/gallery1" className="block px-4 py-2 hover:bg-gray-100">Gallery</Link>
       <Link href="/pages/more/theMinistry"className="block px-4 py-2 hover:bg-gray-100">The Ministry</Link>
-      <Link href="/pages/more/TheMinister" className="block px-4 py-2 hover:bg-gray-100">Support Us</Link>
+      <Link href="/pages/more/support" className="block px-4 py-2 hover:bg-gray-100">Support Us</Link>
     </div>
   )}
 </div>            
@@ -112,7 +112,7 @@ More  </button>
 
         {/* MOBILE LINKSSS */}
         {mobileMenuVisible && (
-  <div className="md:hidden absolute top-0 left-0 w-full">
+  <div className="md:hidden absolute top-0 left-0 w-full text-4xl">
     <div className="w-full flex flex-col space-y-4 p-4 bg-white shadow-xl 
                     absolute top-16 left-0 transition-all duration-300 ease-in-out 
                     translate-y-[-100%] opacity-0"
@@ -132,8 +132,8 @@ More  </button>
 >
       <Link href="/pages/aboutUs/theChurch" className="block px-4 py-2 hover:bg-gray-100">The Church</Link>
       <Link href="/pages/aboutUs/ourBeliefs" className="block px-4 py-2 hover:bg-gray-100">Our Belief</Link>
-      <Link href="/pages/aboutUs/ourWorship" className="block px-4 py-2 hover:bg-gray-100">Our Worship</Link>
-      <Link href="/pages/aboutUs/theMinister" className="block px-4 py-2 hover:bg-gray-100">The Minister</Link>
+      {/* <Link href="/pages/aboutUs/ourWorship" className="block px-4 py-2 hover:bg-gray-100">Our Worship</Link> */}
+      {/* <Link href="/pages/aboutUs/theMinister" className="block px-4 py-2 hover:bg-gray-100">The Minister</Link> */}
     </div>
   )}            <Link href="/pages/lessons" className="hover:text-gray-950 transition hover:bg-gray-100">Teachings</Link>
             <Link href="/pages/contactUs" className="hover:text-gray-950 transition hover:bg-gray-100">Get in Touch</Link>
@@ -148,7 +148,7 @@ More  </button>
 >
       <Link href="/pages/more/gallery1" className="block px-4 py-2 hover:bg-gray-100">Gallery</Link>
       <Link href="/pages/more/theMinistry"className="block px-4 py-2 hover:bg-gray-100">The Ministry</Link>
-      <Link href="/pages/more/TheMinister" className="block px-4 py-2 hover:bg-gray-100">Support Us</Link>
+      <Link href="/pages/more/support" className="block px-4 py-2 hover:bg-gray-100">Support Us</Link>
     </div>
   )}    </div>
   </div>
