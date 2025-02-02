@@ -16,7 +16,7 @@ function Marriage({}: Props) {
      <div className="flex flex-col gap-y-6 justify-center items-center h-full">
         <div className="text-b text-center md:w-2/3 z-20 w-full">
           <p className="font-bold uppercase text-xl md:text-5xl">
-          Malachi's Teaching on Marriage and Divorce          </p>
+          Malachi&apos;s Teaching on Marriage and Divorce          </p>
         </div>
         <div className="space-y-4 text-[#888888]">
           <p>Jan. 10, 2025</p>
@@ -63,11 +63,11 @@ function Marriage({}: Props) {
               • The word home conjures up ideas of the most pleasant sort, rest,
               security, safety, unconditional love, and full acceptance.{" "}
             </li>
-            <li>• The importance of one’s home is universally admitted.</li>
+            <li>• The importance of one&apos;s home is universally admitted.</li>
             <li>
               • From famed agnostic to devout Christian, all emphatically concur
-              in the home’s importance and its connection to society’s welfare
-              and one’s well-being.
+              in the home&apos;s importance and its connection to society&apos;s welfare
+              and one&apos;s well-being.
             </li>
             <li> HOME is brought about by marriage</li>
           </ul>
@@ -79,9 +79,9 @@ function Marriage({}: Props) {
               • It destroys the God-given beauty. Such happened in Israel and
               was the basis for the words of Malachi 2:14-16.
             </li>
-            <li>• Israel was carelessly destroying the beauty of God’s home</li>
+            <li>• Israel was carelessly destroying the beauty of God&apos;s home</li>
             <li>
-              • With subtle moves, Israel had modified God’s home and their
+              • With subtle moves, Israel had modified God&apos;s home and their
               redesign fell far short of divine approval!
             </li>
             <li>
@@ -89,10 +89,10 @@ function Marriage({}: Props) {
               • Instead of joy and security, the homes of the Malachi era
               brought shame and sorrow.
             </li>
-            <li> • God’s prophet was sent to correct this tragedy. </li>
+            <li> • God&apos;s prophet was sent to correct this tragedy. </li>
             <li>
-              • From Malachi’s words, we can find a great lesson regarding the
-              home’s holiness{" "}
+              • From Malachi&apos;s words, we can find a great lesson regarding the
+              home&apos;s holiness{" "}
             </li>
           </ul>
         </div>
@@ -120,7 +120,7 @@ function Marriage({}: Props) {
             </li>
             <li>• His call is appropriate to families today. </li>
             <li>
-              • May all possess these hallmarks of a holy home in Jesus Christ’s
+              • May all possess these hallmarks of a holy home in Jesus Christ&apos;s
               Name!
             </li>
           </ul>

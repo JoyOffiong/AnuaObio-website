@@ -16,7 +16,7 @@ function Teaching1({}: Props) {
    
         <div className="text-b text-center md:w-2/3 z-20 w-full">
           <p className="font-bold uppercase text-xl md:text-5xl">
-            God’s grace is sufficient for our needs.
+            God&apos;s grace is sufficient for our needs.
           </p>
         </div>
         <div className="space-y-4 text-[#888888]">
@@ -113,7 +113,7 @@ function Teaching1({}: Props) {
             native language of the Jews who were assembled for the feast of
             Pentecost. In the midst of wondering by some and mockery by others,
             Apostle Peter stood up and confirmed that what they saw was the
-            fulfillment of Prophet Joel’s prophecy concerning the outpouring of
+            fulfillment of Prophet Joel&apos;s prophecy concerning the outpouring of
             the Holt spirit on all flesh. The main thrust of his sermon was to
             tell the Jews that Jesus Christ whom you crucified was raised from
             the dead and was seated at the right hand of God the Father, and

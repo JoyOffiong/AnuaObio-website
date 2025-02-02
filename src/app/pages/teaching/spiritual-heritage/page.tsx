@@ -64,14 +64,14 @@ function SpritualHeritage({}: Props) {
             minister to remember it too. Timothy`s sincere faith had been
             nurtured in the fertile ground of a godly home. His grandmother,
             Lois and his mother Eunice were women of faith. Paul described their
-            faith as an “unfeigned faith”. Paul’s word, ‘unfeigned’ could be
+            faith as an “unfeigned faith”. Paul&apos;s word, &apos;unfeigned&apos; could be
             translated `un-hypocritical`. It was sincere and genuine. Paul
             called Timothy, “my dearly beloved son” (2 Tim.1:2). We know that he
             nurtured him as a spiritual son. When he writes to others, he often
             tells what Timothy means to him (1 Cor. 4:17). When Timothy left his
             friend/mentor to go to Ephesus, he wept openly (2 Tim. 1:4) and,
-            while apart, Paul longed for each other’s company. Paul readily
-            expressed confidence in his younger colleague’s loyalty, usefulness
+            while apart, Paul longed for each other&apos;s company. Paul readily
+            expressed confidence in his younger colleague&apos;s loyalty, usefulness
             and his concern for the churches. Timothy accompanied Paul during
             periods of his missionary journeys. Timothy had such a good
             reputation in Lystra that Paul recruited him to join the team (Acts
@@ -81,7 +81,7 @@ function SpritualHeritage({}: Props) {
             personal messenger (1 Cor. 4:17, 1 Thess. 3:1-2), or summon Timothy
             to join him (2 Tim. 4:21). Timothy with others accompanied Paul on
             his way to Jerusalem after the third missionary journey. Timothy was
-            with Paul in Rome during the latter’s house arrest, when he (Paul)
+            with Paul in Rome during the latter&apos;s house arrest, when he (Paul)
             wrote to Philemon. Timothy and Paul were also uniquely likeminded
             regarding their concern for the ministry and for the Churches (Phil.
             2:19-23). They formed an effective and faithful ministry team.
@@ -106,7 +106,7 @@ function SpritualHeritage({}: Props) {
             up their memory of God`s grace and calling, so that the challenge of
             ministry will not dampen their devotion. Paul had told Timothy in an
             earlier letter not to neglect the gift that was given to him by
-            prophecy (1 Tim. 4:4). Paul also knew Timothy’s personality and
+            prophecy (1 Tim. 4:4). Paul also knew Timothy&apos;s personality and
             tendencies. His inner sprit needed encouragement, and Paul
             encouraged him not to be afraid. Fear should not keep us from
             exercising our abilities and fulfilling our ministry for Christ. In
@@ -132,18 +132,18 @@ function SpritualHeritage({}: Props) {
             </li>
 
             <li>
-              • Timothy’s youth could lead to intimidation/pressing situation (1
+              • Timothy&apos;s youth could lead to intimidation/pressing situation (1
               Tim. 4:12, 2 Tim. 2:22)
             </li>
             <li>
-              • False teachers’ strife-oriented souls in Ephesus could break his
+              • False teachers&apos; strife-oriented souls in Ephesus could break his
               spirit and push the young man into the world (1 Tim. 1:3,7,19,20;
               4:6-7; 2 Tim. 2:14-19,23).{" "}
             </li>
             <li>
               • Brethren were in some peril from the government, and a
               courageous stand for Christ would not be easy. Therefore,
-              Timothy’s gift from God needed to be burnished so the flame would
+              Timothy&apos;s gift from God needed to be burnished so the flame would
               burn brightly.
             </li>
           </ul>

@@ -14,7 +14,7 @@ function GodPlan({}: Props) {
       <div className="flex flex-col gap-y-6 justify-center items-center h-full">
         <div className="text-b text-center md:w-2/3 z-20 w-full">
           <p className="font-bold uppercase text-xl md:text-5xl">
-            God’s grace is sufficient for our needs.
+            God&apos;s grace is sufficient for our needs.
           </p>
         </div>
         <div className="space-y-4 text-[#888888]">
@@ -39,9 +39,9 @@ function GodPlan({}: Props) {
         <div className="space-y-2 ">
           <p className="font-bold text-lg">A. Introduction</p>
           <p>
-            •God’s love was present in Old Testament times, but it was clarified
-            and completed through Jesus’ life, death and resurrection. With the
-            veil pulled back by Jesus’ sacrifice, we can see God’s great plan
+            •God&apos;s love was present in Old Testament times, but it was clarified
+            and completed through Jesus&apos; life, death and resurrection. With the
+            veil pulled back by Jesus&apos; sacrifice, we can see God&apos;s great plan
             for the ages (Heb. 9:15; Rom. 3:25-36). John emphasized this truth
             when he said, “For from his fullness we have all received grace upon
             grace” (Jn. 1:16).
@@ -49,7 +49,7 @@ function GodPlan({}: Props) {
         </div>
         <div className="space-y-2">
           <p className="font-bold text-lg">
-            B. The sufficiency of God’s grace:
+            B. The sufficiency of God&apos;s grace:
           </p>
           <p>
             • A saving grace: His grace has redeemed us from our past sin (Rom.
@@ -58,7 +58,7 @@ function GodPlan({}: Props) {
             freely justified through the redemption that is in Christ Jesus. Not
             only are we saved, justified and redeemed when we enter into Christ
             through faith, repentance, confession of Jesus, and baptism for the
-            forgiveness of sins; but we are kept by God’s grace as we walk in
+            forgiveness of sins; but we are kept by God&apos;s grace as we walk in
             the light (1 John. 1:7).
           </p>
         </div>
@@ -75,7 +75,7 @@ function GodPlan({}: Props) {
           <p>
             He gives us strengthening grace to see us through our trials. He
             empowers us to face difficulties and struggles that come to us. God
-            did not remove Paul’s thorn in the flesh, but he gave him the grace
+            did not remove Paul&apos;s thorn in the flesh, but he gave him the grace
             to bear it (2 Cor. 12:7-10). Paul faced every kind of trials and
             unimaginable situations, yet he said, “I have learnt to be content
             in whatever circumstances I am” (Philippians 4:11). He was contented
@@ -124,7 +124,7 @@ function GodPlan({}: Props) {
             are by the grace, and apart from the grace of God, we would all be
             miserable sinners headed for hell. All that we are, all that we hope
             to be; all that we have or ever hope to have, all that we
-            accomplished or ever hope to accomplish is because of God’s
+            accomplished or ever hope to accomplish is because of God&apos;s
             wonderful grace.
           </p>
         </div>
@@ -143,7 +143,7 @@ function GodPlan({}: Props) {
         <div className="space-y-2 ">
           <p className="font-bold text-lg"> Conclusion:</p>
           <p>
-            • In conclusion, we see that God’s grace empowers us for the service
+            • In conclusion, we see that God&apos;s grace empowers us for the service
             of God. By grace we have strength to stand against opposition (Eph.
             6:10).
           </p>
