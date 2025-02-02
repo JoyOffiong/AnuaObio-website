@@ -17,7 +17,7 @@ function ReachOut() {
                     <div>
                         <button className='shadow-md px-4 py-2 font-semibold text-center rounded-md text-sm text-white bg-black'><a href="tel:+2348132864386">Call</a> </button>
                     </div>
-                    
+                        
                     </div>
 
                     <div className='relative shadow-custom-xl rounded-3xl p-7 space-y-6 gap-5 text-center '>
