@@ -19,7 +19,7 @@ function Gallery({}: Props) {
 
   return (
     <div>
-      <div className="text-center text-24 font-bold py-10 m-8 ">
+      <div className="text-center text-24 font-bold py-20 m-12 ">
         <Masonry
           breakpointCols={{ default: 4, 1100: 3, 700: 2, 500: 1 }}
           className="flex"
