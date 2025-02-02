@@ -53,7 +53,7 @@ be happy to help in any way we can!</p>
               />  
       </div>
       <div className='mx-auto flex justify-center '>
-      <button className="bg-black flex items-center w-2/3 shadow-custom-xl md:w-1/2 justify-center text-white gap-2 rounded-lg py-2 transform hover:scale-110 mt-5 hover:text-gray-500 transition-all duration-300 "> <a href=".//">Learn More</a></button>
+      <button className="bg-black flex items-center w-2/3 shadow-custom-xl md:w-1/2 justify-center text-white gap-2 rounded-lg py-2 transform hover:scale-110 mt-5 hover:text-gray-500 transition-all duration-300 ">Send</button>
 
       </div>
       </form>
