@@ -1,16 +1,18 @@
 import React from "react";
 import Image from 'next/image';
-import image from "../../../../public/images/churchgathering2.jpeg";
-import Bible from "../../../../public/images/bible.jpg";
+import image from "../../../../public/images/churchgathering3.jpg";
+import Bible from "../../../../public/images/Godsplan.jpg";
+import Grace from "../../../../public/images/GodsSufficiency.jpg";
+import Marriage from "../../../../public/images/marriage.jpg"
 import Link from "next/link";
 
 
 type Props = {};
 const lessons = [
-  { img: image, title: "The Church in God's Eternal Purpose", by:"Bro. Offiong", date: "Jan. 10, 2025", bibleTexts: "Eph.1:4-9; 3:10,11; Eph 1:4,5,11", link: "" },
-  { img: Bible, title: "God’s Grace is Sufficient for our Needs",by:"Bro. Johnson", date: "Jan. 10, 2025", bibleTexts: "2 Cor. 12:7-10; 1 Cor. 15:10", link: "" },
-  { img: image, title: "Malachi's Teaching on Marriage and Divorce",by:"Bro. Offiong", date: "Jan. 10, 2025", bibleTexts: "2 Cor. 12:7-10; 1 Cor. 15:10", link: "./teaching/marriage" },
-  { img: Bible, title: "Remember your Spiritual Heritage",by:"Bro. Akpan", date: "Jan. 10, 2025", bibleTexts: "2 Cor. 12:7-10; 1 Cor. 15:10", link: "" },
+  { img: image, title: "The Church in God's Eternal Purpose", by:"Bro. Offiong", date: "Jan. 10, 2025", bibleTexts: "Eph.1:4-9; 3:10,11; Eph 1:4,5,11", link: "./teaching/teaching1" },
+  { img: Grace, title: "God’s Grace is Sufficient for our Needs",by:"Bro. Johnson", date: "Jan. 10, 2025", bibleTexts: "2 Cor. 12:7-10; 1 Cor. 15:10", link: "./teaching/grace" },
+  { img: Marriage, title: "Malachi's Teaching on Marriage and Divorce",by:"Bro. Offiong", date: "Jan. 10, 2025", bibleTexts: "Malachi 2:14-16.", link: "./teaching/marriage" },
+  { img: Bible, title: "Remember your Spiritual Heritage",by:"Bro. Akpan", date: "Jan. 10, 2025", bibleTexts: "2 Tim 1:3; Act 9:15", link: "./teaching/spiritual-heritage" },
 ];
 function Sermon({}: Props) {
  return (

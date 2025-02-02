@@ -21,6 +21,6 @@
       "@/*": ["./src/*"]
     }
   },
-  "include": ["next-env.d.ts", "**/*.ts", "**/*.tsx", ".next/types/**/*.ts", "src/app/pages/teaching/Teaching1", "src/sharedComponents/googleMap.jsx"],
+  "include": ["next-env.d.ts", "**/*.ts", "**/*.tsx", ".next/types/**/*.ts", "src/app/pages/teaching/teaching1", "src/sharedComponents/googleMap.jsx"],
   "exclude": ["node_modules"]
 }

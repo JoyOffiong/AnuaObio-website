@@ -8,7 +8,7 @@ function GodPlan({}: Props) {
       <div
         className="bg-cover bg-center relative z-10 font-sans"
         style={{
-          backgroundImage: "url('/images/churchgathering3.jpg')",
+          backgroundImage: "url('/images/GodsSufficiency.jpg')",
           height: "400px",
         }}
       >

@@ -8,7 +8,7 @@ function SpritualHeritage({}: Props) {
       <div
         className="bg-cover bg-center relative z-10 font-sans"
         style={{
-          backgroundImage: "url('/images/churchgathering3.jpg')",
+          backgroundImage: "url('/images/Godsplan.jpg')",
           height: "400px",
         }}
       >
@@ -31,7 +31,7 @@ function SpritualHeritage({}: Props) {
             Years before Paul wrote 2 Timothy, God had laid hold of Saul of
             Tarsus on the road to Damascus. God told Saul that he was to be an
             Apostle to the gentiles, the kings as well as the children of Israel
-            (Act9:15). Paul had a heritage for being thankful (Tim1:3). He
+            (Act9:15). Paul had a heritage for being thankful (2 Tim 1:3). He
             learned about God from his ancestors, and he served God as a
             believer after a personal relationship with Christ. It was a
             blessing for Paul to have grown up a Jew with knowledge of Jehovah
