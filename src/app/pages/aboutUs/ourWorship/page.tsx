@@ -76,9 +76,9 @@ function OurWorship() {
               <div className="text-lightText text-left text-2xl space-y-6 font-medium leading-normal">
                 <p className="text-center">
                   <em className="text-xl text-center">
-                    "How sweet are Thy words to my taste! Yea, sweeter than
+                  &quot;How sweet are Thy words to my taste! Yea, sweeter than
                     honey to my mouth...Thy word is a lamp to my feet, and a
-                    light to my path." (Psalm 119:103, 105)
+                    light to my path.&quot; (Psalm 119:103, 105)
                   </em>
                 </p>
 
@@ -94,8 +94,8 @@ function OurWorship() {
                 </p>
 
                 <p>
-                  As someone wisely said, "Everyone ought to love the Bible and
-                  live by its teachings." We prioritize studying God&apos;s Word
+                  As someone wisely said, &quot;Everyone ought to love the Bible and
+                  live by its teachings.&quot; We prioritize studying God&apos;s Word
                   in our worship and invite you to bring your Bible. If you
                   don&apos;t have one, we&apos;ll provide it. Join us and
                   experience the power of His Word!
@@ -115,9 +115,9 @@ function OurWorship() {
                 <p className="text-center">
                   <em className="text-xl text-center">
                     {" "}
-                    "Be anxious for nothing, but in everything by prayer and
+                    &quot;Be anxious for nothing, but in everything by prayer and
                     supplication with thanksgiving let your requests be made
-                    known to God." (Philippians 4:6)
+                    known to God.&quot; (Philippians 4:6)
                   </em>
                 </p>
 
@@ -127,9 +127,9 @@ function OurWorship() {
                 </p>
                 <p className="text-center">
                   <em className="text-xl">
-                    "And they were continually devoting themselves to the
+                  &quot;And they were continually devoting themselves to the
                     apostles&apos; teaching and to fellowship, to the breaking
-                    of bread and to prayer."
+                    of bread and to prayer.&quot;
                   </em>
                 </p>
 
@@ -149,9 +149,9 @@ function OurWorship() {
               </p>
               <div className="text-lightText text-left text-2xl space-y-6 font-medium leading-normal">
                 <p>
-                  When we gather for worship, we speak "to one another in psalms
+                  When we gather for worship, we speak &quot;to one another in psalms
                   and hymns and spiritual songs, singing with thankfulness in
-                  our hearts to God"
+                  our hearts to God&quot;
                   <em> (Ephesians 5:19; Colossians 3:16)</em> .{" "}
                 </p>
 
@@ -172,8 +172,8 @@ function OurWorship() {
               <div className="text-lightText text-left text-2xl space-y-6 font-medium leading-normal">
                 <p>
                   The church collects funds to support its mission, following
-                  Paul&apos;s guidance: "On the first day of every week, let
-                  each one of you set aside and save."
+                  Paul&apos;s guidance: &quot;On the first day of every week, let
+                  each one of you set aside and save.&quot;
                 </p>
 
                 <p>
@@ -196,7 +196,7 @@ function OurWorship() {
               <div className="text-lightText text-left text-2xl space-y-6 font-medium leading-normal">
                 <p>
                   The night before His sacrifice, Jesus established a memorial
-                  known as "communion" or the "Lord&apos;s Supper"{" "}
+                  known as &quot;communion&quot; or the &quot;Lord&apos;s Supper&quot;{" "}
                   <em>(1 Corinthians 10:16; 1 Corinthians 11:20).</em> We follow
                   His example and that of the apostles and early Christians{" "}
                   <em>(1 Corinthians 11:23-29).</em>
