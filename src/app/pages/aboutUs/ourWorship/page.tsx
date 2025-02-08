@@ -182,7 +182,7 @@ function OurWorship() {
                     11:00 AM to 11:15 AM
                   </span>{" "}
                   for our members to contribute as an act of worship, returning
-                  a portion of God's blessings. If you are visiting, please
+                  a portion of God&apos;s blessings. If you are visiting, please
                   don&apos;t feel obligated to contribute. You can simply pass
                   the collection plate along. Your presence is what truly
                   matters to us!
