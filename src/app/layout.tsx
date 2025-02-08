@@ -155,13 +155,13 @@ More  </button>
   {moreDropdownVisible && (
     <div onMouseLeave={()=>setMoreDropdownVisible(false)} className="absolute left-0 top-48 mt-2 w-40 bg-white shadow-custom-xl rounded-lg py-2"   
 >
-      <Link href="/pages/more/gallery1" className="block px-4 py-2 hover:bg-gray-100"><div onClick={()=>{setMobileMenuVisible(false); setAboutDropdownVisible(false)}}  >
+      <Link href="/pages/more/gallery1" className="block px-4 py-2 hover:bg-gray-100"><div onClick={()=>{setMobileMenuVisible(false); setMoreDropdownVisible(false)}}  >
         Gallery
       </div></Link>
-      <Link href="/pages/more/theMinistry"className="block px-4 py-2 hover:bg-gray-100"><div  onClick={()=>{setMobileMenuVisible(false); setAboutDropdownVisible(false)}}  >
+      <Link href="/pages/more/theMinistry"className="block px-4 py-2 hover:bg-gray-100"><div  onClick={()=>{setMobileMenuVisible(false); setMoreDropdownVisible(false)}}  >
         The Ministry
       </div></Link>
-      <Link href="/pages/more/support" className="block px-4 py-2 hover:bg-gray-100"><div  onClick={()=>{setMobileMenuVisible(false); setAboutDropdownVisible(false)}}  >
+      <Link href="/pages/more/support" className="block px-4 py-2 hover:bg-gray-100"><div  onClick={()=>{setMobileMenuVisible(false); setMoreDropdownVisible(false)}}  >
 Support Us      </div></Link>
     </div>
   )}    </div>
