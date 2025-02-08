@@ -42,8 +42,8 @@ export default function FAQ() {
         <div className="p-10 md:p-20 my-20 bg-[#f8f8f8]">
             <p className="text-3xl md:text-5xl font-bold text-center">Join us today at Church of Christ 
           <br />  Anua Obio, Uyo</p>
-            <div className="text-center justify-center flex flex-row">
-            <button className="bg-black flex items-center text-white gap-2 rounded-lg px-3 py-2 transform hover:scale-110 mt-5 hover:bg-green-900 transition-all duration-300 hover:text-white  "> <a href=".//">Learn More</a> </button>
+            <div className="text-center justify-center mt-2 flex flex-row">
+            <button className="bg-black flex items-center text-white font-semibold gap-2 rounded-lg px-3 py-2 transform hover:scale-110 mt-5 hover:bg-green-900 transition-all duration-300 hover:text-white  "> <a href="/pages/contactUs">Contact Us</a> </button>
    
             </div>
             

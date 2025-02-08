@@ -53,7 +53,7 @@ function Lessons() {
               <div key={index} className="px-6 md:px-32 mx-auto items-center gap-4">
                 {/* Image */}
                 <div className="flex flex-col md:flex-col lg:flex-row my-10 gap-4 md:gap-16">
-                  <Image src={img} alt="churchImage" width={600} height={600} className="rounded-xl shadow-lg" />
+                  <Image src={img} alt="churchImage" width={500} height={500} className="rounded-xl shadow-custom-xl" />
 
                   {/* Texts */}
                   <div className="space-y-2 w-full md:w-6/12">

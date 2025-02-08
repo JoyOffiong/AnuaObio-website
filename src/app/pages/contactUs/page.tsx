@@ -5,20 +5,35 @@ import InputBoxComp from '@/sharedComponents/inputField'
 import React from 'react'
 import { useForm } from 'react-hook-form'
 
+type props={
+name:string,
+email: string,
+message: string
+}
 function ContactUs() {
-
   const {control, handleSubmit} = useForm()
 
+
+
   return (
-       <div className='mt-28 mb-20  '>
+       <div className='mt-28 mb-20 font-inter'>
       <div>
       <div className="text-center mx-auto px-6 md:px-14 md:w-9/12 w-full">
         <p className="font-bold  px-0 text-2xl md:text-4xl mb-10 md:mb-14">Questions? Comments?  Want to learn more?
 Please contact us using the form below and we will
 be happy to help in any way we can!</p>
       </div>
-      <form action="" className='w-11/12 px-6 md:px-14 md:w-9/12 space-y-8 mt-10 mx-auto text-[#ac9ca4] font-medium'>
-      <div className='grid grid-cols-1 md:grid-cols-2 gap-8'>
+      <form
+  className="w-11/12 px-6 md:px-14 md:w-9/12 space-y-8 mt-10 mx-auto text-[#ac9ca4] font-medium"
+  onSubmit={handleSubmit((data) => {
+    const subject = encodeURIComponent("New Contact Form Submission");
+    const body = encodeURIComponent(
+      `Name: ${data.name}\nEmail: ${data.email}\nMessage: ${data.message}`
+    );
+
+    window.location.href = `mailto:cocanuaobio@gmail.com?subject=${subject}&body=${body}`;
+  })}
+>      <div className='grid grid-cols-1 md:grid-cols-2 gap-8'>
       <div className='space-y-2'>
         <label htmlFor="">Name</label>
       <InputBoxComp
@@ -53,7 +68,10 @@ be happy to help in any way we can!</p>
               />  
       </div>
       <div className='mx-auto flex justify-center '>
-      <button className="bg-black flex items-center w-2/3 shadow-custom-xl md:w-1/2 justify-center text-white gap-2 rounded-lg py-2 transform hover:scale-110 mt-5 hover:text-gray-500 transition-all duration-300 ">Send</button>
+      <button className="bg-black flex items-center w-2/3 shadow-custom-xl md:w-1/2 justify-center text-white gap-2 rounded-lg py-2 transform hover:scale-110 mt-5 hover:text-gray-500 transition-all duration-300 "   type="submit"
+      >
+      
+     Send</button>
 
       </div>
       </form>

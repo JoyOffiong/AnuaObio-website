@@ -15,7 +15,7 @@ const TheGodHead = [
 
 
   return (
-    <div className=' my-24'>
+    <div className=' my-24 font-inter'>
       <div className=' space-y-6 px-4 py-8 md:px-32'>
       {
         TheGodHead.map((GH)=>{
@@ -25,7 +25,7 @@ const TheGodHead = [
           <>
           <div className='flex flex-col mx-auto w-10/12 md:flex-row  items-center md:gap-24 gap-2'>
           <div className='w-full md:w-1/3'>
-          <p className='text-3xl md:text-5xl font-bold text-[#333333]'>{entity}</p>
+          <p className='text-3xl md:text-4xl font-bold text-[#333333]'>{entity}</p>
 
           </div>
             <div className='leading-8 font-medium  w-full md:w-2/3'>

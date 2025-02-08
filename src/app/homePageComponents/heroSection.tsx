@@ -18,7 +18,7 @@ function HeroSection() {
           <p className="pt-8 text-base font-medium md:w-2/3 mx-auto text-[#bab1aa]">Our mission is to honor God by guiding families and individuals within our community toward a deeper, committed relationship with Jesus Christ, through vibrant ministry inspired by the Holy Spirit. Join us on this transformative journey!</p>
     
     <div className="flex justify-center">
-    <button className="bg-white flex items-center text-black gap-2 rounded-lg px-3 py-2 transform hover:scale-110 mt-5 hover:bg-green-900 transition-all duration-300 hover:text-white  "> <a href=".//">Learn More</a> <MoveRight size={12} strokeWidth={4} /></button>
+    <button className="bg-white flex items-center text-black gap-2 rounded-lg px-3 py-2 transform hover:scale-110 mt-5 hover:bg-green-900 transition-all duration-300 hover:text-white  "> <a href="/pages/aboutUs">Learn More</a> <MoveRight size={12} strokeWidth={4} /></button>
    
     </div>
         </div>

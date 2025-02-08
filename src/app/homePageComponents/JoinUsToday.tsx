@@ -24,8 +24,8 @@ function JoinUsToday({}: Props) {
      
       <div className="flex flex-center gap-4 ">
         
-        <button className='shadow-md px-4 py-2 font-semibold text-center rounded-md text-sm text-white bg-black'>Our Ministry</button>
-        <button className='shadow-md px-4 py-2 border-[1px] border-black font-semibold text-center rounded-md text-sm text-black'>Learn More</button>
+        <button className='shadow-md px-4 py-2 font-semibold text-center rounded-md text-sm text-white bg-black'><a href="/pages/more/theMinistry"> Our Ministry</a></button>
+        <button className='shadow-md px-4 py-2 border-[1px] border-black font-semibold text-center rounded-md text-sm text-black'><a href="/pages/aboutUs/ourWorship">Learn More</a></button>
       
       </div>
       </div>
