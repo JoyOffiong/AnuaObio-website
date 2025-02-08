@@ -58,7 +58,7 @@ be happy to help in any way we can!</p>
       <div className='space-y-2'>
         <label htmlFor="">Message</label>
       <InputBoxComp
-                name="email"
+                name="message"
                 control={control}
                 type="text"
                 multiline
