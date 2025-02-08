@@ -191,12 +191,12 @@ function OurWorship() {
             </div>
             <div className="relative shadow-custom-xl rounded-3xl p-8 space-y-6  text-center ">
               <p className="text-2xl font-semibold text-center ">
-                Communion - The Lord's Supper:
+                Communion - The Lord&apos;s Supper:
               </p>
               <div className="text-lightText text-left text-2xl space-y-6 font-medium leading-normal">
                 <p>
                   The night before His sacrifice, Jesus established a memorial
-                  known as "communion" or the "Lord's Supper"{" "}
+                  known as "communion" or the "Lord&apos;s Supper"{" "}
                   <em>(1 Corinthians 10:16; 1 Corinthians 11:20).</em> We follow
                   His example and that of the apostles and early Christians{" "}
                   <em>(1 Corinthians 11:23-29).</em>
@@ -211,7 +211,7 @@ function OurWorship() {
                   eating unleavened bread, symbolizing His body, and drinking
                   grape juice, representing His blood shed for our forgiveness{" "}
                   <em>(Matthew 26:26-28).</em>
-                  The Lord's Supper powerfully reminds us of God's great love
+                  The Lord&apos;s Supper powerfully reminds us of God&apos;s great love
                   and the incredible sacrifice Jesus made for our salvation.
                 </p>
               </div>
