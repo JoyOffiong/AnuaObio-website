@@ -31,7 +31,7 @@ const config: Config = {
       colors: {
         heading: "#222222",
         darkText:"#333333",
-        secondary: "#FF8000",
+        secondary: "#001122",
         secondary10: "#FFFAF5",
         secondary20: "#FFE6CC",
         secondary30: "#FFCC99",

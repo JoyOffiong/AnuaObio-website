@@ -77,10 +77,10 @@ export default function RootLayout({
                         Our Belief
                       </Link>
                       <Link
-                        href="/pages/aboutUs/theChurch"
+                        href="/pages/aboutUs/ourHistory"
                         className="block px-4 py-2 hover:bg-gray-100"
                       >
-                        The Church
+                       Our History
                       </Link>
                       <Link
                         href="/pages/aboutUs/ourWorship"
