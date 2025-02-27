@@ -10,6 +10,8 @@ name:string,
 email: string,
 message: string
 }
+
+
 function ContactUs() {
   const {control, handleSubmit} = useForm()
 

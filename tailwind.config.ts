@@ -30,6 +30,7 @@ const config: Config = {
       },
       colors: {
         heading: "#222222",
+        darkText:"#333333",
         secondary: "#FF8000",
         secondary10: "#FFFAF5",
         secondary20: "#FFE6CC",
@@ -43,6 +44,7 @@ const config: Config = {
         tertiary60: "#8D9290",
         tertiary70: "#5B5F5E",
         lightText:"#666666",
+        textColor:"#888888",
         tertiary80: "#2E3130",
         tertiary90: "#1A1C1B",
         tertiary100: "#f5f6fa",
