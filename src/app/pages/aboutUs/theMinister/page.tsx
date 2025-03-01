@@ -46,8 +46,8 @@ function OurMinister() {
                 Meet our Minister Min. E. O Akpan
               </p>
               <div className=" justify-center font-medium text-base text-[#666666] flex gap-4 flex-row">
-                <p>Phone</p>
-                <p>Email</p>
+              <p><a href="tel:+2347062330549">Phone</a></p>
+                <p> <a href="mailto:cocanuaobio@gmail.com">Email</a></p>
               </div>
             </div>
           </div>
