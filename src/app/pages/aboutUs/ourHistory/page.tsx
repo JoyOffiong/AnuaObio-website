@@ -7,11 +7,11 @@ function TheChurch() {
     <div className="px-4 md:px-32 my-24 font-inter">
       <div className=" space-y-8 shadow-lg p-4 md:p-8">
         <div>
-          <p className="font-bold text-3xl md:text-5xl text-center">
+          <p className="font-bold text-3xl md:text-6xl text-center">
             Our History
           </p>
         </div>
-        <div className="text-[#666666] pb-8 font-medium text-base space-y-4">
+        <div className="text-[#666666] px-16 pb-8 font-medium text-lg space-y-4">
           <p>
             The Church of Christ has its roots in the early 19th century during
             the Second Great Awakening, a significant religious revival in the
@@ -95,7 +95,7 @@ function TheChurch() {
         <div className="space-y-12 ">
           <div className="flex items-center gap-8 w-1/3 mx-auto">
             <div className="rounded-full h-10 w-10 flex text-center justify-center items-center bg-[#f3f3f3]">
-              <FaFacebook  size={20} />
+              <FaFacebook size={20} />
             </div>
 
             <div>
@@ -107,7 +107,10 @@ function TheChurch() {
             <div></div>
           </div>
           <div className="text-center ">
-            <p className="text-sm">    © Copyright 2025 Church of Christ, Anua Obio. All Rights Reserved</p>
+            <p className="text-sm">
+              {" "}
+              © Copyright 2025 Church of Christ, Anua Obio. All Rights Reserved
+            </p>
           </div>
         </div>
       </div>

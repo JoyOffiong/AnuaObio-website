@@ -4,37 +4,40 @@ import AboutTheChurch from "./homePageComponents/aboutTheChurch";
 import Worshipservices from "./homePageComponents/Worshipservices";
 import JoinUsToday from "./homePageComponents/JoinUsToday";
 import ReachOut from "./homePageComponents/reachUs";
-import Lessons from "./homePageComponents/TodaysLessons"
+import Lessons from "./homePageComponents/TodaysLessons";
 import Verse from "./homePageComponents/VerseOfDay";
 import FAQ from "./homePageComponents/FAQ";
+import ContactUs from "./homePageComponents/contactUs";
 
 export default function Home() {
   return (
     <div className="font-inter">
       <div className="font-inter ">
-      <HeroSection /> 
+        <HeroSection />
       </div>
 
       <div>
-      <ReachOut/>
+        <ReachOut />
       </div>
 
       <div>
         <JoinUsToday />
       </div>
       <div>
-        <Lessons/>
+        <Lessons />
       </div>
       <div>
         <Worshipservices />
       </div>
 
       <div>
-        <Verse/>
+        <Verse />
       </div>
-
       <div>
-        <FAQ/>
+        <ContactUs />
+      </div>
+      <div>
+        <FAQ />
       </div>
     </div>
   );

@@ -35,21 +35,21 @@ export default function RootLayout({
     <html lang="en">
       <body className={inter.className}>
         {/* Navbar */}
-        <div className="fixed  md:px-12 top-0 left-0 w-full z-50 bg-white shadow-md">
-          <div className="flex justify-between py-2 px-4 relative md:gap-48 md:shadow-none shadow-2xl items-center ">
+        <div className="fixed  md:px-48 top-0 left-0 w-full z-50 bg-white shadow-md">
+          <div className="flex justify-between px-4 relative md:space-x-4 md:shadow-none shadow-2xl items-center ">
             {/* Logo */}
             <Link href="/">
               <Image
                 src="/images/coc.png"
                 alt="churchLogo"
-                width={100}
-                height={100}
+                width={150}
+                height={150}
               />
             </Link>
 
             {/* Desktop Links (Hidden on Small Screens) */}
-            <div className="hidden md:block text-sm">
-              <div className=" flex flex-row  gap-32 font-medium text-[#666666]">
+            <div className="hidden  md:block text-md">
+              <div className=" flex flex-row  gap-x-24 font-medium text-[#666666]">
                 <Link href="/" className="hover:text-gray-950 transition">
                   Home
                 </Link>
@@ -80,7 +80,7 @@ export default function RootLayout({
                         href="/pages/aboutUs/ourHistory"
                         className="block px-4 py-2 hover:bg-gray-100"
                       >
-                       Our History
+                        Our History
                       </Link>
                       <Link
                         href="/pages/aboutUs/ourWorship"
