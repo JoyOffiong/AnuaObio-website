@@ -15,7 +15,7 @@ function Verse() {
   ];
 
   // Fetch from Bible API
-  async function fetchVerse(reference: string | number | boolean) {
+  async function fetchVerse(reference: string) {
     const response = await fetch(
       `https://bible-api.com/${encodeURIComponent(reference)}`
     );
@@ -28,35 +28,26 @@ function Verse() {
 
   useEffect(() => {
     async function loadVerse() {
-      const lastUpdate = localStorage.getItem("lastVerseUpdate");
-      const today = new Date().toDateString();
+      const savedReference = sessionStorage.getItem("currentReference");
+      const savedText = sessionStorage.getItem("currentVerseText");
 
-      let chosenRef;
-
-      if (lastUpdate === today) {
-
-        chosenRef = localStorage.getItem("currentReference");
-        const storedText = localStorage.getItem("currentVerseText");
-
-        setReference(chosenRef || "");
-        setVerseText(storedText || "");
-      } else {
-
-        chosenRef =
-          motivationalVerses[
-            Math.floor(Math.random() * motivationalVerses.length)
-          ];
-
-        const text = await fetchVerse(chosenRef);
-
-      
-        localStorage.setItem("lastVerseUpdate", today);
-        localStorage.setItem("currentReference", chosenRef);
-        localStorage.setItem("currentVerseText", text);
-
-        setReference(chosenRef);
-        setVerseText(text);
+      // If session already has a verse, use it
+      if (savedReference && savedText) {
+        setReference(savedReference);
+        setVerseText(savedText);
+        return;
       }
+
+      const chosenRef =
+        motivationalVerses[Math.floor(Math.random() * motivationalVerses.length)];
+
+      const text = await fetchVerse(chosenRef);
+
+      sessionStorage.setItem("currentReference", chosenRef);
+      sessionStorage.setItem("currentVerseText", text);
+
+      setReference(chosenRef);
+      setVerseText(text);
     }
 
     loadVerse();
