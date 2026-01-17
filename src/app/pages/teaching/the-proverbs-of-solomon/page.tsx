@@ -17,7 +17,7 @@ function ProverbsOfSolomon({}: Props) {
         </div>
         <div className="space-y-4 text-[#888888]">
           <p>Jan. 4th, 2026</p>
-          <p>By Bro. Johnson</p>
+          <p>By Bro. Edet Akpan</p>
         </div>
         {/* <div className="">
           <Image

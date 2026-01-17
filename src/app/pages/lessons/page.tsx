@@ -5,6 +5,7 @@ import Bible from "../../../../public/images/Godsplan.jpg";
 import Grace from "../../../../public/images/GodsSufficiency.jpg";
 import Marriage from "../../../../public/images/marriage.jpg";
 import proverbs from "../../../../public/images/proverbs.jpg";
+import proverbs2 from "../../../../public/images/proverbs2.jpg";
 
 import Link from "next/link";
 
@@ -49,6 +50,14 @@ const lessons = [
     date: "Jan. 4, 2026",
     bibleTexts: "Proverbs 22:17; Prov. 1-8",
     link: "./teaching/the-proverbs-of-solomon",
+  },
+  {
+    img: proverbs2,
+    title: "THE Priority OF Wisdom ",
+    by: "Min. E.O. Akpan",
+    date: "Jan. 11, 2026",
+    bibleTexts: "Proverbs 4:1-10",
+    link: "./teaching/the-priority-of-wisdom",
   },
 ];
 function Sermon({}: Props) {
