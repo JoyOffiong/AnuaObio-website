@@ -20,7 +20,7 @@ function SpritualHeritage({}: Props) {
           <p>Jan. 10, 2025</p>
           <p>By Min. E.O. Akpan</p>
         </div>
-        <div className="">
+        {/* <div className="">
           <Image
             alt="God's grace"
             src={Bible}
@@ -28,7 +28,7 @@ function SpritualHeritage({}: Props) {
             width={100}
             className="h-[200px] w-screen max-w-full rounded-3xl object-cover"
           />{" "}
-        </div>
+        </div> */}
         <div className="font-semibold">
           <em>2 Cor. 12:7-10; 1 Cor. 15:10</em>
         </div>

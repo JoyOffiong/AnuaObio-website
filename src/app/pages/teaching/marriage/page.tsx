@@ -22,7 +22,7 @@ function Marriage({}: Props) {
           <p>Jan. 10, 2025</p>
           <p>By Bro. Offiong</p>
         </div>
-        <div className="">
+        {/* <div className="">
           <Image
             alt="Marriage"
             src={Img}
@@ -30,7 +30,7 @@ function Marriage({}: Props) {
             width={100}
             className="h-[200px] w-screen max-w-full rounded-3xl object-cover"
           />{" "}
-        </div>
+        </div> */}
         <div className="font-semibold">
           <em>Malachi 2:14-16.</em>
         </div>

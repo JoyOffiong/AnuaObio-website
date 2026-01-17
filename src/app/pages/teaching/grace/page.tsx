@@ -8,8 +8,7 @@ type Props = {};
 function GodPlan({}: Props) {
   return (
     <div className="font-inter my-24 space-y-6 md:my-32 mx-6 md:mx-32 ">
-    
-    <BackButton/>
+      <BackButton />
 
       <div className="flex flex-col gap-y-6 justify-center items-center h-full">
         <div className="text-b text-center md:w-2/3 z-20 w-full">
@@ -21,7 +20,7 @@ function GodPlan({}: Props) {
           <p>Jan. 12, 2025</p>
           <p>By Bro. Johnson</p>
         </div>
-        <div className="">
+        {/* <div className="">
           <Image
             alt="God's grace"
             src={Grace}
@@ -29,7 +28,7 @@ function GodPlan({}: Props) {
             width={100}
             className="h-[200px] w-screen max-w-full rounded-3xl object-cover"
           />{" "}
-        </div>
+        </div> */}
         <div className="font-semibold">
           <em>2 Cor. 12:7-10; 1 Cor. 15:10</em>
         </div>
@@ -39,12 +38,12 @@ function GodPlan({}: Props) {
         <div className="space-y-2 ">
           <p className="font-bold text-lg">A. Introduction</p>
           <p>
-            •God&apos;s love was present in Old Testament times, but it was clarified
-            and completed through Jesus&apos; life, death and resurrection. With the
-            veil pulled back by Jesus&apos; sacrifice, we can see God&apos;s great plan
-            for the ages (Heb. 9:15; Rom. 3:25-36). John emphasized this truth
-            when he said, “For from his fullness we have all received grace upon
-            grace” (Jn. 1:16).
+            •God&apos;s love was present in Old Testament times, but it was
+            clarified and completed through Jesus&apos; life, death and
+            resurrection. With the veil pulled back by Jesus&apos; sacrifice, we
+            can see God&apos;s great plan for the ages (Heb. 9:15; Rom.
+            3:25-36). John emphasized this truth when he said, “For from his
+            fullness we have all received grace upon grace” (Jn. 1:16).
           </p>
         </div>
         <div className="space-y-2">
@@ -58,8 +57,8 @@ function GodPlan({}: Props) {
             freely justified through the redemption that is in Christ Jesus. Not
             only are we saved, justified and redeemed when we enter into Christ
             through faith, repentance, confession of Jesus, and baptism for the
-            forgiveness of sins; but we are kept by God&apos;s grace as we walk in
-            the light (1 John. 1:7).
+            forgiveness of sins; but we are kept by God&apos;s grace as we walk
+            in the light (1 John. 1:7).
           </p>
         </div>
         <div className="space-y-2">
@@ -75,12 +74,12 @@ function GodPlan({}: Props) {
           <p>
             He gives us strengthening grace to see us through our trials. He
             empowers us to face difficulties and struggles that come to us. God
-            did not remove Paul&apos;s thorn in the flesh, but he gave him the grace
-            to bear it (2 Cor. 12:7-10). Paul faced every kind of trials and
-            unimaginable situations, yet he said, “I have learnt to be content
-            in whatever circumstances I am” (Philippians 4:11). He was contented
-            in spite of his circumstances. He gave a brief answer that many
-            helps in our memory, “I can do all things through Christ who
+            did not remove Paul&apos;s thorn in the flesh, but he gave him the
+            grace to bear it (2 Cor. 12:7-10). Paul faced every kind of trials
+            and unimaginable situations, yet he said, “I have learnt to be
+            content in whatever circumstances I am” (Philippians 4:11). He was
+            contented in spite of his circumstances. He gave a brief answer that
+            many helps in our memory, “I can do all things through Christ who
             strengthens me” (Philippians 4:11-13; Eph. 6:10-11).
           </p>
         </div>
@@ -143,9 +142,9 @@ function GodPlan({}: Props) {
         <div className="space-y-2 ">
           <p className="font-bold text-lg"> Conclusion:</p>
           <p>
-            • In conclusion, we see that God&apos;s grace empowers us for the service
-            of God. By grace we have strength to stand against opposition (Eph.
-            6:10).
+            • In conclusion, we see that God&apos;s grace empowers us for the
+            service of God. By grace we have strength to stand against
+            opposition (Eph. 6:10).
           </p>
           <p> • Grace makes us what we are in God.</p>
           <p> • Grace saves us.</p>

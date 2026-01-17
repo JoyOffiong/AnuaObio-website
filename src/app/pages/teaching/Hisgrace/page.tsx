@@ -1,12 +1,10 @@
-import Image from "next/image";
 import React from "react";
-import image from "../../../../../public/images/churchgathering3.jpg";
 import BackButton from "@/sharedComponents/backButton";
 
 
 type Props = {};
 
-function Teaching1({}: Props) {
+function GodsGrace({}: Props) {
   return (
     <div className="font-inter my-24 space-y-6 md:my-32 mx-6 md:mx-32 ">
    
@@ -23,7 +21,7 @@ function Teaching1({}: Props) {
           <p>Jan. 12, 2025</p>
           <p>By Bro. Johnson</p>
         </div>
-        <div className="">
+        {/* <div className="">
           <Image
             alt="God's grace"
             src={image}
@@ -31,7 +29,7 @@ function Teaching1({}: Props) {
             width={100}
             className="h-[200px] w-screen max-w-full rounded-3xl object-cover"
           />{" "}
-        </div>
+        </div> */}
         <div className="font-semibold">
           <em>2 Cor. 12:7-10; 1 Cor. 15:10</em>
         </div>
@@ -180,4 +178,4 @@ function Teaching1({}: Props) {
   );
 }
 
-export default Teaching1;
+export default GodsGrace;

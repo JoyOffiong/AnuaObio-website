@@ -4,6 +4,8 @@ import image from "../../../../public/images/churchgathering3.jpg";
 import Bible from "../../../../public/images/Godsplan.jpg";
 import Grace from "../../../../public/images/GodsSufficiency.jpg";
 import Marriage from "../../../../public/images/marriage.jpg";
+import proverbs from "../../../../public/images/proverbs.jpg";
+
 import Link from "next/link";
 
 type Props = {};
@@ -14,7 +16,7 @@ const lessons = [
     by: "Bro. Offiong",
     date: "Jan. 10, 2025",
     bibleTexts: "Eph.1:4-9; 3:10,11; Eph 1:4,5,11",
-    link: "./teaching/teaching1",
+    link: "./teaching/Hisgrace",
   },
   {
     img: Grace,
@@ -39,6 +41,14 @@ const lessons = [
     date: "Jan. 10, 2025",
     bibleTexts: "2 Tim 1:3; Act 9:15",
     link: "./teaching/spiritual-heritage",
+  },
+  {
+    img: proverbs,
+    title: "The Proverbs of Solomon: Wisdom for Life",
+    by: "Min. E.O. Akpan",
+    date: "Jan. 4, 2026",
+    bibleTexts: "Proverbs 22:17; Prov. 1-8",
+    link: "./teaching/the-proverbs-of-solomon",
   },
 ];
 function Sermon({}: Props) {
