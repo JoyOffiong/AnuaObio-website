@@ -6,11 +6,37 @@ import Grace from "../../../../public/images/GodsSufficiency.jpg";
 import Marriage from "../../../../public/images/marriage.jpg";
 import proverbs from "../../../../public/images/proverbs.jpg";
 import proverbs2 from "../../../../public/images/proverbs2.jpg";
+import warning from "../../../../public/images/warnings.png";
 
 import Link from "next/link";
 
 type Props = {};
 const lessons = [
+  {
+    img: proverbs2,
+    title: "THE Priority OF Wisdom ",
+    by: "Min. E.O. Akpan",
+    date: "Jan. 11, 2026",
+    bibleTexts: "Proverbs 4:1-10",
+    link: "./teaching/the-priority-of-wisdom",
+  },
+  {
+    img: proverbs,
+    title: "The Proverbs of Solomon: Wisdom for Life",
+    by: "Min. E.O. Akpan",
+    date: "Jan. 4, 2026",
+    bibleTexts: "Proverbs 22:17; Prov. 1-8",
+    link: "./teaching/the-proverbs-of-solomon",
+  },
+
+  {
+    img: warning,
+    title: "Warnings Against Infidelity ",
+    by: "Bro. Effiong Udoekong",
+    date: "Nov. 12, 2025",
+    bibleTexts: "Prov. 5:1-22",
+    link: "./teaching/warnings-against-infidelity",
+  },
   {
     img: image,
     title: "The Church in God's Eternal Purpose",
@@ -42,22 +68,6 @@ const lessons = [
     date: "Jan. 10, 2025",
     bibleTexts: "2 Tim 1:3; Act 9:15",
     link: "./teaching/spiritual-heritage",
-  },
-  {
-    img: proverbs,
-    title: "The Proverbs of Solomon: Wisdom for Life",
-    by: "Min. E.O. Akpan",
-    date: "Jan. 4, 2026",
-    bibleTexts: "Proverbs 22:17; Prov. 1-8",
-    link: "./teaching/the-proverbs-of-solomon",
-  },
-  {
-    img: proverbs2,
-    title: "THE Priority OF Wisdom ",
-    by: "Min. E.O. Akpan",
-    date: "Jan. 11, 2026",
-    bibleTexts: "Proverbs 4:1-10",
-    link: "./teaching/the-priority-of-wisdom",
   },
 ];
 function Sermon({}: Props) {
