@@ -94,7 +94,7 @@ function WarningAgainstFalseTeachings({}: Props) {
             <li>What Paul listed in col.2:16 had nothing to do with salvation and righteousness.</li>
             <li>	Food and observance of special days have no spiritual growth.</li>
             <li>	Jn.16:48- They were a shadow of the true food.</li>
-            <li>	Matt.26:28- Christ's sacrifice is clean from sin.</li>
+            <li>	Matt.26:28- Christ&apos;s sacrifice is clean from sin.</li>
             <li>	Heb. 10:4- Sacrifices during feast and festivals of the law could not.</li>
             <li>	Heb.4:9; 1 Pet.1:3,4- We are promised eternal rest in heaven, better than Sabbath rest.</li>
             <li>Heb.3:3- Jesus a greater law-giver than Moses Heb.10:1-4.</li>
