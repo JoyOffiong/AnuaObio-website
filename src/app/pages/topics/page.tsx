@@ -13,78 +13,21 @@ import Link from "next/link";
 type Props = {};
 const lessons = [
   {
-    img: proverbs2,
-    title: "THE Priority OF Wisdom ",
-    by: "Min. E.O. Akpan",
-    date: "Jan. 11, 2026",
-    bibleTexts: "Proverbs 4:1-10",
-    link: "./teaching/the-priority-of-wisdom",
-  },
-  {
-    img: proverbs,
-    title: "The Proverbs of Solomon: Wisdom for Life",
-    by: "Min. E.O. Akpan",
-    date: "Jan. 4, 2026",
-    bibleTexts: "Proverbs 22:17; Prov. 1-8",
-    link: "./teaching/the-proverbs-of-solomon",
-  },
-
-  {
-    img: warning,
-    title: "Warnings Against Infidelity ",
-    by: "Bro. Effiong Udoekong",
-    date: "Nov. 12, 2025",
-    bibleTexts: "Prov. 5:1-22",
-    link: "./teaching/warnings-against-infidelity",
-  },
-  {
-    img: image,
-    title: "The Church in God's Eternal Purpose",
-    by: "Bro. Offiong",
-    date: "Jan. 10, 2025",
-    bibleTexts: "Eph.1:4-9; 3:10,11; Eph 1:4,5,11",
-    link: "./teaching/Hisgrace",
-  },
-  {
-    img: Grace,
-    title: "God’s Grace is Sufficient for our Needs",
-    by: "Bro. Johnson",
-    date: "Jan. 11, 2025",
-    bibleTexts: "2 Cor. 12:7-10; 1 Cor. 15:10",
-    link: "./teaching/grace",
-  },
-  {
-    img: Marriage,
-    title: "Malachi's Teaching on Marriage and Divorce",
-    by: "Bro. Offiong",
-    date: "Jan. 11, 2025",
-    bibleTexts: "Malachi 2:14-16.",
-    link: "./teaching/marriage",
-  },
-  {
     img: Bible,
-    title: "Remember your Spiritual Heritage",
-    by: "Min. E.O. Akpan",
-    date: "Jan. 11, 2025",
-    bibleTexts: "2 Tim 1:3; Act 9:15",
-    link: "./teaching/spiritual-heritage",
-  },
-   {
-    img: Bible,
-    title: "Warning Against False Teachings",
+    title: "Shadow AND Reality",
     by: "Bro. Asuquo Offiong",
-    date: "Jan. 10, 2025",
+    date: "Jan. 11, 2026",
     bibleTexts: "Col. 2:16-23",
     link: "./teaching/warning-against-false-teachings",
   },
 ];
-function Sermon({}: Props) {
+function Topics({}: Props) {
   return (
     <div className="font-inter mt-16">
       <div className=" md:px-48 px-8 py-16">
         <div className=" text-center md:text-left">
-          <p className="font-bold md:text-5xl text-3xl md:ml-48 mb-10 ">
-            Lessons & Sermons
+          <p className="font-bold md:text-3xl text-xl md:ml-48 mb-10 ">
+            CHALLENGES OF THE COLOSSIANS AND THE HEART OF PREACHING
           </p>
         </div>
         <div className="">
@@ -135,4 +78,4 @@ function Sermon({}: Props) {
   );
 }
 
-export default Sermon;
+export default Topics;
