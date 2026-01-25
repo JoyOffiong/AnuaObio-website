@@ -16,7 +16,7 @@ function WarningAgainstFalseTeachings({}: Props) {
           </p>
         </div>
         <div className="space-y-4 text-[#888888]">
-          <p>Jan. 10th, 2026</p>
+          <p>Jan. 18th, 2026</p>
           <p>Bro. Asuquo Offiong</p>
         </div>
       
@@ -31,7 +31,7 @@ function WarningAgainstFalseTeachings({}: Props) {
           <p className="font-bold text-lg">A. Introduction</p>
           <ul className="list-disc list-inside space-y-2">
             <li>Paul, having told the Colossians that decrees of the law have been abolished and evil forces defeated, told Colossians not to feel obligated to follow these decrees nor be compelled to submit to man-made rules.</li>
-            <li>	He started with “therefore,” meaning a conclusion based on the former statement, that they should look to Jesus to learn how to please God.</li>
+            <li>	He started with &quot;therefore,&quot; meaning a conclusion based on the former statement, that they should look to Jesus to learn how to please God.</li>
             <li>As Christians they are to practice Christ teachings regardless of people&apos;s judgment.</li>
             <li>	They should not listen to anybody&apos;s judgment concerning the keeping of religious practices and rituals (2:16).</li>
             <li>	They should not be controlled by the regulation of the law.</li>
@@ -49,7 +49,7 @@ function WarningAgainstFalseTeachings({}: Props) {
             <li>	Paul was saying that Christians are not obligated to practice these customs because they were not matters of salvation.</li>
             <li>	The practice was to their discretion as long as it did not destroy the weak brother.</li>
             <li>	Paul listed five practices that Jews were obliged to observe, but Christians were not banned to keep.</li>
-            <li>	Hos. 2:11, Ezek.45:17, listed these Jewish practices –&quot;feast&quot;, &quot;new moon&quot;, and &quot;Sabbath&quot;.</li>
+            <li>	Hos. 2:11, Ezek.45:17, listed these Jewish practices, &quot;feast&quot;, &quot;new moon&quot;, and &quot;Sabbath&quot;.</li>
             <li>	The five practices were included in the law.</li>
           </ul>        </div>
         <div className="space-y-2">
@@ -79,7 +79,7 @@ function WarningAgainstFalseTeachings({}: Props) {
          <p> <em>Feast: </em>  The laws mention observance of numerous obligatory feasts. Deut.16:16, 2 Chron.8:13.</p>
 <p><em>Festival: </em>   They observed special days. Lev.23:23-25, numb.29:1-6; Day of Atonement Lev.16:3-34; 23:27-32; Jewish first month Ex.12:2, Called Nisan Esther 3:7; New moons observation on the first day of the month. Numb.10:10, 28:11; Psalm 81:3, Isa. 1:14, Ezek. 46:3.</p>
 
-<p>Sabbath:      A day before the first 1st day of the week. Matt.28:1, Mk.16:1,2; Lk.23:56;24:1;John 20:1.</p>
+<p>Sabbath: A day before the first 1st day of the week. Matt.28:1, Mk.16:1,2; Lk.23:56;24:1;John 20:1.</p>
       <ul className="list-disc list-inside space-y-2">
         <li>	Sabbath means desist, &quot;cease from labour.&quot; No work allowed. Exo.20:8.</li>
         <li>	Heb. 8:13;10:9- Keeping the Sabbath is not for Christians</li>
@@ -112,7 +112,7 @@ function WarningAgainstFalseTeachings({}: Props) {
             <li>Paul cautioned the Colossian if they worship angels, they will be robbed of their prizes, which are: Salvation, eternal life in heaven, and spiritual life in Christ.</li>
             <li>They were warned not to worship angels and any ritual worship.</li>
             <li>Eco.20:3-5- No object or any form or substance should be worshipped except God.</li>
-         <li>Rev.19:10;22:8,9- Angel rejected John's worship at the island of Patmos</li>
+         <li>Rev.19:10;22:8,9- Angel rejected John&apos;s worship at the island of Patmos</li>
          <li>They were warned not to turn away from reality in Christ and follow false teachers of ineffective shadow.  </li>    
           </ul>
         </div>

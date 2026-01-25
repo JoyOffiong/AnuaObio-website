@@ -1,12 +1,6 @@
 import React from "react";
 import Image from "next/image";
-import image from "../../../../public/images/churchgathering3.jpg";
 import Bible from "../../../../public/images/Godsplan.jpg";
-import Grace from "../../../../public/images/GodsSufficiency.jpg";
-import Marriage from "../../../../public/images/marriage.jpg";
-import proverbs from "../../../../public/images/proverbs.jpg";
-import proverbs2 from "../../../../public/images/proverbs2.jpg";
-import warning from "../../../../public/images/warnings.png";
 
 import Link from "next/link";
 
@@ -16,7 +10,7 @@ const lessons = [
     img: Bible,
     title: "Shadow AND Reality",
     by: "Bro. Asuquo Offiong",
-    date: "Jan. 11, 2026",
+    date: "Jan. 18, 2026",
     bibleTexts: "Col. 2:16-23",
     link: "./teaching/warning-against-false-teachings",
   },
