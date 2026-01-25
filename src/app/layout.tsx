@@ -67,7 +67,7 @@ export default function RootLayout({
                   {/* Dropdown Menu */}
                   {aboutDropdownVisible && (
                     <div
-                      onMouseLeave={() => setAboutDropdownVisible(false)}
+                      onMouseLeave={() => toggleAboutDropdown()}
                       className="absolute -left-12 top-full mt-2 w-40 bg-white shadow-lg rounded-lg py-2"
                     >
                       <Link
@@ -196,23 +196,10 @@ export default function RootLayout({
                 {/* Dropdown Menu */}
                 {aboutDropdownVisible && (
                   <div
-                    onMouseLeave={() => setAboutDropdownVisible(false)}
+                    onMouseLeave={() => toggleAboutDropdown()}
                     className="absolute left-0 top-20  w-40 bg-white shadow-custom-xl rounded-lg py-2"
                   >
-                    <Link
-                      href="/pages/aboutUs/theChurch"
-                      className="block px-4 py-2 hover:bg-gray-100"
-                    >
-                      {" "}
-                      <div
-                        onClick={() => {
-                          setMobileMenuVisible(false);
-                          setAboutDropdownVisible(false);
-                        }}
-                      >
-                        The Church
-                      </div>
-                    </Link>
+                   
                     <Link
                       href="/pages/aboutUs/ourBeliefs"
                       className="block px-4 py-2 hover:bg-gray-100"
