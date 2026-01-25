@@ -17,9 +17,9 @@ function JoinUsToday({}: Props) {
         <div className="absolute inset-0 bg-[#f3bb44] md:rounded-tr-xl md:rounded-br-xl opacity-30"></div>
       </div>
 
-      <div className=" flex justify-center text-center md:text-left md:justify-end md:px-10 px-4 ">
+      <div className=" flex justify-center text-center md:px-10 px-4 ">
         <div className="space-y-6">
-  <p className="text-[#333333] font-bold text-center md:text-left text-5xl leading-tight">
+  <p className="text-[#333333] font-bold text-center text-5xl leading-tight">
           <span> Here at the </span>
           <br /> <span className="text-5xl">
             {" "}

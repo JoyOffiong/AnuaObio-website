@@ -69,13 +69,13 @@ const lessons = [
     bibleTexts: "2 Tim 1:3; Act 9:15",
     link: "./teaching/spiritual-heritage",
   },
-   {
+  {
     img: Bible,
     title: "Warning Against False Teachings",
     by: "Bro. Asuquo Offiong",
     date: "Jan. 10, 2025",
     bibleTexts: "Col. 2:16-23",
-    link: "./teaching/warning-against-false-teachings",
+    link: "./teaching/topics",
   },
 ];
 function Sermon({}: Props) {
