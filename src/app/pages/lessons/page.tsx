@@ -75,7 +75,12 @@ const lessons = [
     by: "Bro. Asuquo Offiong",
     date: "Jan. 10, 2025",
     bibleTexts: "Col. 2:16-23",
-    link: "./teaching/topics",
+    link: "./teaching/warning-against-false-teachings",
+  },
+  {
+    img: Grace,
+    title: "The Law of Moses",
+    link: "./teaching/the-law-of-moses",
   },
 ];
 function Sermon({}: Props) {

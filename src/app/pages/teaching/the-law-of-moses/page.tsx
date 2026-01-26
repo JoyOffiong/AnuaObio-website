@@ -1,6 +1,6 @@
 import React from "react";
 import Image from "next/image";
-import Bible from "../../../../public/images/Godsplan.jpg";
+import Bible from "../../../../../public/images/Godsplan.jpg";
 
 import Link from "next/link";
 
@@ -12,17 +12,16 @@ const lessons = [
     by: "Bro. Asuquo Offiong",
     date: "Jan. 18, 2026",
     bibleTexts: "Col. 2:16-23",
-    link: "./teaching/warning-against-false-teachings",
+    link: "./the-covenant-between-God-and-His-People",
   },
 ];
-function Topics({}: Props) {
+function LawOfMoses({}: Props) {
   return (
     <div className="font-inter mt-16">
       <div className=" md:px-48 px-8 py-16">
         <div className=" text-center md:text-left">
           <p className="font-bold md:text-3xl text-xl md:ml-48 mb-10 ">
-            CHALLENGES OF THE COLOSSIANS AND THE HEART OF PREACHING
-          </p>
+THE LAW OF MOSES   </p>
         </div>
         <div className="">
           {lessons.map((lesson, index) => {
@@ -72,4 +71,4 @@ function Topics({}: Props) {
   );
 }
 
-export default Topics;
+export default LawOfMoses;
