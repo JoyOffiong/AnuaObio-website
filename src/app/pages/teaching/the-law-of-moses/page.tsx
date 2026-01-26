@@ -8,10 +8,10 @@ type Props = {};
 const lessons = [
   {
     img: Bible,
-    title: "Shadow AND Reality",
-    by: "Bro. Asuquo Offiong",
-    date: "Jan. 18, 2026",
-    bibleTexts: "Col. 2:16-23",
+    title: "The Covenant between God and His People",
+    by: "Bro. Effiong Udoekong ",
+    date: "April 13, 2025",
+    bibleTexts: "Exodus 19: 1-25",
     link: "./the-covenant-between-God-and-His-People",
   },
 ];
@@ -49,14 +49,14 @@ THE LAW OF MOSES   </p>
                       <p className="md:text-lg font-semibold uppercase">
                         {title}
                       </p>
-                      <em className="md:w-2/3 w-full pt-4 text-md font-normal text-[#888888]">
+                      <em className=" w-full pt-4 text-md font-normal text-[#888888]">
                         {bibleTexts}
                       </em>
-                      <p className="md:w-1/2 w-full text-base font-normal text-[#888888]">
+                      <p className=" w-full text-base font-normal text-[#888888]">
                         {" "}
                         by {by}
                       </p>
-                      <p className="md:w-1/2 w-full text-base font-normal text-[#888888]">
+                      <p className="w-full text-base font-normal text-[#888888]">
                         {date}
                       </p>
                     </div>

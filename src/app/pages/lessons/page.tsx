@@ -75,7 +75,7 @@ const lessons = [
     by: "Bro. Asuquo Offiong",
     date: "Jan. 10, 2025",
     bibleTexts: "Col. 2:16-23",
-    link: "./teaching/warning-against-false-teachings",
+    link: "./teaching/warnings-against-false-teachings",
   },
   {
     img: Grace,
@@ -123,7 +123,7 @@ function Sermon({}: Props) {
                       </em>
                       <p className="md:w-1/2 w-full text-base font-normal text-[#888888]">
                         {" "}
-                        by {by}
+                     {by}
                       </p>
                       <p className="md:w-1/2 w-full text-base font-normal text-[#888888]">
                         {date}

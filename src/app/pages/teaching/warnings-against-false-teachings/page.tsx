@@ -50,14 +50,14 @@ function Topics({}: Props) {
                       <p className="md:text-lg font-semibold uppercase">
                         {title}
                       </p>
-                      <em className="md:w-2/3 w-full pt-4 text-md font-normal text-[#888888]">
+                      <em className="m w-full pt-4 text-md font-normal text-[#888888]">
                         {bibleTexts}
                       </em>
-                      <p className="md:w-1/2 w-full text-base font-normal text-[#888888]">
+                      <p className=" w-full text-base font-normal text-[#888888]">
                         {" "}
                         by {by}
                       </p>
-                      <p className="md:w-1/2 w-full text-base font-normal text-[#888888]">
+                      <p className=" w-full text-base font-normal text-[#888888]">
                         {date}
                       </p>
                     </div>
