@@ -16,10 +16,8 @@ const lessons = [
   },
     {
     img: Bible,
-    title: "The Covenant between God and His People",
-    by: "Bro. Effiong Udoekong ",
-    date: "April 13, 2025",
-    bibleTexts: "Exodus 19: 1-25",
+    title: "Laws Against False Spiritualists",
+    date: "May 18, 2025",
     link: "./the-covenant-between-God-and-His-People",
   },
 ];
