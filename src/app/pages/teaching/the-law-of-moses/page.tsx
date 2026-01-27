@@ -14,6 +14,14 @@ const lessons = [
     bibleTexts: "Exodus 19: 1-25",
     link: "./the-covenant-between-God-and-His-People",
   },
+    {
+    img: Bible,
+    title: "The Covenant between God and His People",
+    by: "Bro. Effiong Udoekong ",
+    date: "April 13, 2025",
+    bibleTexts: "Exodus 19: 1-25",
+    link: "./the-covenant-between-God-and-His-People",
+  },
 ];
 function LawOfMoses({}: Props) {
   return (

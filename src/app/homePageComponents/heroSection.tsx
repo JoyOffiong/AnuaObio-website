@@ -6,7 +6,7 @@ function HeroSection() {
     <div
       className="bg-cover bg-center font-inter relative"
       style={{
-        backgroundImage: "url('/images/churchgathering3.jpg')",
+        backgroundImage: "url('/images/img3.jpeg')",
         height: "800px",
       }}
     >
