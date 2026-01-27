@@ -3,6 +3,7 @@ import Image from "next/image";
 import Bible from "../../../../../public/images/Godsplan.jpg";
 
 import Link from "next/link";
+import BackButton from "@/sharedComponents/backButton";
 
 type Props = {};
 const lessons = [
@@ -18,13 +19,17 @@ const lessons = [
     img: Bible,
     title: "Laws Against False Spiritualists",
     date: "May 18, 2025",
-    link: "./the-covenant-between-God-and-His-People",
+    by: "Bro. Effiong Udoekong",
+    link: "./laws-against-false-spiritualists",
   },
 ];
 function LawOfMoses({}: Props) {
   return (
     <div className="font-inter mt-16">
+           
+
       <div className=" md:px-48 px-8 py-16">
+         <BackButton />
         <div className=" text-center md:text-left">
           <p className="font-bold md:text-3xl text-xl md:ml-48 mb-10 ">
 THE LAW OF MOSES   </p>
@@ -60,7 +65,7 @@ THE LAW OF MOSES   </p>
                       </em>
                       <p className=" w-full text-base font-normal text-[#888888]">
                         {" "}
-                        by {by}
+                        {by}
                       </p>
                       <p className="w-full text-base font-normal text-[#888888]">
                         {date}
