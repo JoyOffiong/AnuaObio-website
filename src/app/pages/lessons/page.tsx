@@ -82,6 +82,11 @@ const lessons = [
     title: "The Law of Moses",
     link: "./teaching/the-law-of-moses",
   },
+    {
+    img: image,
+    title: "The Teachings of Jesus on the Mount",
+    link: "./teaching/the-teachings-of-Jesus-on-the-mount",
+  },
 ];
 function Sermon({}: Props) {
   return (
