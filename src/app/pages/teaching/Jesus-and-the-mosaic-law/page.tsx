@@ -60,24 +60,34 @@ function JesusAndTheMosaicLaw({}: Props) {
         
         <div className="space-y-2">
           <p className="font-bold text-lg">B. The new standard.</p>
-           <p className="font-bold text-md">I. Exhortation to Embrace Wisdom:</p>
+           <p className="font-bold text-md"> <em>I.  Teaching against murder (Matt. 5:21-26).</em> </p>
           <p>
-           Children who receive proper instruction from faithful parents are promised a long life. The wise man said, &quot;And the years of your life shall be many&quot; (4:10). Notice the signs of love in the parents&rsquo; advice in Proverbs 4:1-4. The father continues to emphasise the importance of gaining wisdom and understanding, pleading with the child to listen, hear, and remember. &quot;Hear, my children, the instruction of a father, and give attention to know understanding. For I give you good teaching; do not forsake my law&quot; (Proverbs 4:2). Parents desire their children to thrive with wisdom, which increases the chances of success. 
-            <br />
-         &quot;Hear, O my son, and receive my sayings, and the years of your life will be many&quot; (Proverbs 4:10). This proverb speaks of life: survival, avoiding problems, and overcoming the obstacles along the path. &quot;Take firm hold of instruction. Do not let her go; keep her, for she is your life&quot; (Proverbs 4:13).
+          The anger that is not allowed in this first example of the new standard that Jesus set. The old law said, "You shall not kill" (Exo. 20:13), but Jesus said that even being angry at a brother is wrong. Not only should you not hit a man, but you shouldn't even want to hit him or have bad feelings towards him in your heart. Jesus says that all selfish anger is wrong. The Bible plainly says that anger is wrong. James said, "The anger of man does not work the righteousness of God."(James 1:20). Paul told his people to stop being angry (Col3:8). Jesus forbade the anger that broods, the anger that won't go away, the anger that won't be calmed down, and the anger that wants revenge. Jesus goes on to talk about two times when anger leads to rude words. (Psa109:1-3, Deu19:16-18) (Deut19:11-12). It is also wrong for a man to speak in anger. Jesus says that the person who ruined his brother's name and reputation is the one who will be judged most harshly, by the fire of Gehenna.
+       
           </p>
         </div>
         <div className="space-y-2">
           <p className="font-bold text-md">
-           II. Supremacy of Wisdom:.{" "}
+           II. Teaching against adultery and lust (Matt. 5:31-32): {" "}
           </p>
           <p>
-           &quot;Get wisdom. Get understanding. Do not forget it, nor turn away from the words of my mouth. Do not forsake her, and she will preserve you. Love her, and she will keep you. Wisdom is the principal thing; therefore, get wisdom. And with all your acquiring, get understanding. Exalt her, and she will promote you; she will bring you honour when you embrace her. She will give you a crown of glory&quot; (Proverbs 4:5-9). 
+           The forbidden desire you have heard that it been said: "You must not commit adultery. 
+ Here is Jesus' second example of a new standard. The law laid it down you shall not commit adultery (Exo. 20:14). So seriously a view did the Jewish teacher take of adultery that the guilty parties could be punished by nothing less than death (Lev. 20:10); but once again Jesus lays it down that not only the forbidden action but also the forbidden thought is guilty in the sight of God. We must understand what Jesus is saying here. He is not speaking of the natural, normal desire which is part of human instinct and human nature. According to the literal meaning of the Greek, the man who is condemned is the man who looks at a woman with the deliberate intention of lusting after her. The man who is condemned is the man who deliberately uses his eyes to awaken his lust, the man who looks in such a way that passion is awakened and desire deliberately stimulated. Verses 29 and 30 provide a cure.
+
           </p>
          
-          <p>Wisdom, knowledge, and understanding are closely connected; they are the offspring of the same parents. It takes wisdom to pursue knowledge, and the ability to apply knowledge correctly is what we call understanding. The proverbs state that wisdom is supreme and the first thing one should seek. Knowledge of God and His words is emphasised throughout the Bible. The moment you gain insight into a matter is the moment you begin to escape the path of ignorance and bondage. A wise person is a knowledgeable person.
+       
+        </div>
+         <div className="space-y-2">
+          <p className="font-bold text-md">
+           III. Teaching against oaths and retaliation (5:33 - 37): {" "}
           </p>
-          <p>Verses 4-7 describe what wisdom is and emphasise the need for loyalty to it.  </p>
+         <p>In Matthew 5:33-37, Jesus teaches against taking oaths and retaliation, emphasizing honesty and non-violent responses. He instructs:</p>
+         <ul className="list-disc list-inside space-y-2">
+
+         </ul>
+         
+       
         </div>
         <div className="space-y-2">
           <p className="font-bold text-lg">C. What Will Godly Knowledge Do for a Man Who Possesses It? </p>
