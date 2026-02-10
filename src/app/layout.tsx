@@ -150,7 +150,7 @@ export default function RootLayout({
             </div>
 
             {/* Mobile Menu Toggle */}
-            <div className="sm:block md:hidden">
+            <div className="block md:hidden">
               <button className="md:hidden block text-black focus:outline-none">
                 {mobileMenuVisible ? (
                   <X size={28} onClick={() => setMobileMenuVisible(false)} />
