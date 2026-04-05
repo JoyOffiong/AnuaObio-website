@@ -77,10 +77,10 @@ export default function RootLayout({
                         Our Belief
                       </Link>
                       <Link
-                        href="/pages/aboutUs/ourHistory"
+                        href="/pages/aboutUs/ourCongragation"
                         className="block px-4 py-2 hover:bg-gray-100"
                       >
-                        Our History
+                        Our Congregation
                       </Link>
                       <Link
                         href="/pages/aboutUs/ourWorship"
@@ -143,6 +143,13 @@ export default function RootLayout({
                       >
                         Support Us
                       </Link>
+
+                      <Link
+                        href="/pages/more/ourHistory"
+                        className="block px-4 py-2 hover:bg-gray-100"
+                      >
+                        The Church History
+                      </Link>
                     </div>
                   )}
                 </div>
@@ -199,7 +206,6 @@ export default function RootLayout({
                     onMouseLeave={() => toggleAboutDropdown()}
                     className="absolute left-0 top-20  w-40 bg-white shadow-custom-xl rounded-lg py-2"
                   >
-                   
                     <Link
                       href="/pages/aboutUs/ourBeliefs"
                       className="block px-4 py-2 hover:bg-gray-100"
@@ -212,6 +218,12 @@ export default function RootLayout({
                       >
                         Our Belief{" "}
                       </div>
+                    </Link>
+                    <Link
+                      href="/pages/aboutUs/ourCongragation"
+                      className="block px-4 py-2 hover:bg-gray-100"
+                    >
+                      Our Congregation
                     </Link>
                     <Link
                       href="/pages/aboutUs/ourWorship"
@@ -291,6 +303,12 @@ export default function RootLayout({
                       >
                         The Ministry
                       </div>
+                    </Link>
+                    <Link
+                      href="/pages/more/ourHistory"
+                      className="block px-4 py-2 hover:bg-gray-100"
+                    >
+                      The Church History
                     </Link>
                     <Link
                       href="/pages/more/support"
