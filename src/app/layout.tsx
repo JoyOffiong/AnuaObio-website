@@ -77,7 +77,7 @@ export default function RootLayout({
                         Our Belief
                       </Link>
                       <Link
-                        href="/pages/aboutUs/ourCongragation"
+                        href="/pages/aboutUs/ourCongregation"
                         className="block px-4 py-2 hover:bg-gray-100"
                       >
                         Our Congregation
@@ -220,7 +220,7 @@ export default function RootLayout({
                       </div>
                     </Link>
                     <Link
-                      href="/pages/aboutUs/ourCongragation"
+                      href="/pages/aboutUs/ourCongregation"
                       className="block px-4 py-2 hover:bg-gray-100"
                     >
                       Our Congregation

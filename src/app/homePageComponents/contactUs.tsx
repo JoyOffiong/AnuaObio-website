@@ -25,11 +25,11 @@ function ContactUs() {
         <form
           className="w-11/12 px-6 md:px-14 md:w-9/12 space-y-8 mt-10 mx-auto text-[#ac9ca4] font-medium"
           onSubmit={handleSubmit((data) => {
+           
             const subject = encodeURIComponent("New Contact Form Submission");
             const body = encodeURIComponent(
               `Name: ${data.name}\nEmail: ${data.email}\nMessage: ${data.message}`
             );
-
             window.location.href = `mailto:cocanuaobio@gmail.com?subject=${subject}&body=${body}`;
           })}
         >
