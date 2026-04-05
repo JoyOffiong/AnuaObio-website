@@ -195,7 +195,7 @@ export default function RootLayout({
                 {/* About Us Button */}
                 <div className="flex items-center gap-1 hover:text-green-950 transition">
                   <Link href="/pages/aboutUs">
-                    <div onMouseEnter={() => setAboutDropdownVisible(true)}>
+                    <div onClick={() => setAboutDropdownVisible(true)}>
                       About Us
                     </div>
                   </Link>
@@ -203,8 +203,8 @@ export default function RootLayout({
                 {/* Dropdown Menu */}
                 {aboutDropdownVisible && (
                   <div
-                    onMouseLeave={() => toggleAboutDropdown()}
-                    className="absolute left-0 top-20  w-40 bg-white shadow-custom-xl rounded-lg py-2"
+                    onMouseLeave={() => setAboutDropdownVisible(false)}
+                    className="absolute text-base left-0 top-20  w-40 bg-white shadow-custom-xl rounded-lg py-2"
                   >
                     <Link
                       href="/pages/aboutUs/ourBeliefs"
@@ -223,7 +223,15 @@ export default function RootLayout({
                       href="/pages/aboutUs/ourCongregation"
                       className="block px-4 py-2 hover:bg-gray-100"
                     >
-                      Our Congregation
+                      <div
+                        onClick={() => {
+                          setMobileMenuVisible(false);
+                          setAboutDropdownVisible(false);
+                        }}
+                      >
+                        {" "}
+                        Our Congregation
+                      </div>
                     </Link>
                     <Link
                       href="/pages/aboutUs/ourWorship"
@@ -257,17 +265,19 @@ export default function RootLayout({
                   href="/pages/lessons"
                   className="hover:text-gray-950 transition hover:bg-gray-100"
                 >
-                  Lessons
+                  <div onClick={() => setMobileMenuVisible(false)}>Lessons</div>
                 </Link>
                 <Link
                   href="/pages/contactUs"
                   className="hover:text-gray-950 transition hover:bg-gray-100"
                 >
-                  Get in Touch
+                  <div onClick={() => setMobileMenuVisible(false)}>
+                    Get in Touch
+                  </div>
                 </Link>
                 {/* M Button */}
                 <button
-                  onMouseEnter={() => setMoreDropdownVisible(true)}
+                  onClick={() => setMoreDropdownVisible(true)}
                   className="flex items-center gap-1 hover:text-green-950 transition"
                 >
                   More{" "}
@@ -276,7 +286,7 @@ export default function RootLayout({
                 {moreDropdownVisible && (
                   <div
                     onMouseLeave={() => setMoreDropdownVisible(false)}
-                    className="absolute left-0 top-48 mt-2 w-40 bg-white shadow-custom-xl rounded-lg py-2"
+                    className="absolute left-0 top-48 mt-2 text-base w-40 bg-white shadow-custom-xl rounded-lg py-2"
                   >
                     <Link
                       href="/pages/more/gallery1"
@@ -308,7 +318,14 @@ export default function RootLayout({
                       href="/pages/more/ourHistory"
                       className="block px-4 py-2 hover:bg-gray-100"
                     >
-                      The Church History
+                      <div
+                        onClick={() => {
+                          setMobileMenuVisible(false);
+                          setMoreDropdownVisible(false);
+                        }}
+                      >
+                        The Church History
+                      </div>
                     </Link>
                     <Link
                       href="/pages/more/support"
