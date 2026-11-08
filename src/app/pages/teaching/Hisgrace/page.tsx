@@ -6,18 +6,21 @@ type Props = {};
 
 function GodsGrace({}: Props) {
   return (
-    <div className="font-inter my-24 space-y-6 md:my-32 mx-6 md:mx-32 ">
+    <div className="mx-auto max-w-5xl px-6 pb-20 pt-28 font-inter sm:px-10 lg:px-16">
    
    <BackButton/>
 
-    <div className="flex flex-col gap-y-6 justify-center items-center h-full">
+    <header className="mt-8 border-b border-[#e4c47d]/50 space-y-2 pb-10 text-center">
+      <p className="text-sm font-bold uppercase tracking-[0.2em] text-[#4ca233]">
+        Bible teaching
+      </p>
    
-        <div className="text-b text-center md:w-2/3 z-20 w-full">
-          <p className="font-bold uppercase text-xl md:text-5xl">
+       
+          <p className="text-3xl font-bold uppercase leading-tight text-[#17261f] md:text-5xl">
             God&apos;s grace is sufficient for our needs.
           </p>
-        </div>
-        <div className="space-y-4 text-[#888888]">
+    
+        <div className="space-y-2 text-sm text-[#66716b]">
           <p>Jan. 12, 2025</p>
           <p>By Bro. Johnson</p>
         </div>
@@ -30,12 +33,12 @@ function GodsGrace({}: Props) {
             className="h-[200px] w-screen max-w-full rounded-3xl object-cover"
           />{" "}
         </div> */}
-        <div className="font-semibold">
+        <div className="font-semibold italic text-[#196f00]">
           <em>2 Cor. 12:7-10; 1 Cor. 15:10</em>
         </div>
-      </div>
+      </header>
 
-      <div className="text-[#000000] space-y-4">
+      <article className="mt-12 rounded-3xl border border-[#e1e8e1] bg-white p-6 text-[#303b35] shadow-[0_12px_35px_rgba(25,49,35,0.06)] sm:p-10">
         <div className="space-y-2 ">
           <p className="font-bold text-lg">A. Introduction</p>
           <p>
@@ -57,7 +60,7 @@ function GodsGrace({}: Props) {
           </p>
         </div>
         <div className="space-y-2">
-          <p className="font-bold text-lg">
+          <p className="font-bold text-lg pt-2">
             B. Biblical Teachings on God`s Plan to Redeem Man
           </p>
           <p>
@@ -159,7 +162,7 @@ function GodsGrace({}: Props) {
         </div>
 
         <div className="space-y-2 ">
-          <p className="font-bold text-lg"> CONCLUSION </p>
+          <p className="font-bold mt-2 text-lg"> CONCLUSION </p>
           <p>
             As the church serve as a grooming ground in the process of selecting
             candidates for heaven, she has to purify herself for Jesus as the
@@ -173,7 +176,7 @@ function GodsGrace({}: Props) {
             faithful to this calling, in Jesus name. Amen.
           </p>
         </div>
-      </div>
+      </article>
     </div>
   );
 }

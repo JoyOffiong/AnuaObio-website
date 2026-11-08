@@ -25,49 +25,57 @@ const lessons = [
 ];
 function LawOfMoses({}: Props) {
   return (
-    <div className="font-inter mt-16">
+    <div className="mx-auto max-w-5xl px-6 pb-20 pt-28 font-inter sm:px-10 lg:px-16">
            
 
-      <div className=" md:px-48 px-8 py-16">
+      <div className="py-12">
          <BackButton />
-        <div className=" text-center md:text-left">
-          <p className="font-bold md:text-3xl text-xl md:ml-48 mb-10 ">
-THE LAW OF MOSES   </p>
-        </div>
-        <div className="">
+        <header className="border-b border-[#e4c47d]/50 pb-10 text-center">
+          <p className="text-sm font-bold uppercase tracking-[0.2em] text-[#4ca233]">
+            Bible teaching
+          </p>
+          <p className="mt-4 text-4xl font-bold uppercase leading-tight tracking-tight text-[#17261f] sm:text-6xl">
+            The Law of Moses
+          </p>
+          <p className="mx-auto mt-5 max-w-2xl text-base leading-7 text-[#66716b]">
+            Explore lessons about the covenant, law, and spiritual principles
+            revealed through Scripture.
+          </p>
+        </header>
+        <div className="mt-10 grid gap-6 md:grid-cols-2">
           {lessons.map((lesson, index) => {
             const { img, title, date, bibleTexts, by, link } = lesson;
             return (
               <div
                 key={index}
-                className="mt-10 w-11/12 hover:scale-110 duration-200 transition-all md:w-8/12 mx-auto items-center gap-4"
+                className="group overflow-hidden rounded-3xl border border-[#e1e8e1] bg-white shadow-[0_12px_35px_rgba(25,49,35,0.06)] transition duration-300 hover:-translate-y-1 hover:shadow-[0_20px_45px_rgba(25,49,35,0.12)]"
               >
                 {/* Image */}
                 <Link href={link}>
-                  <div className="flex flex-col md:flex-col gap-4  lg:flex-row my-10">
-                    <div className=" rounded-2xl">
+                  <div className="flex h-full flex-col gap-5">
+                    <div className="overflow-hidden">
                       <Image
                         src={img}
                         alt="churchImage"
                         width={300}
                         height={50}
-                        className="h-[150px] w-[250px] rounded-2xl max-w-[100%] object-cover"
+                        className="h-56 w-full object-cover transition duration-500 group-hover:scale-105"
                       />
                     </div>
 
                     {/* Texts */}
-                    <div className="space-y-4">
-                      <p className="md:text-lg font-semibold uppercase">
+                    <div className="space-y-4 p-6">
+                      <p className="text-xl font-bold uppercase text-[#17261f]">
                         {title}
                       </p>
-                      <em className=" w-full pt-4 text-md font-normal text-[#888888]">
+                      <em className="block w-full text-sm font-medium text-[#4ca233]">
                         {bibleTexts}
                       </em>
-                      <p className=" w-full text-base font-normal text-[#888888]">
+                      <p className="w-full text-sm text-[#66716b]">
                         {" "}
                         {by}
                       </p>
-                      <p className="w-full text-base font-normal text-[#888888]">
+                      <p className="w-full text-sm text-[#66716b]">
                         {date}
                       </p>
                     </div>

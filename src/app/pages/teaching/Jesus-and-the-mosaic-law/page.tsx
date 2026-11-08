@@ -6,28 +6,31 @@ type Props = {};
 
 function JesusAndTheMosaicLaw({}: Props) {
   return (
-    <div className="font-inter my-24 space-y-6 md:my-32 mx-6 md:mx-32 ">
+    <div className="mx-auto max-w-5xl px-6 pb-20 pt-28 font-inter sm:px-10 lg:px-16">
       <BackButton />
 
-      <div className="flex flex-col gap-y-6 justify-center items-center h-full">
-        <div className="text-b text-center md:w-2/3 z-20 w-full">
-          <p className="font-bold uppercase text-xl md:text-5xl">
+      <header className="mt-8 border-b border-[#e4c47d]/50 pb-10 text-center space-y-2">
+        <p className="text-sm font-bold uppercase tracking-[0.2em] text-[#4ca233]">
+          Bible teaching
+        </p>
+      
+          <p className="text-3xl font-bold uppercase leading-tight text-[#17261f] md:text-5xl">
             Jesus and the Mosaic Law
           </p>
-        </div>
-        <div className="space-y-4 text-[#888888]">
+      
+        <div className="space-y-2 text-sm text-[#66716b]">
           <p>October 12th, 2025</p>
           <p>By Min. E.O. Akpan</p>
         </div>
 
-        <div className="font-semibold">
+        <div className="font-semibold italic text-[#196f00]">
           <em>Matt. 5:17-48</em>
         </div>
-      </div>
+      </header>
 
-      <div className="text-[#000000] space-y-4">
+      <article className="mt-12 rounded-3xl border border-[#e1e8e1] bg-white p-6 text-[#303b35] shadow-[0_12px_35px_rgba(25,49,35,0.06)] sm:p-10">
          <div className="space-y-2">
-          <p className="font-bold text-lg">Lesson Outline</p>
+          <p className="font-bold text-lg pt-2">Lesson Outline</p>
           
           <ul>
             <li>i. Introduction</li>
@@ -42,7 +45,7 @@ function JesusAndTheMosaicLaw({}: Props) {
           </ul>
         </div>
         <div className="space-y-2 ">
-          <p className="font-bold text-lg">A. Introduction</p>
+          <p className="font-bold text-lg pt-2">A. Introduction</p>
           <p>
             • Jesus said &quot;You have heard….&quot; (Matt. 5:17-48, Luke 6:27-30, 32,36). The longest section of the Sermon on the Mount in Matthew 5:17-48, which contrasts the law of Moses and related to man-made traditions with Jesus teaching, it was essential that Christ&apos;s disciples have a clear understanding of his relationship to the law and also his attitude toward the multiplicity of traditions that men had attached to the law. 
           </p>
@@ -59,7 +62,7 @@ function JesusAndTheMosaicLaw({}: Props) {
         </div>
         
         <div className="space-y-2">
-          <p className="font-bold text-lg">B. The new standard.</p>
+          <p className="font-bold text-lg pt-2">B. The new standard.</p>
            <p className="font-bold text-md"> <em>I.  Teaching against murder (Matt. 5:21-26).</em> </p>
           <p>
           The anger that is not allowed in this first example of the new standard that Jesus set. The old law said, &quot;You shall not kill&quot;(Exo. 20:13), but Jesus said that even being angry at a brother is wrong. Not only should you not hit a man, but you shouldn&apos;t even want to hit him or have bad feelings towards him in your heart. Jesus says that all selfish anger is wrong. The Bible plainly says that anger is wrong. James said, &quot;The anger of man does not work the righteousness of God.&quot;(James 1:20). Paul told his people to stop being angry (Col3:8). Jesus forbade the anger that broods, the anger that won&apos;t go away, the anger that won&apos;t be calmed down, and the anger that wants revenge. Jesus goes on to talk about two times when anger leads to rude words. (Psa109:1-3, Deu19:16-18) (Deut19:11-12). It is also wrong for a man to speak in anger. Jesus says that the person who ruined his brother&apos;s name and reputation is the one who will be judged most harshly, by the fire of Gehenna.
@@ -103,7 +106,7 @@ function JesusAndTheMosaicLaw({}: Props) {
 </p>
         </div>
         <div className="space-y-2">
-          <p className="font-bold text-lg">Conclusion: </p>
+          <p className="font-bold text-lg pt-2">Conclusion: </p>
           
           <p></p>
           <p>
@@ -112,8 +115,8 @@ function JesusAndTheMosaicLaw({}: Props) {
  
         </div>
         
-      </div>
-    </div>
+    </article>
+       </div>
   );
 }
 

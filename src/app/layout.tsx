@@ -1,353 +1,203 @@
 "use client";
 
-import { Metadata } from "next";
-import { Inter } from "next/font/google";
 import "./globals.css";
-import Footer from "@/sharedComponents/footer";
-import Navbar from "@/sharedComponents/header";
-import { useState } from "react";
-import { AppBar, Toolbar, Typography, Button } from "@mui/material";
-import Link from "next/link";
 import Image from "next/image";
-import { AlignRightIcon, ChevronDown, X } from "lucide-react";
+import Link from "next/link";
+import { ChevronDown, Menu, X } from "lucide-react";
+import { useState } from "react";
+import Footer from "@/sharedComponents/footer";
 
-const inter = Inter({ subsets: ["latin"] });
+const aboutLinks = [
+  { label: "Our Beliefs", href: "/pages/aboutUs/ourBeliefs" },
+  { label: "Our Congregation", href: "/pages/aboutUs/ourCongregation" },
+  { label: "Our Worship", href: "/pages/aboutUs/ourWorship" },
+  { label: "The Minister", href: "/pages/aboutUs/theMinister" },
+];
+
+const moreLinks = [
+  { label: "Gallery", href: "/pages/more/gallery1" },
+  { label: "The Ministry", href: "/pages/more/theMinistry" },
+  { label: "Support Us", href: "/pages/more/support" },
+  { label: "Church History", href: "/pages/more/ourHistory" },
+];
 
 export default function RootLayout({
   children,
 }: {
   children: React.ReactNode;
 }) {
-  const [mobileMenuVisible, setMobileMenuVisible] = useState<boolean>(false);
-  const [aboutDropdownVisible, setAboutDropdownVisible] =
-    useState<boolean>(false);
-  const [moreDropdownVisible, setMoreDropdownVisible] =
-    useState<boolean>(false);
+  const [mobileMenuVisible, setMobileMenuVisible] = useState(false);
+  const [openMenu, setOpenMenu] = useState<"about" | "more" | null>(null);
 
-  const toggleMobileMenu = () => {
-    setMobileMenuVisible(true);
-  };
-  const toggleAboutDropdown = () => {
-    setAboutDropdownVisible(!aboutDropdownVisible);
+  const closeMenu = () => {
+    setMobileMenuVisible(false);
+    setOpenMenu(null);
   };
 
   return (
     <html lang="en">
-      <body className={inter.className}>
-        {/* Navbar */}
-        <div className="fixed  md:px-48 top-0 left-0 w-full z-50 bg-white shadow-md">
-          <div className="flex justify-between px-4 relative md:space-x-4 md:shadow-none shadow-2xl items-center ">
-            {/* Logo */}
-            <Link href="/">
+      <body>
+        <header className="fixed left-0 top-0 z-50 w-full border-b border-[#e4c47d]/30 bg-white font-inter shadow-[0_8px_30px_rgba(25,49,35,0.08)]">
+          <div className="mx-auto flex h-[76px] max-w-7xl items-center justify-between px-5 sm:px-10 lg:px-16">
+            <Link
+              href="/"
+              onClick={closeMenu}
+              className="flex items-center gap-3"
+            >
               <Image
                 src="/images/coc.png"
-                alt="churchLogo"
-                width={150}
-                height={150}
+                alt="Church of Christ Anua Obio logo"
+                width={58}
+                height={58}
+                className="h-12 w-12 rounded-full bg-white object-contain p-1"
+                priority
               />
+              <span className="hidden max-w-[170px] text-sm font-bold leading-tight tracking-wide text-[#17261f] sm:block">
+                CHURCH OF CHRIST
+                <span className="mt-0.5 block text-xs font-medium tracking-normal text-[#66716b]">
+                  Anua Obio, Uyo
+                </span>
+              </span>
             </Link>
 
-            {/* Desktop Links (Hidden on Small Screens) */}
-            <div className="hidden  md:block text-md">
-              <div className=" flex flex-row  gap-x-24 font-medium text-[#666666]">
-                <Link href="/" className="hover:text-gray-950 transition">
+            <nav className="hidden items-center gap-1 md:flex" aria-label="Main navigation">
+              <Link
+                href="/"
+                className="rounded-full px-4 py-2 text-sm font-semibold text-[#17261f] transition hover:bg-[#f7f8f5] hover:text-[#196f00]"
+              >
+                Home
+              </Link>
+              <div className="relative">
+                <button
+                  type="button"
+                  onClick={() => setOpenMenu(openMenu === "about" ? null : "about")}
+                  className="flex items-center gap-1 rounded-full px-4 py-2 text-sm font-semibold text-[#17261f] transition hover:bg-[#f7f8f5] hover:text-[#196f00]"
+                  aria-expanded={openMenu === "about"}
+                >
+                  About us
+                  <ChevronDown
+                    size={15}
+                    className={openMenu === "about" ? "rotate-180 transition" : "transition"}
+                  />
+                </button>
+                {openMenu === "about" && (
+                  <div className="absolute left-0 top-full mt-4 w-52 rounded-2xl border border-[#e4c47d]/50 bg-white p-2 shadow-xl">
+                    {aboutLinks.map((item) => (
+                      <Link
+                        key={item.href}
+                        href={item.href}
+                        onClick={closeMenu}
+                        className="block rounded-xl px-4 py-2.5 text-sm text-[#66716b] transition hover:bg-[#f7f8f5] hover:text-[#196f00]"
+                      >
+                        {item.label}
+                      </Link>
+                    ))}
+                  </div>
+                )}
+              </div>
+              <Link
+                href="/pages/lessons"
+                className="rounded-full px-4 py-2 text-sm font-semibold text-[#17261f] transition hover:bg-[#f7f8f5] hover:text-[#196f00]"
+              >
+                Lessons
+              </Link>
+              <div className="relative">
+                <button
+                  type="button"
+                  onClick={() => setOpenMenu(openMenu === "more" ? null : "more")}
+                  className="flex items-center gap-1 rounded-full px-4 py-2 text-sm font-semibold text-[#17261f] transition hover:bg-[#f7f8f5] hover:text-[#196f00]"
+                  aria-expanded={openMenu === "more"}
+                >
+                  More
+                  <ChevronDown
+                    size={15}
+                    className={openMenu === "more" ? "rotate-180 transition" : "transition"}
+                  />
+                </button>
+                {openMenu === "more" && (
+                  <div className="absolute right-0 top-full mt-4 w-52 rounded-2xl border border-[#e4c47d]/50 bg-white p-2 shadow-xl">
+                    {moreLinks.map((item) => (
+                      <Link
+                        key={item.href}
+                        href={item.href}
+                        onClick={closeMenu}
+                        className="block rounded-xl px-4 py-2.5 text-sm text-[#66716b] transition hover:bg-[#f7f8f5] hover:text-[#196f00]"
+                      >
+                        {item.label}
+                      </Link>
+                    ))}
+                  </div>
+                )}
+              </div>
+              <Link
+                href="/pages/contactUs"
+                className="ml-3 rounded-full bg-[#e4c47d] px-5 py-2.5 text-sm font-semibold text-[#17261f] transition hover:bg-white"
+              >
+                Get in touch
+              </Link>
+            </nav>
+
+            <button
+              type="button"
+              aria-label={mobileMenuVisible ? "Close menu" : "Open menu"}
+              aria-expanded={mobileMenuVisible}
+              onClick={() => setMobileMenuVisible((visible) => !visible)}
+              className="rounded-lg p-2 text-[#17261f] transition hover:bg-[#f7f8f5] md:hidden"
+            >
+              {mobileMenuVisible ? <X size={25} /> : <Menu size={25} />}
+            </button>
+          </div>
+
+          {mobileMenuVisible && (
+            <nav className="border-t border-[#e4c47d]/30 bg-white px-5 py-5 shadow-lg md:hidden" aria-label="Mobile navigation">
+              <div className="mx-auto max-w-7xl space-y-2">
+                <Link href="/" onClick={closeMenu} className="block rounded-xl px-4 py-3 font-semibold text-[#17261f] hover:bg-[#f7f8f5]">
                   Home
                 </Link>
-                <div className="relative">
-                  {/* About Us Button */}
-
-                  <div className="flex items-center gap-1 hover:text-green-950 transition">
-                    <Link href="/pages/aboutUs">
-                      <div onMouseEnter={() => setAboutDropdownVisible(true)}>
-                        About Us
-                      </div>
-                    </Link>
-                  </div>
-
-                  {/* Dropdown Menu */}
-                  {aboutDropdownVisible && (
-                    <div
-                      onMouseLeave={() => toggleAboutDropdown()}
-                      className="absolute -left-12 top-full mt-2 w-40 bg-white shadow-lg rounded-lg py-2"
-                    >
-                      <Link
-                        href="/pages/aboutUs/ourBeliefs"
-                        className="block px-4 py-2 hover:bg-gray-100"
-                      >
-                        Our Belief
-                      </Link>
-                      <Link
-                        href="/pages/aboutUs/ourCongregation"
-                        className="block px-4 py-2 hover:bg-gray-100"
-                      >
-                        Our Congregation
-                      </Link>
-                      <Link
-                        href="/pages/aboutUs/ourWorship"
-                        className="block px-4 py-2 hover:bg-gray-100"
-                      >
-                        Our Worship
-                      </Link>
-                      <Link
-                        href="/pages/aboutUs/theMinister"
-                        className="block px-4 py-2 hover:bg-gray-100"
-                      >
-                        The Minister
-                      </Link>
-                    </div>
-                  )}
-                </div>
-
-                <Link
-                  href="/pages/lessons"
-                  className="hover:text-gray-950 transition "
+                <button
+                  type="button"
+                  onClick={() => setOpenMenu(openMenu === "about" ? null : "about")}
+                  className="flex w-full items-center justify-between rounded-xl px-4 py-3 text-left font-semibold text-[#17261f] hover:bg-[#f7f8f5]"
                 >
+                  About us <ChevronDown size={18} className={openMenu === "about" ? "rotate-180 transition" : "transition"} />
+                </button>
+                {openMenu === "about" && (
+                  <div className="ml-4 border-l-2 border-[#e4c47d] pl-3">
+                    {aboutLinks.map((item) => (
+                      <Link key={item.href} href={item.href} onClick={closeMenu} className="block rounded-lg px-3 py-2 text-sm text-[#66716b] hover:bg-[#f7f8f5] hover:text-[#196f00]">
+                        {item.label}
+                      </Link>
+                    ))}
+                  </div>
+                )}
+                <Link href="/pages/lessons" onClick={closeMenu} className="block rounded-xl px-4 py-3 font-semibold text-[#17261f] hover:bg-[#f7f8f5]">
                   Lessons
                 </Link>
-                <Link
-                  href="/pages/contactUs"
-                  className="hover:text-gray-950 transition"
-                >
-                  Get in Touch
-                </Link>
-                <div className="relative">
-                  {/* M Button */}
-                  <button
-                    onMouseEnter={() => setMoreDropdownVisible(true)}
-                    className="flex items-center gap-1 hover:text-green-950 transition"
-                  >
-                    More{" "}
-                  </button>
-
-                  {/* Dropdown Menu */}
-                  {moreDropdownVisible && (
-                    <div
-                      onMouseLeave={() => setMoreDropdownVisible(false)}
-                      className="absolute -left-12 top-full mt-2 w-40 bg-white shadow-lg rounded-lg py-2"
-                    >
-                      <Link
-                        href="/pages/more/gallery1"
-                        className="block px-4 py-2 hover:bg-gray-100"
-                      >
-                        Gallery
-                      </Link>
-                      <Link
-                        href="/pages/more/theMinistry"
-                        className="block px-4 py-2 hover:bg-gray-100"
-                      >
-                        The Ministry
-                      </Link>
-                      <Link
-                        href="/pages/more/support"
-                        className="block px-4 py-2 hover:bg-gray-100"
-                      >
-                        Support Us
-                      </Link>
-
-                      <Link
-                        href="/pages/more/ourHistory"
-                        className="block px-4 py-2 hover:bg-gray-100"
-                      >
-                        The Church History
-                      </Link>
-                    </div>
-                  )}
-                </div>
-              </div>
-            </div>
-
-            {/* Mobile Menu Toggle */}
-            <div className="block md:hidden">
-              <button className="md:hidden block text-black focus:outline-none">
-                {mobileMenuVisible ? (
-                  <X size={28} onClick={() => setMobileMenuVisible(false)} />
-                ) : (
-                  <AlignRightIcon size={28} onClick={toggleMobileMenu} />
-                )}
-              </button>
-            </div>
-          </div>
-
-          <div className="md:hidden block ">
-            <hr />
-          </div>
-
-          {/* MOBILE LINKSSS */}
-          {mobileMenuVisible && (
-            <div className="md:hidden absolute top-0 left-0 w-full font-semibold text-2xl">
-              <div
-                className="w-full flex flex-col space-y-4 p-4 bg-white shadow-xl 
-                    absolute top-16 left-0 transition-all duration-300 ease-in-out 
-                    translate-y-[-100%] opacity-0"
-                style={{
-                  transform: mobileMenuVisible
-                    ? "translateY(0)"
-                    : "translateY(-100%)",
-                  opacity: mobileMenuVisible ? 1 : 0,
-                }}
-              >
-                <Link
-                  href="/"
-                  className="hover:text-gray-950 transition hover:bg-gray-100"
-                >
-                  <div onClick={() => setMobileMenuVisible(false)}>Home</div>
-                </Link>
-                {/* About Us Button */}
-                <div className="flex items-center gap-1 hover:text-green-950 transition">
-                  <Link href="/pages/aboutUs">
-                    <div onClick={() => setAboutDropdownVisible(true)}>
-                      About Us
-                    </div>
-                  </Link>
-                </div>
-                {/* Dropdown Menu */}
-                {aboutDropdownVisible && (
-                  <div
-                    onMouseLeave={() => setAboutDropdownVisible(false)}
-                    className="absolute text-base left-0 top-20  w-40 bg-white shadow-custom-xl rounded-lg py-2"
-                  >
-                    <Link
-                      href="/pages/aboutUs/ourBeliefs"
-                      className="block px-4 py-2 hover:bg-gray-100"
-                    >
-                      <div
-                        onClick={() => {
-                          setMobileMenuVisible(false);
-                          setAboutDropdownVisible(false);
-                        }}
-                      >
-                        Our Belief{" "}
-                      </div>
-                    </Link>
-                    <Link
-                      href="/pages/aboutUs/ourCongregation"
-                      className="block px-4 py-2 hover:bg-gray-100"
-                    >
-                      <div
-                        onClick={() => {
-                          setMobileMenuVisible(false);
-                          setAboutDropdownVisible(false);
-                        }}
-                      >
-                        {" "}
-                        Our Congregation
-                      </div>
-                    </Link>
-                    <Link
-                      href="/pages/aboutUs/ourWorship"
-                      className="block px-4 py-2 hover:bg-gray-100"
-                    >
-                      <div
-                        onClick={() => {
-                          setMobileMenuVisible(false);
-                          setAboutDropdownVisible(false);
-                        }}
-                      >
-                        Our Worship{" "}
-                      </div>
-                    </Link>
-                    <Link
-                      href="/pages/aboutUs/theMinister"
-                      className="block px-4 py-2 hover:bg-gray-100"
-                    >
-                      <div
-                        onClick={() => {
-                          setMobileMenuVisible(false);
-                          setAboutDropdownVisible(false);
-                        }}
-                      >
-                        The Minister{" "}
-                      </div>
-                    </Link>
-                  </div>
-                )}{" "}
-                <Link
-                  href="/pages/lessons"
-                  className="hover:text-gray-950 transition hover:bg-gray-100"
-                >
-                  <div onClick={() => setMobileMenuVisible(false)}>Lessons</div>
-                </Link>
-                <Link
-                  href="/pages/contactUs"
-                  className="hover:text-gray-950 transition hover:bg-gray-100"
-                >
-                  <div onClick={() => setMobileMenuVisible(false)}>
-                    Get in Touch
-                  </div>
-                </Link>
-                {/* M Button */}
                 <button
-                  onClick={() => setMoreDropdownVisible(true)}
-                  className="flex items-center gap-1 hover:text-green-950 transition"
+                  type="button"
+                  onClick={() => setOpenMenu(openMenu === "more" ? null : "more")}
+                  className="flex w-full items-center justify-between rounded-xl px-4 py-3 text-left font-semibold text-[#17261f] hover:bg-[#f7f8f5]"
                 >
-                  More{" "}
+                  More <ChevronDown size={18} className={openMenu === "more" ? "rotate-180 transition" : "transition"} />
                 </button>
-                {/* Dropdown Menu */}
-                {moreDropdownVisible && (
-                  <div
-                    onMouseLeave={() => setMoreDropdownVisible(false)}
-                    className="absolute left-0 top-48 mt-2 text-base w-40 bg-white shadow-custom-xl rounded-lg py-2"
-                  >
-                    <Link
-                      href="/pages/more/gallery1"
-                      className="block px-4 py-2 hover:bg-gray-100"
-                    >
-                      <div
-                        onClick={() => {
-                          setMobileMenuVisible(false);
-                          setMoreDropdownVisible(false);
-                        }}
-                      >
-                        Gallery
-                      </div>
-                    </Link>
-                    <Link
-                      href="/pages/more/theMinistry"
-                      className="block px-4 py-2 hover:bg-gray-100"
-                    >
-                      <div
-                        onClick={() => {
-                          setMobileMenuVisible(false);
-                          setMoreDropdownVisible(false);
-                        }}
-                      >
-                        The Ministry
-                      </div>
-                    </Link>
-                    <Link
-                      href="/pages/more/ourHistory"
-                      className="block px-4 py-2 hover:bg-gray-100"
-                    >
-                      <div
-                        onClick={() => {
-                          setMobileMenuVisible(false);
-                          setMoreDropdownVisible(false);
-                        }}
-                      >
-                        The Church History
-                      </div>
-                    </Link>
-                    <Link
-                      href="/pages/more/support"
-                      className="block px-4 py-2 hover:bg-gray-100"
-                    >
-                      <div
-                        onClick={() => {
-                          setMobileMenuVisible(false);
-                          setMoreDropdownVisible(false);
-                        }}
-                      >
-                        Support Us{" "}
-                      </div>
-                    </Link>
+                {openMenu === "more" && (
+                  <div className="ml-4 border-l-2 border-[#e4c47d] pl-3">
+                    {moreLinks.map((item) => (
+                      <Link key={item.href} href={item.href} onClick={closeMenu} className="block rounded-lg px-3 py-2 text-sm text-[#66716b] hover:bg-[#f7f8f5] hover:text-[#196f00]">
+                        {item.label}
+                      </Link>
+                    ))}
                   </div>
-                )}{" "}
+                )}
+                <Link href="/pages/contactUs" onClick={closeMenu} className="mt-3 block rounded-full bg-[#e4c47d] px-5 py-3 text-center font-semibold text-[#17261f]">
+                  Get in touch
+                </Link>
               </div>
-            </div>
+            </nav>
           )}
-        </div>
+        </header>
 
-        <main className="bg-[#fff]">{children}</main>
+        <main className="bg-white pt-20">{children}</main>
         <div className="bg-black">
           <Footer />
         </div>

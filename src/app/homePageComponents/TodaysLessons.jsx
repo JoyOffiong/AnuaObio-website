@@ -1,6 +1,8 @@
 "use client";
 
 import Image from "next/image";
+import Link from "next/link";
+import { ArrowRight, BookOpen, CalendarDays } from "lucide-react";
 import React, { useEffect, useRef, useState } from "react";
 import image from "../../../public/images/GodsSufficiency.jpg";
 import image2 from "../../../public/images/Godsplan.jpg";
@@ -48,60 +50,73 @@ function Lessons() {
   }, []);
 
   return (
-    <div
+    <section
       ref={sectionRef}
-      className={`font-inter my-20 transform transition-all duration-700 ${
+      className={`my-20 font-inter transition-all duration-700 lg:my-28 ${
         isVisible ? "opacity-100 translate-y-0" : "opacity-0 translate-y-10"
       }`}
     >
-      <div className="text-center">
-        <p className="font-bold md:text-5xl text-3xl mb-10">
-          Today&apos;s Lessons
-        </p>
-      </div>
-      <div className="bg-[#f7f7f7] py-14">
-        <div>
-          {lessons.map((lesson, index) => {
-            const { img, title, date, bibleTexts, link } = lesson;
-            return (
-              <div
-                key={index}
-                className="px-6 md:mx-44 mx-auto items-center gap-4"
-              >
-                {/* Image */}
-                <div className="flex flex-col md:flex-col lg:flex-row my-10 gap-4 md:gap-16">
+      <div className="mx-auto max-w-7xl px-6 sm:px-10 lg:px-16">
+        <div className="mb-10 flex flex-col justify-between gap-5 md:flex-row md:items-end">
+          <div>
+           
+            <h2 className="text-4xl font-bold tracking-tight text-[#17261f] sm:text-5xl">
+              Today&apos;s lessons
+            </h2>
+          </div>
+          <p className="max-w-md text-base leading-7 text-[#66716b]">
+            Take time to study, reflect, and discover how God&apos;s word
+            speaks into everyday life.
+          </p>
+        </div>
+
+        <div className="grid gap-6 lg:grid-cols-2">
+          {lessons.map(({ img, title, date, bibleTexts, link }) => (
+            <article
+              key={title}
+              className="group overflow-hidden rounded-3xl border border-[#e1e8e1] bg-white shadow-[0_12px_35px_rgba(25,49,35,0.06)] transition duration-300 hover:-translate-y-1 hover:shadow-[0_20px_45px_rgba(25,49,35,0.12)]"
+            >
+              <Link href={link} className="block">
+                <div className="relative h-64 overflow-hidden sm:h-72">
                   <Image
                     src={img}
-                    alt="churchImage"
-                    width={500}
-                    height={500}
-                    className="rounded-xl shadow-custom-xl"
+                    alt={title}
+                    fill
+                    sizes="(max-width: 1024px) 100vw, 50vw"
+                    className="object-cover transition duration-500 group-hover:scale-105"
                   />
-
-                  {/* Texts */}
-                  <div className="space-y-4 w-full md:w-6/12">
-                    <p className="md:text-6xl leading-loose text-2xl font-bold">
-                      {title}
-                    </p>
-                    <p className="md:w-1/2 w-full text-2xl leading-tight font-bold">
-                      {date}
-                    </p>
-                    <p className="md:w-2/3 w-full leading-tight text-3xl font-medium text-[#888888]">
-                      {bibleTexts}
-                    </p>
-                    <div className="mt-2">
-                      <button className="bg-[#222222] text-base drop-shadow-xl flex items-center text-white gap-2 rounded-md font-semibold px-3 py-2 transform hover:scale-110 mt-5 hover:bg-green-900 transition-all duration-300 hover:text-white">
-                        <a href={link}>Read More</a>
-                      </button>
-                    </div>
+                  <div className="absolute inset-0 bg-gradient-to-t from-[#081c15]/70 via-transparent to-transparent" />
+                  <div className="absolute bottom-5 left-5 inline-flex items-center gap-2 rounded-full bg-white/90 px-3 py-2 text-xs font-semibold text-[#17261f]">
+                    <CalendarDays size={14} />
+                    {date}
                   </div>
                 </div>
-              </div>
-            );
-          })}
+
+                <div className="p-6 sm:p-8">
+                  <div className="flex items-center gap-2 text-sm font-semibold text-[#4ca233]">
+                    <BookOpen size={17} />
+                    Bible study
+                  </div>
+                  <h3 className="mt-4 max-w-lg text-2xl font-bold leading-tight text-[#17261f] sm:text-3xl">
+                    {title}
+                  </h3>
+                  <p className="mt-4 text-base leading-7 text-[#66716b]">
+                    {bibleTexts}
+                  </p>
+                  <span className="mt-7 inline-flex items-center gap-2 font-semibold text-[#196f00]">
+                    Read the lesson
+                    <ArrowRight
+                      size={18}
+                      className="transition-transform group-hover:translate-x-1"
+                    />
+                  </span>
+                </div>
+              </Link>
+            </article>
+          ))}
         </div>
       </div>
-    </div>
+    </section>
   );
 }
 

@@ -6,16 +6,19 @@ type Props = {};
 
 function WarningAgainstInfidelity({}: Props) {
   return (
-    <div className="font-inter my-24 space-y-6 md:my-32 mx-6 md:mx-32 ">
+    <div className="mx-auto max-w-5xl px-6 pb-20 pt-28 font-inter sm:px-10 lg:px-16">
       <BackButton />
 
-      <div className="flex flex-col gap-y-6 justify-center items-center h-full">
-        <div className="text-b text-center md:w-2/3 z-20 w-full">
-          <p className="font-bold uppercase text-xl md:text-5xl">
+      <header className="mt-8 border-b border-[#e4c47d]/50 pb-10 text-center space-y-2">
+        <p className="text-sm font-bold uppercase tracking-[0.2em] text-[#4ca233]">
+          Bible teaching
+        </p>
+      
+          <p className="text-3xl text-center font-bold uppercase leading-tight text-[#17261f] md:text-5xl">
             Warnings Against Infidelity
           </p>
-        </div>
-        <div className="space-y-4 text-[#888888]">
+       
+        <div className="space-y-2 text-sm text-[#66716b]">
           <p>Nov. 12th, 2025</p>
           <p>By Bro. Effiong Udoekong</p>
         </div>
@@ -28,12 +31,12 @@ function WarningAgainstInfidelity({}: Props) {
             className="h-[200px] max-w-full rounded-3xl object-cover"
           />{" "}
         </div> */}
-        <div className="font-semibold">
+        <div className="font-semibold italic text-[#196f00]">
           <em>Proverbs 5:1-22</em>
         </div>
-      </div>
+      </header>
 
-      <div className="text-[#000000] space-y-4">
+      <article className="mt-12 rounded-3xl border border-[#e1e8e1] bg-white p-6 text-[#303b35] shadow-[0_12px_35px_rgba(25,49,35,0.06)] sm:p-10">
         <div className="space-y-4 ">
           <p className="font-bold text-lg">A. Introduction</p>
           <p>
@@ -121,7 +124,7 @@ function WarningAgainstInfidelity({}: Props) {
             right partner. God bless you.
           </p>
         </div>
-      </div>
+      </article>
     </div>
   );
 }

@@ -1,51 +1,54 @@
 import { ArrowRight } from "lucide-react";
-import React from "react";
+import Link from "next/link";
 
-type Props = {};
-
-function JoinUsToday({}: Props) {
+function JoinUsToday() {
   return (
-    <div className="flex my-20 items-center w-full flex-col  md:space-x-24 md:gap-0 gap-y-6  md:flex-row">
-      <div
-        className="w-full hidden md:block  md:w-1/2 bg-cover bg-center md:rounded-tr-2xl md:rounded-br-2xl relative z-10 font-sans"
-        style={{
-          backgroundImage: "url('/images/churchpix6.jpeg')",
-          height: "700px",
-        }}
-      >
-        <div className="absolute inset-0 bg-[#f3bb44] md:rounded-tr-xl md:rounded-br-xl opacity-30"></div>
-      </div>
+    <section className="my-20 overflow-hidden bg-[#17261f] lg:my-28">
+      <div className="mx-auto grid max-w-7xl items-stretch lg:grid-cols-[0.95fr_1.05fr]">
+        <div
+          className="relative min-h-[420px] bg-cover bg-center lg:min-h-[620px]"
+          style={{ backgroundImage: "url('/images/churchpix6.jpeg')" }}
+        >
+          <div className="absolute inset-0 bg-gradient-to-t from-[#081c15]/80 via-[#173326]/15 to-[#d7b56d]/20" />
+          
+        </div>
 
-      <div className="flex md:justify-left justify-center w-full md:w-1/2 md:px-10 px-6">
-        <div className="space-y-6">
-          <p className="text-[#333333] font-bold text-center md:text-left text-3xl md:text-5xl leading-tight">
-            <span>Here at the</span>
-            <br />
-            <span>CHURCH OF CHRIST,</span>
-            <br />
-            <span className="text-3xl">Anua Obio, Uyo</span>
-          </p>
-
-          <p className="text-xl md:text-2xl leading-normal font-medium text-[#888888] w-full">
+        <div className="flex items-center px-6 py-14 sm:px-10 lg:px-16 lg:py-20">
+          <div className="max-w-xl">
+           
+            <h2 className="text-4xl font-bold leading-normal tracking-[-0.03em] text-white sm:text-5xl">
+Here at the <br />
+CHURCH OF CHRIST,
+Anua Obio, Uyo            </h2>
+            <p className="mt-7 text-base leading-7 text-white/70 sm:text-lg sm:leading-8">
             Our goal is to worship God in Spirit & Truth. Our worship is
             organized in order to offer God an acceptable worship each time we
             meet. Our items of worship includes: Singing, Praying, Teaching,
             Sermon, Communion and Giving.
-          </p>
+            </p>
 
-          <div className="flex justify-center md:justify-start gap-4">
-            <button className="px-2 md:px-3 py-2 md:py-3 font-semibold drop-shadow-xl rounded-md hover:bg-green-900 transition-all duration-300 transform hover:scale-110 text-base text-white bg-[#222222]">
-              <a href="/pages/more/theMinistry">Our Ministry</a>
-            </button>
-
-            <button className="shadow-md px-2 md:px-3 py-2 md:py-3 flex items-center gap-x-2 border border-black font-semibold rounded-md text-sm text-[#222222] transform hover:scale-110 transition-all duration-300">
-              <a href="/pages/aboutUs/ourWorship">Learn More</a>
-              <ArrowRight size={18} />
-            </button>
+            <div className="mt-9 flex flex-col gap-3 sm:flex-row">
+              <Link
+                href="/pages/more/theMinistry"
+                className="inline-flex items-center justify-center rounded-full bg-[#e4c47d] px-6 py-3.5 font-semibold text-[#173326] transition hover:bg-white focus:outline-none focus:ring-2 focus:ring-[#e4c47d] focus:ring-offset-2 focus:ring-offset-[#17261f]"
+              >
+                Our ministry
+              </Link>
+              <Link
+                href="/pages/aboutUs/ourWorship"
+                className="group inline-flex items-center justify-center gap-2 rounded-full border border-white/35 px-6 py-3.5 font-semibold text-white transition hover:border-white hover:bg-white hover:text-[#173326] focus:outline-none focus:ring-2 focus:ring-white focus:ring-offset-2 focus:ring-offset-[#17261f]"
+              >
+                Learn more
+                <ArrowRight
+                  size={18}
+                  className="transition-transform group-hover:translate-x-1"
+                />
+              </Link>
+            </div>
           </div>
         </div>
       </div>
-    </div>
+    </section>
   );
 }
 

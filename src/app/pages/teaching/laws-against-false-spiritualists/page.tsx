@@ -6,31 +6,32 @@ type Props = {};
 
 function LawsAgainstFalseSpiritualists({}: Props) {
   return (
-    <div className="font-inter my-24 space-y-6 md:my-32 mx-6 md:mx-32 ">
+    <div className="mx-auto max-w-5xl px-6 pb-20 pt-28 font-inter sm:px-10 lg:px-16">
       <BackButton />
 
-      <div className="flex flex-col gap-y-6 justify-center items-center h-full">
-        <div className="text-b text-center md:w-2/3 z-20 w-full">
-          <p className="font-bold uppercase text-xl md:text-5xl">
+      <header className="mt-8 border-b border-[#e4c47d]/50 pb-10 text-center space-y-2">
+        <p className="text-sm font-bold uppercase tracking-[0.2em] text-[#4ca233]">
+          Bible teaching
+        </p>
+          <p className="text-3xl font-bold uppercase leading-tight text-[#17261f] md:text-5xl">
 Laws Against False Spiritualists          </p>
-        </div>
-        <div className="space-y-4 text-[#888888]">
+        <div className="space-y-2 text-sm text-[#66716b]">
           <p>May 18th, 2025</p>
           <p>By Bro. Effiong Udoekong</p>
         </div>
       
       
-      </div>
+      </header>
 
-      <div className="text-[#000000] space-y-4">
+      <article className="mt-12 rounded-3xl border border-[#e1e8e1] bg-white p-6 text-[#303b35] shadow-[0_12px_35px_rgba(25,49,35,0.06)] sm:p-10">
         <div className="space-y-4 ">
-          <p className="font-bold text-lg">A. Introduction</p>
+          <p className="font-bold text-lg pt-2">A. Introduction</p>
           <p>
 Who is a spiritualist? He who believes that the spirit of the dead can communicate with the living. He consults the spirit of the dead. He is one possessed by the spirit of the dead.           </p>
           
         </div>
         <div className="space-y-2">
-          <p className="font-bold text-lg">B. Synonyms/ related terms </p>
+          <p className="font-bold text-lg pt-2">B. Synonyms/ related terms </p>
          <ul className="list-disc list-inside space-y-2">
   <li>Medium – 1 Sam. 28:3</li>
   <li>Witch / Wizard</li>
@@ -53,7 +54,7 @@ Who is a spiritualist? He who believes that the spirit of the dead can communica
 
         </div>
         <div className="space-y-2">
-          <p className="font-bold text-lg">C. Why do people turn to spiritualism / engage in it?</p>
+          <p className="font-bold text-lg pt-2">C. Why do people turn to spiritualism / engage in it?</p>
 
          <ul className="list-disc list-inside space-y-2">
   <li>Fear – 1 Sam. 28:5</li>
@@ -72,7 +73,7 @@ Who is a spiritualist? He who believes that the spirit of the dead can communica
         </div>
 
         <div className="space-y-2">
-          <p className="font-bold text-lg">D. Warnings / Consequences</p>
+          <p className="font-bold text-lg pt-2">D. Warnings / Consequences</p>
 
          <ul className="list-disc list-inside space-y-2">
   <li>Death (cut off from God&apos;s people)</li>
@@ -109,7 +110,7 @@ Who is a spiritualist? He who believes that the spirit of the dead can communica
         </div>
 
          <div className="space-y-2">
-          <p className="font-bold text-lg">E. Beware of modern-day practices/ items bordering on spiritism.</p>
+          <p className="font-bold text-lg pt-2">E. Beware of modern-day practices/ items bordering on spiritism.</p>
 
          <ul className="list-disc list-inside space-y-2">
   <li>Yahoo, yahoo</li>
@@ -123,13 +124,12 @@ Who is a spiritualist? He who believes that the spirit of the dead can communica
     <li>Cultism/Masquerades</li>
 </ul>
         </div>
- <div className="space-y-2">
-          <p className="font-bold text-lg">F. Conclusion</p>
+        <div className="space-y-2">
+          <p className="font-bold text-lg pt-2">F. Conclusion</p>
 <p>God&apos;s children should consult God and trust Him at all times, particularly in times of distress. Only God knows all secrets. Secret things belong to God. He reveals what he wants to reveal to us. Dan. 2:27. Do not turn to mediums and soothsayers. Turn to God. God bless you. </p>
         </div>
 
-        
-      </div>
+    </article>
     </div>
   );
 }

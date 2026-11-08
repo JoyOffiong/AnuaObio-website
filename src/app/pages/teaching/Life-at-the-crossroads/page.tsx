@@ -6,23 +6,24 @@ type Props = {};
 
 function LifeAtTheCrossRoads({}: Props) {
   return (
-    <div className="font-inter my-24 space-y-6 md:my-32 mx-6 md:mx-32 ">
+    <div className="mx-auto max-w-5xl px-6 pb-20 pt-28 font-inter sm:px-10 lg:px-16">
       <BackButton />
 
-      <div className="flex flex-col gap-y-6 justify-center items-center h-full">
-        <div className="text-b text-center md:w-2/3 z-20 w-full">
-          <p className="font-bold uppercase text-xl md:text-5xl">
+      <header className="mt-8 border-b border-[#e4c47d]/50 pb-10 text-center space-y-2">
+        <p className="text-sm font-bold uppercase tracking-[0.2em] text-[#4ca233]">
+          Bible teaching
+        </p>
+          <p className="text-3xl font-bold uppercase leading-tight text-[#17261f] md:text-5xl">
 Life at the Crossroads         </p>
-        </div>
-        <div className="space-y-4 text-[#888888]">
+        <div className="space-y-2 text-sm text-[#66716b]">
           <p>October 19th, 2025</p>
           <p>By Min E.O.Akpan</p>
         </div>
       
       
-      </div>
+      </header>
 
-      <div className="text-[#000000] space-y-4">
+      <article className="mt-12 rounded-3xl border border-[#e1e8e1] bg-white p-6 text-[#303b35] shadow-[0_12px_35px_rgba(25,49,35,0.06)] sm:p-10">
         <div className="space-y-4 ">
           <p> &quot; Enter by the narrow gates, for the gate is wide and the way is easy, that leads to destruction, and those who enter by it are many. 14 for the gate is narrow, and the way is hard that leads to life and those who find it are few&quot; (Mathew 7:13-14). </p>
           
@@ -61,7 +62,7 @@ There is always a certain dramatic quality about life, for as it has been said, 
     We have four contrasts, but only two option is either the narrow way that leads to life, or the broad way that leads to destruction.
 </p>
 <p>John R. Spott wrote. There are, according to Jesus, only two ways, hard and easy (there is no middle way), entered by to gate, broad and narrow (there is no other gate), trodden by two crowds, large and small (there is no neutral group), ending in two destinations, destruction and life (there is no third alternative)</p>
-
+ </div>
 <div className="space-y-1">
     <b> The narrow gate</b>
 
@@ -83,9 +84,9 @@ There is always a certain dramatic quality about life, for as it has been said, 
  What makes the narrow way hard to find is the existence of numerous false teachers who have their own formulas for man&apos;s welfare and who cry aloud in our own time. Choose the right way and be saved.
 </p>
 </div>
-        </div>
+       
         <div className="space-y-2">
-          <p className="font-bold text-lg">C. Why do people turn to spiritualism / engage in it?</p>
+          <p className="font-bold text-lg pt-2">C. Why do people turn to spiritualism / engage in it?</p>
 
          <ul className="list-disc list-inside space-y-2">
   <li>Fear – 1 Sam. 28:5</li>
@@ -104,7 +105,7 @@ There is always a certain dramatic quality about life, for as it has been said, 
         </div>
 
         <div className="space-y-2">
-          <p className="font-bold text-lg">D. Warnings / Consequences</p>
+          <p className="font-bold text-lg pt-2">D. Warnings / Consequences</p>
 
          <ul className="list-disc list-inside space-y-2">
   <li>Death (cut off from God&apos;s people)</li>
@@ -141,7 +142,7 @@ There is always a certain dramatic quality about life, for as it has been said, 
         </div>
 
          <div className="space-y-2">
-          <p className="font-bold text-lg">E. Beware of modern-day practices/ items bordering on spiritism.</p>
+          <p className="font-bold text-lg pt-2">E. Beware of modern-day practices/ items bordering on spiritism.</p>
 
          <ul className="list-disc list-inside space-y-2">
   <li>Yahoo, yahoo</li>
@@ -156,13 +157,14 @@ There is always a certain dramatic quality about life, for as it has been said, 
 </ul>
         </div>
  <div className="space-y-2">
-          <p className="font-bold text-lg">F. Conclusion</p>
+          <p className="font-bold text-lg pt-2">F. Conclusion</p>
 <p>God&apos;s children should consult God and trust Him at all times, particularly in times of distress. Only God knows all secrets. Secret things belong to God. He reveals what he wants to reveal to us. Dan. 2:27. Do not turn to mediums and soothsayers. Turn to God. God bless you. </p>
         </div>
 
-        
+         </article>
+     
       </div>
-    </div>
+
   );
 }
 
