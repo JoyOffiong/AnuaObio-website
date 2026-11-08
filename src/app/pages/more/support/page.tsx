@@ -1,51 +1,41 @@
-"use client"
-
-import React, {useRef, useEffect, useState} from 'react'
-import { FaHeart } from 'react-icons/fa'
+import { Heart, Landmark } from "lucide-react";
 
 function Support() {
-    const [isVisible, setIsVisible] = useState(false);
-      const sectionRef = useRef(null);
-  
-        useEffect(() => {
-          const observer = new IntersectionObserver(
-            ([entry]) => {
-              if (entry.isIntersecting) {
-                setIsVisible(true);
-              }
-            },
-            { threshold: 0.2 }
-          );
-      
-          if (sectionRef.current) {
-            observer.observe(sectionRef.current);
-          }
-      
-          return () => {
-            if (sectionRef.current) {
-              observer.unobserve(sectionRef.current);
-            }
-          };
-        }, []);
   return (
-    <div ref={sectionRef} className={`font-inter text-center transform transition-all duration-700 ${
-        isVisible ? "opacity-100 translate-y-0" : "opacity-0 translate-y-10"
-      }`}>
- <div className='my-10 mx-6 md:mx-40 font-inter'>
-      <div className='my-40'>
-        <p className='my-5 text-center flex flex-row justify-center'><FaHeart size={48} color='#000000'/>
-        </p>
-        <p className='font-bold text-4xl text-center md:text-7xl'>Support our Ministry</p>
-        <p className='mt-10 text-[#666666] text-base text-justify font-medium leading-6'>Calvary greetings to you in the name of our Lord and Saviour, Jesus Christ. <br /> We invite you to support our church community. Your generous contributions will help enhance our programs and improve our worship facilities, creating a vibrant space for all. <br /> Every donation, no matter the size, makes a difference. We encourage you to partner with us through one-time gifts or regular contributions. We appreciate your commitment to our church family and thank you for your generosity. May God bless you abundantly as you respond to this call. <br /> Please send your donations to the Church account details below. Thank you for being a part of this important work!</p>
-        <p className='mt-10 font-extrabold text-center text-[#001122] text-3xl'>
-          A/C NAME: CHURCH OF CHRIST UYO <br /> AC/NO. 0146796011 <br /> BANK NAME: FCMB</p>
-      </div>
-    </div>
-    </div>
-   
-  )
+    <main className="min-h-screen bg-[#f7f8f5] px-6 pb-20 pt-28 font-inter sm:px-10 lg:px-16">
+      <section className="mx-auto max-w-4xl overflow-hidden rounded-3xl border border-[#e4c47d]/60 bg-white shadow-[0_12px_35px_rgba(25,49,35,0.06)]">
+        <div className="bg-[#17261f] px-6 py-12 text-center text-white sm:px-12">
+          <div className="mx-auto flex h-14 w-14 items-center justify-center rounded-full bg-[#e4c47d] text-[#17261f]">
+            <Heart size={25} fill="currentColor" />
+          </div>
+        
+          <h1 className="mt-3 text-4xl font-bold sm:text-4xl">To Support the Congregation</h1>
+        </div>
+        <div className="space-y-8 px-6 py-10 sm:px-12">
+          <p className="text-center leading-8 text-[#66716b]">
+            Calvary greetings to you in the name of our Lord and Saviour, Jesus
+            Christ. We invite you to support our church community. Your generous
+            contributions help enhance our programmes and worship facilities,
+            creating a vibrant space for all.
+          </p>
+          
+          <div className="rounded-2xl border border-[#e4c47d] bg-[#fffaf0] p-6 text-center">
+            <Landmark className="mx-auto text-[#d0a94f]" size={28} />
+            <h2 className="mt-4 text-xl font-bold text-[#17261f]">
+              Church account details
+            </h2>
+            <p className="mt-4 leading-8 text-[#66716b]">
+              <strong>Account name:</strong> Church of Christ Uyo
+              <br />
+              <strong>Account number:</strong> 0146796011
+              <br />
+              <strong>Bank:</strong> FCMB
+            </p>
+          </div>
+        </div>
+      </section>
+    </main>
+  );
 }
 
-export default Support
-
-
+export default Support;

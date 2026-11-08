@@ -1,72 +1,47 @@
-"use client";
-import Image from 'next/image';
-import React, { useEffect, useRef, useState } from 'react';
+import Image from "next/image";
+import Link from "next/link";
 
-const images = [
-    { img: "/images/img1.jpeg" },
-    { img: "/images/img2.jpeg" },
-    { img: "/images/img3.jpeg" }
-];
+const images = ["/images/img1.jpeg", "/images/img2.jpeg", "/images/img3.jpeg"];
 
-function Gallery1() {
-    const [isVisible, setIsVisible] = useState(false);
-    const sectionRef = useRef(null);
-
-    useEffect(() => {
-        const observer = new IntersectionObserver(
-            ([entry]) => {
-                if (entry.isIntersecting) {
-                    setIsVisible(true);
-                }
-            },
-            { threshold: 0.2 }
-        );
-
-        if (sectionRef.current) {
-            observer.observe(sectionRef.current);
-        }
-
-        return () => {
-            if (sectionRef.current) {
-                observer.unobserve(sectionRef.current);
-            }
-        };
-    }, []);
-
-    return (
-        <div
-            ref={sectionRef}
-            className={`font-inter my-20 mt-32 w-11/12 mx-auto transform transition-all duration-700 ${
-                isVisible ? "opacity-100 translate-y-0" : "opacity-0 translate-y-10"
-            }`}
-        >
-            {/* Image Container */}
-            <div className="w-full flex flex-wrap md:flex-nowrap gap-4 justify-center">
-                {images.map((props, index) => {
-                    const { img } = props;
-                    return (
-                        <div key={index} className="w-full md:w-1/3">
-                            <Image
-                                src={img}
-                                alt="Gallery Image"
-                                width={400} // Adjust based on preference
-                                height={300} // Adjust based on preference
-                                className="w-full h-auto"
-                                style={{ objectFit: "cover" }}
-                            />
-                        </div>
-                    );
-                })}
-            </div>
-
-            {/* Button */}
-            <div className="mt-6 text-center flex justify-center">
-                <button className="bg-black shadow-xl flex items-center text-white gap-2 rounded-lg px-8 py-2 transform hover:scale-110 mt-5 hover:bg-green-900 transition-all duration-300 hover:text-white">
-                    <a href="./gallery">See all</a>
-                </button>
-            </div>
+function GalleryPreview() {
+  return (
+    <section className="bg-[#f7f8f5] px-6 pb-16 pt-28 font-inter sm:px-10 lg:px-16">
+      <div className="mx-auto max-w-6xl">
+        <div className="flex flex-col justify-between gap-5 sm:flex-row sm:items-end">
+          <div>
+            <p className="text-sm font-bold uppercase tracking-[0.2em] text-[#4ca233]">
+              Moments together
+            </p>
+            <h1 className="mt-3 text-3xl font-bold text-[#17261f] sm:text-5xl">
+              Church life in pictures
+            </h1>
+          </div>
+          <Link
+            href="/pages/more/gallery"
+            className="w-fit rounded-full border border-[#e4c47d] px-5 py-3 text-sm font-bold text-[#17261f] transition hover:bg-[#e4c47d]"
+          >
+            View full gallery
+          </Link>
         </div>
-    );
+        <div className="mt-10 grid gap-5 md:grid-cols-3">
+          {images.map((src, index) => (
+            <div
+              key={src}
+              className="group relative h-72 overflow-hidden rounded-3xl border border-[#e4c47d]/60 bg-white p-2 shadow-[0_12px_35px_rgba(25,49,35,0.06)]"
+            >
+              <Image
+                src={src}
+                alt={`Church gallery image ${index + 1}`}
+                fill
+                sizes="(max-width: 768px) 100vw, 33vw"
+                className="rounded-2xl object-cover transition duration-500 group-hover:scale-105"
+              />
+            </div>
+          ))}
+        </div>
+      </div>
+    </section>
+  );
 }
 
-export default Gallery1;
+export default GalleryPreview;

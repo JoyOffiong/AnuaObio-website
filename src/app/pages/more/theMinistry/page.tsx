@@ -1,138 +1,103 @@
-"use client"
+"use client";
 
-import React , { useRef, useState , useEffect} from "react";
+import { Heart, Megaphone, Sparkles, Users } from "lucide-react";
 
-function OurMinstry() {
+const ministries = [
+  {
+    title: "Evangelism",
+    icon: Megaphone,
+    description:
+      "We reach people in hospitals, prisons, overseas, and our local community with a message of hope and love. Through Bible studies and outreach, we welcome those who are searching and help new believers grow in faith.",
+  },
+  {
+    title: "Edification",
+    icon: Sparkles,
+    description:
+      "We nurture spiritual growth and maturity through gatherings, prayer meetings, and programmes for men, women, and youth. These opportunities help members discover their God-given roles, grow as leaders, and support one another.",
+  },
+  {
+    title: "Benevolence",
+    icon: Heart,
+    description:
+      "We care for people in our church and wider community by supporting those facing difficult seasons. Through visits, encouragement, and practical help, we share hope and remind one another that no one is alone.",
+  },
+];
 
-    const [isVisible, setIsVisible] = useState(false);
-    const sectionRef = useRef(null);
+const salvationSteps = [
+  ["Hear the Gospel", "Romans 10:17"],
+  ["Believe the Gospel", "Hebrews 11:6"],
+  ["Repent of your sins", "Luke 13:3"],
+  ["Confess Christ", "Matthew 10:32"],
+  ["Be baptized", "Romans 6:3-4"],
+];
 
-      useEffect(() => {
-        const observer = new IntersectionObserver(
-          ([entry]) => {
-            if (entry.isIntersecting) {
-              setIsVisible(true);
-            }
-          },
-          { threshold: 0.2 }
-        );
-    
-        if (sectionRef.current) {
-          observer.observe(sectionRef.current);
-        }
-    
-        return () => {
-          if (sectionRef.current) {
-            observer.unobserve(sectionRef.current);
-          }
-        };
-      }, []);
-
+function OurMinistry() {
   return (
-    <div className="font-inter mt-16">
-      <div className="px-8 md:px-32 py-16">
-
-        <div className={`font-inter text-center transform transition-all duration-700 ${
-        isVisible ? "opacity-100 translate-y-0" : "opacity-0 translate-y-10"
-      }`}   ref={sectionRef}        >
-          <p className="font-bold md:text-4xl text-3xl mb-10 ">
+    <main className="min-h-screen bg-[#f7f8f5] pb-20 font-inter">
+      <header className="px-6 pb-12 pt-28 text-center sm:px-10 lg:px-16">
+        <div className="mx-auto max-w-4xl border-b border-[#e4c47d]/60 pb-10">
+        
+        
+          <h1 className="mt-4 text-4xl font-bold uppercase leading-tight tracking-tight text-[#17261f] sm:text-6xl">
             The Ministry
+          </h1>
+          <p className="mx-auto mt-5 max-w-2xl text-base leading-7 text-[#66716b] sm:text-lg">
+            Serving God and our community through evangelism, edification, and
+            benevolence.
           </p>
-        </div>  
-
-        <div className="md:space-y-24 space-y-12">
-          <div className={`font-inter transform transition-all duration-700 flex md:flex-row flex-col items-center space-y-4 w-full md:w-1/2  mx-auto ${
-        isVisible ? "opacity-100 translate-y-0" : "opacity-0 translate-y-10 flex md:flex-row flex-col items-center space-y-4 w-full md:w-1/2  mx-auto"
-      }`}      ref={sectionRef}
-          >
-              <div >
-                <div className="md:w-10/12 w-full text-center md:text-right">
-                <em className="text-[#333333]  font-semibold  text-xl md:text-2xl">
-              Our Ministries are structured based on the work of church which
-              includes:
-            </em>
-                </div>
-         
-              </div>
-            
-            <div className="text-[#757575] flex md:w-1/2 justify-center text-center md:text-left w-full flex-col gap-y-2 font-medium text-base md:text-xl">
-              <p>Evangelism</p>
-              <p>Edification</p>
-              <p>Benevolence</p>
-            </div>
-          </div>
-
-<div className={` font-inter transform transition-all space-y-8 duration-700 ${
-        isVisible ? "opacity-100 translate-y-0" : "opacity-0 translate-y-10"
-      }`}>
-<div className="space-y-4 ">
-            <p className="text-[#333333] text-xl md:text-2xl font-bold text-center">Evangelism</p>
-
-            <p className="text-[#666666] text-base font-medium">
-              We are all about reaching out to people in different places,
-              whether it&apos;s hospitals, prisons, or even overseas, to spread a
-              message of hope and love. We make it a point to connect with
-              everyone who visits or contacts us, making sure they feel at home
-              and supported on their salvation journey. To help new believers
-              grow, we usually have a Bible study program that helps them dive
-              deeper into what Scripture has to say. On top of that, we&apos;ve
-              created an exciting outreach program designed to engage with our
-              community and welcome those who are searching for answers. Our
-              goal is to share the good news and help everyone grow in their
-              faith.{" "}
-            </p>
-          </div>
-          
-          <div className="space-y-4">
-            <p className="text-[#333333] text-xl md:text-2xl font-bold text-center">Edification</p>
-
-            <p className="text-[#666666] text-base font-medium">
-            The Church of Christ Abua Obio is dedicated to the edification of its congregation through various programs and initiatives aimed at spiritual growth and maturity. The church actively mobilizes men, women, and youth to fulfill their God-given roles both at home and in the church. Through tailored gatherings and events, the church fosters leadership development among men and guides women in fulfilling their divine purpose. Youth programs are designed to nurture the next generation into becoming the Christian individuals that God desires. Additionally, the church organizes prayer meetings, ensuring that members in need receive support through prayer. The church also maintains comprehensive financial and administrative records to ensure accountability and transparency. By providing a well-equipped worship space and facilitating essential health checks, the Church of Christ Abua Obio is committed to the holistic growth and well-being of its members, promoting a strong and supportive faith community.
-            </p>
-          </div>
-
-          <div className="space-y-4">
-            <p className="text-[#333333] text-xl md:text-2xl font-bold text-center">Benevolence</p>
-
-            <p className="text-[#666666] text-base font-medium">
-            The Church of Christ Abua Obio really focuses on helping those in need, both within our church and in the wider community. We always seek to help those in need through various means, doing what we can to support people facing tough times. We also make an effort to visit and encourage those who might be feeling down or struggling physically. It&apos;s all about coming together to lift each other up and share hope and faith with everyone who could use a little extra help.
-            </p>
-          </div>
-
-          <div className=" space-y-10 justify-center">
-            <p className="text-[#333333] text-xl md:text-2xl font-bold  text-center">The Plan of salvation
-            </p>
-
-            <p className="text-[#666666] w-full mx-auto md:w-7/12 text-xl font-medium text-center ">
-            We&apos;ve left this here because we will always seek to share goodness with you, so
-            </p>
-
-            <div>
-            <p className="text-[#666666] font-medium text-center text-xl">
-                Hear the Gospel <span className="font-bold">– Romans 10:17</span>
-            </p>
-            <p className="text-[#666666] font-medium text-center text-xl">
-                Believe the Gospel <span className="font-bold">—Hebrews 11:6</span>
-            </p>
-            <p className="text-[#666666] font-medium text-center text-xl">
-            Repent of your Sins <span className="font-bold">—-Luke 13:3</span>
-            </p>
-            <p className="text-[#666666] font-medium text-center text-xl">
-            Confess Christ <span className="font-bold">—- Matt 10:32</span>
-            </p>
-            <p className="text-[#666666] font-medium text-center text-xl">
-            Be Baptized <span className="font-bold">—- Romans 6:3-4</span>
-            </p>
-            </div>
-            
-          </div>
-</div>
-          
         </div>
-      </div>
-    </div>
+      </header>
+
+      <section className="mx-auto max-w-6xl px-6 sm:px-10 lg:px-16">
+        <div className="mb-12 grid gap-5 md:grid-cols-3">
+          {ministries.map(({ title, icon: Icon, description }) => (
+            <article
+              key={title}
+              className="rounded-3xl border border-[#e4c47d]/60 bg-white p-7 shadow-[0_12px_35px_rgba(25,49,35,0.06)]"
+            >
+              <div className="flex h-12 w-12 items-center justify-center rounded-2xl bg-[#17261f] text-[#e4c47d]">
+                <Icon size={22} />
+              </div>
+              <h2 className="mt-6 text-2xl font-bold text-[#17261f]">{title}</h2>
+              <p className="mt-3 leading-7 text-[#66716b]">{description}</p>
+            </article>
+          ))}
+        </div>
+
+        <section className="rounded-3xl bg-[#17261f] px-6 py-10 text-white sm:px-10 lg:px-16">
+          <div className="flex flex-col gap-5 border-b border-white/15 pb-8 md:flex-row md:items-end md:justify-between">
+            <div>
+              <p className="text-sm font-bold uppercase tracking-[0.2em] text-[#e4c47d]">
+                Our purpose
+              </p>
+              <h2 className="mt-3 text-3xl font-bold sm:text-4xl">
+                The plan of salvation
+              </h2>
+            </div>
+            <Users className="hidden text-[#e4c47d] md:block" size={42} />
+          </div>
+          <p className="max-w-2xl py-8 leading-7 text-white/75">
+            We share the goodness of God so that everyone can respond to the
+            gospel and grow in a life of faith.
+          </p>
+          <div className="grid gap-3 sm:grid-cols-2 lg:grid-cols-5">
+            {salvationSteps.map(([step, reference], index) => (
+              <div
+                key={step}
+                className="rounded-2xl border border-[#e4c47d]/40 bg-white/5 p-4"
+              >
+                <span className="text-sm font-bold text-[#e4c47d]">
+                  0{index + 1}
+                </span>
+                <p className="mt-3 font-semibold">{step}</p>
+                <p className="mt-1 text-sm text-white/60">{reference}</p>
+              </div>
+            ))}
+          </div>
+        </section>
+      </section>
+    </main>
   );
 }
 
-export default OurMinstry;
-
+export default OurMinistry;
