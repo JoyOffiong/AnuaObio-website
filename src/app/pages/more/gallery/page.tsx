@@ -17,14 +17,12 @@ function Gallery() {
   return (
     <main className="min-h-screen bg-[#f7f8f5] px-6 pb-20 pt-28 font-inter sm:px-10 lg:px-16">
       <header className="mx-auto max-w-4xl border-b border-[#e4c47d]/60 pb-10 text-center">
-        <p className="text-sm font-bold uppercase tracking-[0.2em] text-[#4ca233]">
-          Life together
-        </p>
+     
         <h1 className="mt-4 text-4xl font-bold uppercase text-[#17261f] sm:text-6xl">
           Gallery
         </h1>
         <p className="mx-auto mt-5 max-w-2xl leading-7 text-[#66716b]">
-          A glimpse into worship, fellowship, and service at Anua Obio.
+          A glimpse into worship, fellowship, and service at the Church of Christ, Anua Obio.
         </p>
       </header>
       <section className="mx-auto mt-12 max-w-7xl">

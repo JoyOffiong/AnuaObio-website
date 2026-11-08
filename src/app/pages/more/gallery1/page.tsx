@@ -12,9 +12,7 @@ function GalleryPreview() {
             <p className="text-sm font-bold uppercase tracking-[0.2em] text-[#4ca233]">
               Moments together
             </p>
-            <h1 className="mt-3 text-3xl font-bold text-[#17261f] sm:text-5xl">
-              Church life in pictures
-            </h1>
+           
           </div>
           <Link
             href="/pages/more/gallery"
