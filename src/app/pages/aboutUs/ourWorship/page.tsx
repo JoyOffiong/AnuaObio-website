@@ -28,9 +28,17 @@ function OurWorship() {
   }, []);
 
   return (
-    <div>
-      <div className="mt-28 mb-20 font-inter">
-        <div className="text-left mx-auto px-6 md:w-9/12 w-full">
+    <main className="min-h-screen bg-[#f7f8f5] px-6 pb-20 pt-28 font-inter sm:px-10 lg:px-16">
+      <div className="mx-auto max-w-5xl">
+        <header className="border-b border-[#e4c47d]/50 pb-10 text-center">
+          <p className="text-sm font-bold uppercase tracking-[0.2em] text-[#4ca233]">
+            About our church
+          </p>
+          <h1 className="mt-4 text-4xl font-bold leading-tight tracking-tight text-[#17261f] sm:text-6xl">
+            What&apos;s our worship like?
+          </h1>
+        </header>
+        <div className="mt-12 space-y-6">
           <div
             ref={sectionRef}
             className={`font-inter text-left transform transition-all duration-700 ${
@@ -40,18 +48,15 @@ function OurWorship() {
             }`}
           >
             <div>
-              <p className="font-bold  px-0 text-2xl pt-6 md:text-5xl mb-6">
-                What&apos;s our worship like?
-              </p>
-
-              <div className="text-[#888888] font-medium text-2xl">
+              <div className="rounded-3xl border border-[#e1e8e1] bg-white p-6 text-[#4d5b52] shadow-[0_12px_35px_rgba(25,49,35,0.06)] sm:p-10">
+                <div className="text-lg font-normal leading-8">
                 <p>
                   We use only what we find in the New Testament to guide our
                   group worship
                 </p>
 
                 <div>
-                  <ul className="list-disc text-2xl pl-6">
+                  <ul className="list-disc text-lg space-y-2 pl-6">
                     <li className="pl-4">
                       Preaching and Teaching the Word of God
                     </li>
@@ -68,18 +73,19 @@ function OurWorship() {
                     collective worship must contain these elements.{" "}
                   </p>
                   <p className="pt-6">scroll down to dive deeper</p>
+                  </div>
                 </div>
               </div>
             </div>
 
             <div className="space-y-6 mt-6">
               <div className="relative shadow-custom-xl rounded-3xl p-8 space-y-6  text-center ">
-                <p className="text-2xl font-semibold text-center ">
+                <p className="text-lg font-semibold text-center ">
                   We Focus on Preaching and Teaching the Word:
                 </p>
-                <div className="text-lightText text-left text-2xl space-y-6 font-medium leading-normal">
+                <div className="text-lightText text-left text-lg space-y-6 font-normal leading-normal">
                   <p className="text-center">
-                    <em className="text-xl text-center">
+                    <em className="text-lg text-center">
                       &quot;How sweet are Thy words to my taste! Yea, sweeter
                       than honey to my mouth...Thy word is a lamp to my feet,
                       and a light to my path.&quot; (Psalm 119:103, 105)
@@ -107,10 +113,10 @@ function OurWorship() {
                 </div>
               </div>
               <div className="relative shadow-custom-xl rounded-3xl p-8 space-y-6  text-center ">
-                <p className="text-2xl font-semibold text-center ">
+                <p className="text-lg font-semibold text-center ">
                   We Create Time for Prayers to God:
                 </p>
-                <div className="text-lightText text-left text-2xl space-y-6 font-medium leading-normal">
+                <div className="text-lightText text-left text-lg space-y-6 font-medium leading-normal">
                   <p>
                     God speaks to us through the Bible, while we communicate
                     with Him through prayer. The Bible emphasizes the importance
@@ -150,10 +156,10 @@ function OurWorship() {
                 </div>
               </div>
               <div className="relative shadow-custom-xl rounded-3xl p-8 space-y-6  text-center ">
-                <p className="text-2xl font-semibold text-center ">
+                <p className="text-lg font-semibold text-center ">
                   Worship in Song:
                 </p>
-                <div className="text-lightText text-left text-2xl space-y-6 font-medium leading-normal">
+                <div className="text-lightText text-left text-lg space-y-6 font-medium leading-normal">
                   <p>
                     When we gather for worship, we speak &quot;to one another in
                     psalms and hymns and spiritual songs, singing with
@@ -172,10 +178,10 @@ function OurWorship() {
                 </div>
               </div>
               <div className="relative shadow-custom-xl rounded-3xl p-8 space-y-6  text-center ">
-                <p className="text-2xl font-semibold text-center ">
+                <p className="text-lg font-semibold text-center ">
                   We Give As We Have Been Blessed:
                 </p>
-                <div className="text-lightText text-left text-2xl space-y-6 font-medium leading-normal">
+                <div className="text-lightText text-left text-lg space-y-6 font-medium leading-normal">
                   <p>
                     The church collects funds to support its mission, following
                     Paul&apos;s guidance: &quot;On the first day of every week,
@@ -196,10 +202,10 @@ function OurWorship() {
                 </div>
               </div>
               <div className="relative shadow-custom-xl rounded-3xl p-8 space-y-6  text-center ">
-                <p className="text-2xl font-semibold text-center ">
+                <p className="text-lg font-semibold text-center ">
                   Communion - The Lord&apos;s Supper:
                 </p>
-                <div className="text-lightText text-left text-2xl space-y-6 font-medium leading-normal">
+                <div className="text-lightText text-left text-lg space-y-6 font-medium leading-normal">
                   <p>
                     The night before His sacrifice, Jesus established a memorial
                     known as &quot;communion&quot; or the &quot;Lord&apos;s
@@ -225,10 +231,10 @@ function OurWorship() {
                 </div>
               </div>
               <div className="relative shadow-custom-xl rounded-3xl p-8 space-y-6  text-center ">
-                <p className="text-2xl font-semibold text-center ">
+                <p className="text-lg font-semibold text-center ">
                   Godly Behaviors:
                 </p>
-                <div className="text-lightText text-left text-2xl space-y-6 font-medium leading-normal">
+                <div className="text-lightText text-left text-lg space-y-6 font-medium leading-normal">
                   <p>
                     In addition to the elements of our worship mentioned
                     earlier, there are specific behaviors that Christians are
@@ -261,7 +267,7 @@ function OurWorship() {
           </div>
         </div>
       </div>
-    </div>
+    </main>
   );
 }
 

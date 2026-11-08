@@ -27,16 +27,23 @@ function CongregationHistory() {
       }
     };
   }, []);
+
   return (
-    <div className="font-inter my-24 space-y-6 md:my-32 mx-6 md:mx-32 ">
+    <>
+        <main className="min-h-screen bg-[#f7f8f5] px-6 pb-20 pt-28 font-inter sm:px-10 lg:px-16">
       <BackButton />
-      <div className="flex flex-col gap-y-6 justify-center items-center h-full">
-        <div className="text-b text-center md:w-2/3 z-20 w-full">
-          <p className="font-bold md:text-4xl text-3xl mb-10 ">
+      <header className="mx-auto mt-8 max-w-5xl border-b border-[#e4c47d]/50 pb-10 text-center">
+        <p className="text-sm font-bold uppercase tracking-[0.2em] text-[#4ca233]">
+          About the Congregation
+        </p>
+        <div className="mt-4">
+          <p className="text-xl font-bold leading-tight tracking-tight text-[#17261f] sm:text-xl">
             Brief History of The Church of Christ, 18 Thomas Udoekong Street,
             Anua Obio, Uyo, <br /> Akwa Ibom State, Nigeria
           </p>
         </div>
+      </header>
+      <article className="mx-auto mt-12 max-w-5xl space-y-8 rounded-3xl border border-[#e1e8e1] bg-white p-6 shadow-[0_12px_35px_rgba(25,49,35,0.06)] sm:p-10">
         <div className="space-y-2">
           <p className="font-bold text-lg">Initial Plan:</p>
           <ul className="list-disc list-inside space-y-2 text-[#888888]">
@@ -60,8 +67,6 @@ function CongregationHistory() {
               Asuquo Offiong moved to his house.
             </li>
           </ul>
-        </div>
-
         <div className="space-y-2">
           <p className="font-bold text-lg">The Implementation:</p>
           <p className="text-[#888888]">
@@ -181,9 +186,12 @@ function CongregationHistory() {
           <p>Bro. Asuquo Offiong </p>
           <p>Church secretary</p>
         </div>
-      </div>
-    </div>
+</div>
+      </article>
+      </main>
+    </>
   );
+
 }
 
 export default CongregationHistory;
